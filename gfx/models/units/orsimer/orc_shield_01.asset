@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "orc_shield_1_mesh"
+	file = "orc_shield_1.mesh"
+
+	meshsettings = {
+		name = "orc_shield_01Shape"
+		index = 0
+		texture_diffuse = "orc_shield_1_diffuse.dds"
+		texture_normal = "orc_shield_1_normal.dds"
+		texture_specular = "orc_shield_1_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "orc_shield_01_entity"
+	pdxmesh = "orc_shield_1_mesh"
+}

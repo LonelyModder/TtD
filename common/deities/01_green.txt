@@ -1,0 +1,139 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_ius = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_ius = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_ius
+	passive_modifier = { land_morale_modifier = deity_land_morale_modifier_svalue }
+	omen = { modded_beasts_offensive = 0.1 } #Bonus from Omen
+	religion = green_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_wilderking = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			deity:omen_wilderking = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_wilderking
+	passive_modifier = { modded_beasts_offensive = 0.05 }
+	omen = { global_monthly_food_modifier = omen_global_monthly_food_modifier } #Bonus from Omen
+	religion = green_pantheon
+	deity_category = economy #This Deity uses a Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_greenlady = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			deity:omen_greenlady = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_greenlady
+	passive_modifier = { global_start_experience = deity_global_start_experience_svalue }
+	omen = { agressive_expansion_monthly_change = omen_agressive_expansion_monthly_change_svalue } #Bonus from Omen
+	religion = green_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_silvenar = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			deity:omen_silvenar = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_silvenar
+	passive_modifier = { diplomatic_relations = deity_diplomatic_relations_svalue }
+	omen = { global_population_happiness = omen_global_population_happiness } #Bonus from Omen
+	religion = green_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_zenithar = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			deity:omen_zenithar = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_zenit
+	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
+	omen = { global_nobles_happiness = omen_global_nobles_happiness_svalue } #Bonus from Omen
+	religion = green_pantheon
+	deity_category = economy #This Deity uses a Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}

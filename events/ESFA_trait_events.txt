@@ -1,0 +1,170 @@
+﻿namespace = esfa_traits
+
+#Trait inheritance events
+esfa_traits.1 = {		
+	type = character_event
+	hidden = yes
+
+	immediate = {
+		#Racial traits
+		if = {
+			limit = {
+				AND = {
+					NOT = { has_trait = altmer }
+					NOT = { has_trait = pure }
+				}
+				AND = {
+					NOT = { has_trait = altmer }
+					NOT = { has_trait = impure }
+				}
+				NOT = { has_trait = bosmer }
+				NOT = { has_trait = goblin }
+				NOT = { has_trait = tnede }
+				NOT = { has_trait = orc }
+				NOT = { has_trait = minotaur }
+				NOT = { has_trait = khajiit }
+				NOT = { has_trait = argonian }
+				NOT = { has_trait = imga }
+				NOT = { has_trait = nord }
+				NOT = { has_trait = breton }
+				NOT = { has_trait = falmer }
+				NOT = { has_trait = dwemer }
+				NOT = { has_trait = halfauroran }
+			}
+			if = {
+				limit = {
+					mother = { has_trait = minotaur } # Create the Half-Breeds? 
+				}
+				add_trait = minotaur
+			}
+			else_if = {
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = altmer }
+				}
+				add_trait = altmer
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = bosmer }
+				}
+				add_trait = bosmer
+			}	
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = tnede }
+				}
+				add_trait = tnede
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = breton }
+				}
+				add_trait = breton
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = falmer }
+				}
+				add_trait = falmer
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = dwemer }
+				}
+				add_trait = dwemer
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = goblin }
+				}
+				add_trait = goblin
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = orc }
+				}
+				add_trait = orc
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = imga }
+				}
+				add_trait = imga
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = khajiit }
+				}
+				add_trait = khajiit
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = argonian }
+				}
+				add_trait = argonian
+			}
+			else_if = { 
+				limit = {
+					# NOT = { father = { has_trait = minotaur } }
+					mother = { has_trait = nord }
+				}
+				add_trait = nord
+			}
+			#Altmer racism
+			if = {
+				limit = {
+					NOT = {has_trait = impure}
+					has_trait = altmer
+					OR = {
+						OR = {
+							mother = { has_trait = impure }
+							father = { has_trait = impure }
+						}
+						AND = {
+							father = { 
+								OR = { 
+									has_trait = ayleid
+									has_trait = bosmer 	
+									has_trait = tnede 
+									has_trait = goblin 
+									has_trait = orc
+									has_trait = khajiit
+									has_trait = argonian
+									has_trait = imga
+									has_trait = nord
+									has_trait = minotaur
+									has_trait = falmer
+									has_trait = dwemer
+									has_trait = breton
+									has_trait = halfauroran
+								} 
+							}
+							mother = { has_trait = altmer }
+						}
+					}	
+				}
+				add_trait = impure
+			}
+			else_if = { 
+				limit = {
+					has_trait = altmer
+					NOT = {has_trait = pure}
+				}
+				add_trait = pure
+			}
+		}
+	}				
+}
+		
+		

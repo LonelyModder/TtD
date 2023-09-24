@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "teleri_port_mesh"
+	file = "teleri_port.mesh"
+
+	meshsettings = {
+		name = "tribal_portShape"
+		index = 0
+		texture_diffuse = "teleri_port_diffuse.dds"
+		texture_normal = "teleri_port_normal.dds"
+		texture_specular = "teleri_port_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "teleri_gfx_port_entity"
+	pdxmesh = "teleri_port_mesh"
+}

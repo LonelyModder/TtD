@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "wonder_eldentree_mesh"
+	file = "wonder_eldentree.mesh"
+
+	meshsettings = {
+		name = "wonder_eldentreeShape"
+		index = 0
+		texture_diffuse = "highelves_fort_diffuse.dds"
+		texture_normal = "highelves_fort_normal.dds"
+		texture_specular = "highelves_fort_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "wonder_eldentree_entity"
+	pdxmesh = "wonder_eldentree_mesh"
+}

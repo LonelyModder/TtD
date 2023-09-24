@@ -1,0 +1,9 @@
+deity_manager = {
+	deities_database = { ### KEYS 10241-10260 ###
+		10241 = {
+			key = omen_lamaebal
+			deity = deity_lamaebal
+		}
+	}
+}
+

@@ -1,0 +1,57 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_rancestralworship = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			deity:omen_rancestralworship = {
+				holy_site_deity_check_trigger = yes
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+		}
+		NOT = { religion = elven_pantheon }
+	}
+	icon = deity_rancestralworship
+	passive_modifier = { call_omen_cost_modifier = deity_call_omen_cost_modifier_svalue }
+	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	religion = reachmen_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_hagravens = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			deity:omen_hagravens = {
+				holy_site_deity_check_trigger = yes
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+		}
+		NOT = { religion = elven_pantheon }
+	}
+	icon = deity_hagravens
+	passive_modifier = { lv_mages_offensive = 0.1 }
+	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue } #Bonus from Omen
+	religion = reachmen_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}

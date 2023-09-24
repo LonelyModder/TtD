@@ -1,0 +1,376 @@
+﻿namespace = bloodlines_startup
+
+bloodlines_startup.1 = { #Aranas
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = AAA
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:1
+			}
+			add_trait = aranas
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.2 = { #Umarils
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CAA
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:2
+			}
+			add_trait = unfeathered
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.3 = { #Atatar Clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CBP
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:3
+			}
+			add_trait = atatar
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.4 = { #Dynar Clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CBO
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:4
+			}
+			add_trait = dynar
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.5 = { #Ulorome Lineage
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = AAJ
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:5
+			}
+			add_trait = ulorome
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.6 = { #Tor clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CBL
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:6
+			}
+			add_trait = tor
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.7 = { #Ceya-Tar clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CAT
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:7
+			}
+			add_trait = ceyatar
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.8 = { #Ninendava clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CBH
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:8
+			}
+			add_trait = ninendava
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.9 = { #Miscarcand clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CAH
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:9
+			}
+			add_trait = miscarcandite
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.10 = { #Camoran clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = VAA
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:11
+			}
+			add_trait = camoran
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.11 = { #Direnni clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = VAS
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:12
+			}
+			add_trait = direnni
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.12 = { #Direnni clan - the ones that remained
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = AAL
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:13
+			}
+			add_trait = direnni
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.13 = { #Anequina clan
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = KAL
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:27
+			}
+			add_trait = banequina
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.14 = { #Tharn family
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CBY
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:29
+			}
+			add_trait = tharn
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}
+
+bloodlines_startup.15 = { #Alesh family in Sardavar Leed family
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		tag = CAO
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = char:31
+			}
+			add_trait = alesh
+			add_trait = dragonblood
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	
+	}
+
+}

@@ -1,0 +1,106 @@
+﻿country_decisions = {
+	
+	# Form High Kingdom of Alinor
+	form_colovia = {
+		
+		potential = {
+			OR = {
+				country_culture_group = nede
+				country_culture_group = altmer
+			}
+			#is_tribal = yes
+			NOT = {
+				tag = XCL
+			}
+			NOR = {
+				is_tier_1_formable_trigger = yes
+				is_tier_2_formable_trigger = yes
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 831
+					province_id = 798
+					province_id = 926
+					province_id = 1047
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = colovia_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XCL
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns = 831
+			owns_or_subject_owns = 798
+			owns_or_subject_owns = 926
+			owns_or_subject_owns = 1047
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "KColovia_name"
+			change_country_flag = colovia_FLAG
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "KColovia_adj"
+				change_country_color =  "KColovia_color"
+				change_country_tag = XCL
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 831
+						}
+					}
+				}
+				set_capital = 831
+				hidden_effect = {
+					p:831.state = {
+						set_state_capital = 831
+					}
+				}
+			}
+			#p:831 = {
+			#	if = {
+			#		limit = { has_city_status = no }
+			#		set_city_status = city
+			#	}
+			#}
+			p:831 = {
+				capital_formable_medium_effect = yes
+				formable_capital_modifier_normal_effect = yes
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_goldcoast_region = { formable_region_province_effect = yes }
+				region:modded_kvatch_region = { formable_region_province_effect = yes }
+				region:modded_skingrad_region = { formable_region_province_effect = yes }
+				region:modded_chorrol_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

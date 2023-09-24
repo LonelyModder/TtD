@@ -1,0 +1,233 @@
+﻿#Culture Group heritages
+
+altmer_heritage = { 
+	modifier = {
+		#good
+		research_points_modifier = 0.1
+		navy_maintenance_cost = -0.25
+		
+		#bad
+		diplomatic_relations = -1
+	}
+	
+	trigger = {
+		country_culture_group = altmer
+		NOT = { 
+			OR = {
+				primary_culture = heartlanderelves
+				primary_culture = besarabicelves
+				primary_culture = deathelves
+				primary_culture = northelves
+				primary_culture = colovianelves
+			} 
+		}
+	}
+}
+
+falmer_heritage = { 
+	modifier = {
+		#good
+		omen_power = 0.2
+		lv_cavlary_cost = -0.2
+		
+		#bad
+		diplomatic_relations = -1
+	}
+	
+	trigger = {
+		country_culture_group = falmer
+	}
+}
+
+dwemer_heritage = { 
+	modifier = {
+		#good
+		research_points_modifier = 0.2
+		global_monthly_state_loyalty = 0.025
+		
+		#bad
+		omen_power = -0.2
+	}
+	
+	trigger = {
+		country_culture_group = dwemer
+	}
+}
+
+breton_heritage = { 
+	modifier = {
+		#good
+		research_points_modifier = 0.1
+		lv_cavalry_offensive = 0.1
+		
+		#bad
+		improve_relation_impact = -0.25
+	}
+	
+	trigger = {
+		OR = {
+			country_culture_group = breton
+			country_culture_group = druid
+		}
+	}
+}
+
+ayleid_heritage = { 
+	modifier = {
+		#good
+		enslavement_efficiency = 0.25
+		global_monthly_civilization = 0.05
+		
+		#bad
+		global_slaves_happyness = negative_happiness_small_svalue
+	}
+	
+	trigger = {
+		OR = {
+			primary_culture = heartlanderelves
+			primary_culture = besarabicelves
+			primary_culture = deathelves
+			primary_culture = northelves
+			primary_culture = colovianelves
+		}
+	}
+}
+
+nede_heritage = { 
+	modifier = {
+		#good
+		happiness_for_same_religion_modifier = 0.1
+		omen_power = 0.2
+
+		#bad
+		global_slaves_output = -0.2
+	}
+	
+	trigger = {
+		OR = {
+			country_culture_group = nede
+			country_culture_group = keptu
+			country_culture_group = reachmenic
+		}
+	}
+}
+
+goblin_heritage = { 
+	modifier = {
+		#good
+		war_score_cost = -0.05
+		army_weight_modifier = -0.1
+		
+		#bad
+		land_morale_modifier = -0.2
+	}
+	
+	trigger = {
+		country_culture_group = goblin
+	}
+}
+
+orcish_heritage = { 
+	modifier = {
+		#good
+		war_exhaustion = -0.025
+		discipline = 0.25
+		
+		#bad
+		research_points_modifier = -0.1
+	}
+	
+	trigger = {
+		country_culture_group = orcish
+	}
+}
+
+minotauric_heritage = { 
+	modifier = {
+		#good
+		land_morale_modifier = 0.2
+		army_maintenance_cost = -0.2
+		
+		#bad
+		improve_relation_impact = -0.25
+	}
+	
+	trigger = {
+		country_culture_group = minotauric
+	}
+}
+
+bosmer_heritage = { 
+	modifier = {
+		#good
+		lv_archers_offensive = 0.1
+		improve_relation_impact = 0.2
+		
+		#bad
+		build_cost = 0.25
+	}
+	
+	trigger = {
+		country_culture_group = bosmer
+	}
+}
+
+khajiit_heritage = { 
+	modifier = {
+		#good
+		global_commerce_modifier = 0.05
+		global_capital_trade_routes = 1
+		
+		#bad
+		loyalty_gain_chance_modifier = 0.05
+	}
+	
+	trigger = {
+		country_culture_group = khajiit
+	}
+}
+
+imga_heritage = { 
+	modifier = {
+		#good
+		monthly_legitimacy = 0.05
+		improve_relation_impact = 0.5
+		
+		#bad
+		land_morale_modifier = -0.1
+	}
+	
+	trigger = {
+		country_culture_group = imga
+	}
+}
+
+argonian_heritage = { 
+	modifier = {
+		#good
+		hostile_attrition = 0.2
+		army_weight_modifier = -0.1
+		
+		#bad
+		research_points_modifier = -0.1
+	}
+	
+	trigger = {
+		country_culture_group = argonian
+	}
+}
+
+nordic_heritage = { 
+	modifier = {
+		#good
+		global_manpower_modifier = 0.1
+		discipline = 0.1
+		
+		#bad
+		research_points_modifier = -0.1
+	}
+	
+	trigger = {
+		country_culture_group = nordic
+	}
+}

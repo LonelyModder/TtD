@@ -1,0 +1,8 @@
+﻿nordic = { # Nedic names
+	1071 = PROV1071_nordic #Imperial City
+	1084 = PROV1084_nordic #Imperial Bastion
+	976 = PROV976_nordic #Ceyatatar
+	1288 = PROV1288_nordic #Sancre Tor
+	1542 = PROV1542_nordic #Malada
+	2441 = PROV2441_nordic #Rihad
+}

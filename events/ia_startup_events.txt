@@ -1,0 +1,251 @@
+﻿namespace = esfa_startup
+
+esfa_startup.1 = { #Sommerset Isles
+    type = country_event
+    title = esfa_startup.1.t
+    desc = esfa_startup.1.desc
+    picture = welcoming_window_1
+	
+    trigger = {
+		OR = {
+			primary_culture = sommersetic
+			primary_culture = auridonic
+			primary_culture = hiforested
+			primary_culture = psijic
+		}
+    }
+
+    option = {    
+        name = esfa_startup.1.a
+		root = { every_owned_province = { add_claim = p:453.owner } }
+    }
+}
+
+esfa_startup.2 = { #Goblins
+    type = country_event
+    title = esfa_startup.2.t
+    desc = esfa_startup.2.desc
+    picture = welcoming_window_4
+	
+    trigger = {
+    	country_culture_group = goblin
+    }
+
+    option = {    
+        name = esfa_startup.2.a
+    }
+}
+
+esfa_startup.3 = { #Vallenwood
+    type = country_event
+    title = esfa_startup.3.t
+    desc = esfa_startup.3.desc
+    picture = welcoming_window_3
+	
+    trigger = {
+		country_culture_group = bosmer
+    }
+
+    option = {    
+        name = esfa_startup.3.a
+		region:modded_southpoint_region = { formable_region_province_effect = yes }
+		region:modded_grahtwood_region = { formable_region_province_effect = yes }
+		region:modded_xolo_region = { formable_region_province_effect = yes }
+		region:modded_westernreapersmarch_region = { formable_region_province_effect = yes }
+		region:modded_greenshade_region = { formable_region_province_effect = yes }
+    }
+}
+
+esfa_startup.4 = { #Ayleid Empire
+    type = country_event
+    title = esfa_startup.4.t
+    desc = esfa_startup.4.desc
+    picture = welcoming_window_2
+	
+    trigger = {
+    	OR = {
+			primary_culture = colovianelves
+			primary_culture = northelves
+			primary_culture = deathelves
+			primary_culture = besarabicelves
+			primary_culture = heartlanderelves
+		}
+    }
+
+    option = {    
+        name = esfa_startup.4.a
+		#every_owned_province = { add_claim = c:CAA } 			
+    }
+}
+
+esfa_startup.5 = { #Minotaurs
+	type = country_event
+    title = esfa_startup.5.t
+    desc = esfa_startup.5.desc
+    picture = welcoming_window_5
+	
+    trigger = {
+    	country_culture_group = minotauric
+    }
+
+    option = {    
+        name = esfa_startup.5.a
+    }
+}
+
+esfa_startup.6 = { #Khajiit
+	type = country_event
+    title = esfa_startup.6.t
+    desc = esfa_startup.6.desc
+    picture = welcoming_window_6
+	
+    trigger = {
+    	country_culture_group = khajiit
+    }
+
+    option = {    
+        name = esfa_startup.6.a
+    }
+}
+
+esfa_startup.7 = { #Nedes
+	type = country_event
+    title = esfa_startup.7.t
+    desc = esfa_startup.7.desc
+    picture = welcoming_window_7
+	
+    trigger = {
+		OR = {
+			country_culture_group = nede
+			country_culture_group = keptu
+			country_culture_group = reachmenic
+		}
+    }
+
+    option = {    
+        name = esfa_startup.7.a
+    }
+}
+
+esfa_startup.8 = { #Orcs
+	type = country_event
+    title = esfa_startup.8.t
+    desc = esfa_startup.8.desc
+    picture = welcoming_window_8
+	
+    trigger = {
+    	country_culture_group = orcish
+    }
+
+    option = {    
+        name = esfa_startup.8.a
+    }
+}
+
+esfa_startup.9 = { #Argonian
+	type = country_event
+    title = esfa_startup.9.t
+    desc = esfa_startup.9.desc
+    picture = welcoming_window_9
+	
+    trigger = {
+    	country_culture_group = argonian
+    }
+
+    option = {    
+        name = esfa_startup.9.a
+    }
+}
+
+esfa_startup.10 = { #Imga
+	type = country_event
+    title = esfa_startup.10.t
+    desc = esfa_startup.10.desc
+    picture = welcoming_window_3
+	
+    trigger = {
+    	country_culture_group = imga
+    }
+
+    option = {    
+        name = esfa_startup.10.a
+    }
+}
+
+esfa_startup.11 = { #Nord
+	type = country_event
+    title = esfa_startup.11.t
+    desc = esfa_startup.11.desc
+    picture = welcoming_window_11
+	
+    trigger = {
+    	country_culture_group = nordic
+    }
+
+    option = {    
+        name = esfa_startup.11.a
+    }
+}
+
+esfa_startup.12 = { #Breton
+	type = country_event
+    title = esfa_startup.12.t
+    desc = esfa_startup.12.desc
+    picture = welcoming_window_12
+	
+    trigger = {
+		OR = {
+			country_culture_group = breton
+			country_culture_group = druid
+		}
+    }
+
+    option = {    
+        name = esfa_startup.12.a
+    }
+}
+
+esfa_startup.13 = { #Direnni
+	type = country_event
+    title = esfa_startup.13.t
+    desc = esfa_startup.13.desc
+    picture = welcoming_window_13
+	
+    trigger = {
+    	primary_culture = iliacite
+    }
+
+    option = {    
+        name = esfa_startup.13.a
+    }
+}
+
+esfa_startup.14 = { #Falmer
+	type = country_event
+    title = esfa_startup.14.t
+    desc = esfa_startup.14.desc
+    picture = welcoming_window_14
+	
+    trigger = {
+    	country_culture_group = falmer
+    }
+
+    option = {    
+        name = esfa_startup.14.a
+    }
+}
+
+esfa_startup.15 = { #Dwemer
+	type = country_event
+    title = esfa_startup.15.t
+    desc = esfa_startup.15.desc
+    picture = welcoming_window_15
+	
+    trigger = {
+    	country_culture_group = dwemer
+    }
+
+    option = {    
+        name = esfa_startup.15.a
+    }
+}

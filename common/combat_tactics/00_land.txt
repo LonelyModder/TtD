@@ -1,0 +1,342 @@
+﻿# Offensive tactics
+
+shock_action = {
+	use_as_default = yes
+
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	envelopment = 0.20
+	padma_vyuha = 0.20
+	bottleneck = -0.1
+	greek_phalanx = -0.1
+	
+	casualties = 0.1
+
+	effective_composition = {
+		lv_lightinfantry = 1	
+		lv_heavyinfantry = 0	
+		lv_archers =  0	
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 1.5	
+		lv_cavalry = 0		
+		lv_guarcavalry = 2		
+		lv_horsearchers = 2		
+		lv_dremoras = 2	
+		lv_undead = 0	
+		lv_gryphons = 1.5
+		lv_warriors = 2
+		lv_raiders = 2
+		lv_atronach = 0
+		lv_clanfear = 2
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+envelopment = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	deception = 0.20
+	greek_phalanx = 0.20
+	shock_action = -0.1
+	padma_vyuha = -0.1
+	
+	effective_composition = {
+		lv_lightinfantry = 0	
+		lv_heavyinfantry = 1	
+		lv_archers =  1.5
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 1.5	
+		lv_cavalry = 2	
+		lv_guarcavalry = 2
+		lv_horsearchers = 2		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 2
+		lv_warriors = 0
+		lv_raiders = 0
+		lv_atronach = 2
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+skirmishing = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+	
+	bottleneck = 0.20
+	cavalry_skirmish = 0.20
+	deception = -0.1
+	triplex_acies = -0.1
+		
+	casualties = -0.25
+
+	effective_composition = {
+		lv_lightinfantry = 1	
+		lv_heavyinfantry = 0	
+		lv_archers =  0	
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 0	
+		lv_cavalry = 2		
+		lv_guarcavalry = 1.5
+		lv_horsearchers = 2		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 2	
+		lv_warriors = 1.5
+		lv_raiders = 1.5
+		lv_atronach = 2
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+deception = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	skirmishing = 0.2
+	triplex_acies = 0.2
+	envelopment = -0.1
+	hit_and_run_tactics = -0.1
+
+	effective_composition = {
+		lv_lightinfantry = 1	
+		lv_heavyinfantry = 0	
+		lv_archers =  1.5		
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 0	
+		lv_cavalry = 2		
+		lv_guarcavalry = 0	
+		lv_horsearchers = 2	
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 2	
+		lv_warriors = 1.5
+		lv_raiders = 1.5
+		lv_atronach = 0
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+bottleneck = {
+	enable = yes
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	shock_action = 0.2
+	hit_and_run_tactics = 0.2
+	skirmishing = -0.1
+	cavalry_skirmish = -0.1
+
+	effective_composition = {
+		lv_lightinfantry = 0	
+		lv_heavyinfantry = 1.5	
+		lv_archers =  2		
+		lv_crossbowmen = 2	
+		lv_camels = 0
+		lv_mages = 2	
+		lv_cavalry = 0		
+		lv_guarcavalry = 0	
+		lv_horsearchers = 0		
+		lv_dremoras = 2	
+		lv_undead = 0	
+		lv_gryphons = 0	
+		lv_warriors = 0
+		lv_raiders = 0
+		lv_atronach = 2
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+# Military Tradition
+
+greek_phalanx = { #Good vs Shock - Bad vs Envelopment
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	shock_action = 0.25
+	cavalry_skirmish = 0.25
+	envelopment = -0.1
+	triplex_acies = -0.1
+	
+	casualties = -0.1
+
+	effective_composition = { #
+		lv_lightinfantry = 1.5	
+		lv_heavyinfantry = 2	
+		lv_archers =  2	
+		lv_crossbowmen = 2	
+		lv_camels = 0
+		lv_mages = 2	
+		lv_cavalry = 0		
+		lv_guarcavalry = 0	
+		lv_horsearchers = 0		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 0	
+		lv_warriors = 1.5
+		lv_raiders = 0
+		lv_atronach = 0
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+triplex_acies = { #Good vs Envelopment - Bad vs Skirmishing
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	skirmishing = 0.25
+	greek_phalanx = 0.25
+	deception = -0.1
+	hit_and_run_tactics = -0.1
+	
+	effective_composition = { #
+		lv_lightinfantry = 2	
+		lv_heavyinfantry = 2	
+		lv_archers =  2	
+		lv_crossbowmen = 2	
+		lv_camels = 0
+		lv_mages = 0	
+		lv_cavalry = 2		
+		lv_guarcavalry = 0	
+		lv_horsearchers = 0		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 0	
+		lv_warriors = 0
+		lv_raiders = 0
+		lv_atronach = 0
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+cavalry_skirmish = {
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	bottleneck = 0.25
+	padma_vyuha = 0.25
+	skirmishing = -0.1
+	greek_phalanx = -0.1
+	
+	casualties = -0.1
+
+	effective_composition = {
+		lv_lightinfantry = 0	
+		lv_heavyinfantry = 0	
+		lv_archers =  0	
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 0	
+		lv_cavalry = 2	
+		lv_guarcavalry = 2	
+		lv_horsearchers = 2		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 0	
+		lv_warriors = 0
+		lv_raiders = 0
+		lv_atronach = 0
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+padma_vyuha = {
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	envelopment = 0.25
+	hit_and_run_tactics = 0.25
+	shock_action = -0.1
+	cavalry_skirmish = -0.1
+	
+	casualties = -0.1
+
+	effective_composition = {
+		lv_lightinfantry = 0	
+		lv_heavyinfantry = 0	
+		lv_archers =  0	
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 0	
+		lv_cavalry = 0		
+		lv_guarcavalry = 0	
+		lv_horsearchers = 0		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 0	
+		lv_warriors = 0
+		lv_raiders = 0
+		lv_atronach = 0
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}
+
+
+hit_and_run_tactics = {
+
+	enable = no
+
+	sound = "event:/SFX/UI/Unit/sfx_ui_unit_tactic_set_offensive"
+
+	deception = 0.25
+	triplex_acies = 0.25
+	bottleneck = -0.1
+	padma_vyuha = -0.1
+	
+	casualties = -0.1
+
+	effective_composition = {
+		lv_lightinfantry = 1	
+		lv_heavyinfantry = 0	
+		lv_archers =  1.5	
+		lv_crossbowmen = 0	
+		lv_camels = 0
+		lv_mages = 0	
+		lv_cavalry = 0		
+		lv_guarcavalry = 0	
+		lv_horsearchers = 2		
+		lv_dremoras = 0	
+		lv_undead = 0	
+		lv_gryphons = 2
+		lv_warriors = 1.5
+		lv_raiders = 1.5
+		lv_atronach = 0
+		lv_clanfear = 0
+		lv_bonelord = 0
+		lv_bonewalker = 0
+	}
+}

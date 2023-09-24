@@ -1,0 +1,153 @@
+﻿necrom_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = necrom_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = {
+				AND = {
+					OR = {
+						any_owned_province = {
+							OR = {
+								is_importing_trade_good = necromancers
+								trade_goods = necromancers
+							}					
+						}
+						religion = idealmasters_pantheon
+						religion = night_pantheon
+						
+					}
+					NAND = {
+						has_deity_in_pantheon = deity:omen_meridia
+						deity:omen_meridia = { has_holy_site = yes }
+					}
+				}
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			AND = {
+				OR = {
+					any_owned_province = {
+						OR = {
+							is_importing_trade_good = necromancers
+							trade_goods = necromancers
+						}					
+					}
+					religion = idealmasters_pantheon
+					religion = night_pantheon
+				}
+				NAND = {
+					has_deity_in_pantheon = deity:omen_meridia
+					deity:omen_meridia = { has_holy_site = yes }
+				}
+			}
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = tradition_unlock_requirement_necrom
+				AND = {
+					OR = {
+						any_owned_province = {
+							OR = {
+								is_importing_trade_good = necromancers
+								trade_goods = necromancers
+							}					
+						}
+						religion = idealmasters_pantheon
+						religion = night_pantheon
+					}
+					NAND = {
+						has_deity_in_pantheon = deity:omen_meridia
+						deity:omen_meridia = { has_holy_site = yes }
+					}
+				}
+			}
+		}
+	}
+	
+	necrom_path_1 = { ###altmer path
+		modifier = { 
+			lv_undead_offensive = 0.1
+		}
+		icon = necrom_mini_trad
+		requires = {}
+	}
+	
+	necrom_path_2 = { ###altmer path
+		modifier = { 
+			levy_size_multiplier = 0.025
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_1}
+	}
+	
+	necrom_path_2a = { ###altmer path
+		modifier = { 
+			lv_undead_defensive = 0.1
+			lv_undead_discipline = 0.1
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_2}
+	}
+	
+	necrom_path_3a = { ###altmer path
+		modifier = { 
+			army_movement_speed = 0.2
+			movement_speed_if_no_road = 0.2
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_2a}
+	}
+	
+	necrom_path_4a = { ###altmer path
+		modifier = { 
+			lv_bonewalker_offensive = 0.1
+			lv_bonewalker_defensive = 0.1
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_3a}
+	}
+	
+	necrom_path_5a = { ###altmer path
+		modifier = { 
+			siege_ability = 0.5
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_4a}
+	}
+	
+	necrom_path_2b = { ###altmer path
+		modifier = { 
+			lv_bonelord_offensive = 0.2
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_2}
+	}
+	
+	necrom_path_3b = { ###altmer path
+		modifier = { 
+			lv_bonelord_defensive = 0.1
+			lv_bonelord_discipline = 0.1
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_2b}
+	}
+	
+	necrom_path_4b = { ###altmer path
+		modifier = { 
+			levy_size_multiplier = 0.025
+		}
+		icon = necrom_mini_trad
+		requires = {necrom_path_3b}
+	}
+	
+	necrom_states_path_end_bonus = {
+		modifier = { 
+			lv_bonelord_offensive = 0.15
+			levy_size_multiplier = 0.025
+		}
+		requires = { necrom_path_5a necrom_path_4b } 
+		icon = necrom_mini_trad 
+	}
+}

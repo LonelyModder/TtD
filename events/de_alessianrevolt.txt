@@ -1,0 +1,566 @@
+﻿namespace = alessian_revolt
+
+alessian_revolt.10 = { # Revolt of ayleid slaves
+	type = country_event
+	hidden = yes
+	fire_only_once = yes
+	picture = alessian_revolution
+	
+	trigger = {
+		owns = p:1288
+		religion = nedic_pantheon
+		NOT = { has_global_variable = alesh }
+		AND = {
+			p:1288.owner = {
+				war = no
+			}
+			AND = {
+				NOT = { p:1609.owner = c:CCE }
+				NOT = { p:1594.owner = c:CCE }
+				NOT = { p:1542.owner = c:CCE }
+			}
+			p:1071.owner = {
+				religion = deadric_pantheon
+			}
+		}
+	}
+	
+	immediate = {
+		set_global_variable = {
+			name = alesh
+		}
+		#Alessian Revolt
+		p:1288 = {
+            while = {
+                count = 20
+                define_pop = {
+                type = freemen
+                culture = nednibenese
+                religion = nedic_pantheon
+                }
+            }                
+        }
+		change_government = despotic_monarchy
+		switch_government_type_event_clearup_effect = yes
+		set_primary_culture = nednibenese
+		change_country_name = "Alessia_NAME"
+		change_country_adjective = "Alessia_ADJECTIVE"
+		change_country_flag = alessian_FLAG
+		change_country_color =  "KAlessian_color"
+		p:1288.owner = {
+			capital_scope.governorship = {
+				raise_legion = {
+					create_unit = {
+						location = 1288
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_archers
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_heavyinfantry
+						add_subunit = lv_cavalry
+						add_subunit = lv_cavalry
+						add_subunit = lv_cavalry
+						add_subunit = lv_cavalry
+						add_subunit = lv_cavalry
+						add_subunit = lv_cavalry
+					}
+				}
+			}
+			add_country_modifier = {
+				name = cymmerian_invasion_modifier
+				duration = 14600 # 10 years
+			}
+			every_unit = {
+				add_food = 100
+			}
+			add_treasury = 300
+		
+			create_character = {
+				first_name = "Morihaus"
+				family_name = "Cyrod"
+				no_stats = yes
+				add_trait="minotaur"
+				culture = minotauran
+				religion = nedic_pantheon
+				age = 23
+				good_martial_effect = yes
+				good_charisma_effect = yes
+				average_finesse_effect = yes
+				average_zeal_effect = yes
+				add_gold=500
+				save_scope_as = mori_gov
+			}
+			
+			create_character = {
+				first_name = "Alessia"
+				family_name = "Cyrod"
+				no_stats = yes
+				add_trait="tnede"
+				add_trait="dragonblood"
+				add_trait="alesh"
+				culture = nednibenese
+				religion = nedic_pantheon
+				female = yes
+				age = 18
+				bad_martial_effect = yes
+				good_charisma_effect = yes
+				average_finesse_effect = yes
+				average_zeal_effect = yes
+				save_scope_as = alessia_gov
+				add_gold=500
+			}
+			
+			create_character = {
+				first_name = "Pelinal"
+				family_name = "Whitestrike"
+				no_stats = yes
+				add_trait="tnede"
+				add_trait="shezzarine"
+				culture = nednibenese
+				religion = nedic_pantheon
+				age = 30
+				add_martial=10
+				add_charisma=8
+				add_finesse=2
+				add_zeal=10
+				save_scope_as = pelinal_gov
+			}																																			
+		}
+		trigger_event = {
+			id = alessian_revolt.1 
+		}
+	}
+	
+}
+
+alessian_revolt.1 = { # The Choice
+	type = country_event
+	title = "alessian_revolt.1.t"
+	desc = "alessian_revolt.1.desc"
+	fire_only_once = yes
+	picture = alessian_revolution
+	
+	left_portrait = root.current_ruler
+	left_portrait = scope:alessia_gov
+	right_portrait = scope:mori_gov
+	right_portrait = scope:pelinal_gov
+	
+	trigger = {
+		
+	}
+	
+	option = {
+		name = alessian_revolt.1.a
+		trigger = {
+			owns = p:1288
+		}
+		p:1288.owner = {
+			set_as_ruler = scope:alessia_gov
+			current_ruler = {
+				add_popularity = 100
+			}
+		}
+		ai_chance = {
+            factor = 90
+        }
+	}
+	
+	option = {
+		name = alessian_revolt.1.b
+		trigger = {
+			owns = p:1288
+		}
+		ai_chance = {
+            factor = 10
+        }
+	}
+	
+	option = {
+		name = alessian_revolt.1.c
+		trigger = {
+			NOT = { owns = p:1288 }
+		}
+	}
+}
+
+alessian_revolt.2 = { # The Choice
+	type = country_event
+	title = "alessian_revolt.2.t"
+	desc = "alessian_revolt.2.desc"
+	fire_only_once = yes
+	picture = alessian_revolution
+	
+	trigger = {
+		p:1288.owner = {
+			religion = nedic_pantheon
+			has_country_modifier = cymmerian_invasion_modifier
+		}
+		capital_scope = {
+			OR = {
+				is_in_region = modded_sjerall_region
+				is_in_region = modded_chaydinhal_region
+			}
+		}
+		p:1288.owner = { is_ai = yes }
+	}
+	
+	option = {
+		name = alessian_revolt.2.a
+		every_owned_province = {
+			set_conquered_by = p:1288.owner
+		}
+		#c:EAG = { # For elven call to surrender
+        #    make_subject = {
+        #        target = c:EAI
+        #        type = feudatory
+        #    }
+        #}
+		ai_chance = {
+            factor = 90
+        }
+	}
+	
+	option = {
+		name = alessian_revolt.2.b
+		ai_chance = {
+            factor = 10
+        }
+	}
+}
+
+alessian_revolt.3 = { # Alessian cores
+	type = country_event
+	fire_only_once = yes
+	hidden = yes
+	picture = alessian_revolution
+	
+	trigger = {
+		p:1288.owner = {
+			religion = nedic_pantheon
+			has_country_modifier = cymmerian_invasion_modifier
+		}
+		owns = p:1288
+	}
+	
+	immediate = {
+		region:modded_goldcoast_region = { formable_region_province_effect = yes }
+		region:modded_kvatch_region = { formable_region_province_effect = yes }
+		region:modded_skingrad_region = { formable_region_province_effect = yes }
+		region:modded_chorrol_region = { formable_region_province_effect = yes }
+		region:modded_heartlands_region = { formable_region_province_effect = yes }
+		region:modded_westweald_region = { formable_region_province_effect = yes }
+		region:modded_lowerniben_region = { formable_region_province_effect = yes }
+		region:modded_sjerall_region = { formable_region_province_effect = yes }
+		region:modded_chaydinhal_region = { formable_region_province_effect = yes }
+		region:modded_valus_region = { formable_region_province_effect = yes }
+		region:modded_nibenbasin_region = { formable_region_province_effect = yes }
+	}
+}
+
+alessian_revolt.4 = { #Dragonblood
+
+	type = country_event
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = cymmerian_invasion_modifier
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				has_same_family = scope:alessia_gov
+				NOT = { has_trait = dragonblood }
+			}
+			add_trait = dragonblood
+		
+		}
+		hidden_effect = {
+			trigger_event = { id = bloodlines_setup_completion.1 }
+		}
+	}
+
+}
+
+alessian_revolt.5 = { # Capital in Sancre Tor
+	type = country_event
+	title = "alessian_revolt.5.t"
+	desc = "alessian_revolt.5.desc"
+	fire_only_once = yes
+	picture = alessian_revolution
+	
+	trigger = {
+		p:1288.owner = {
+			religion = nedic_pantheon
+			has_country_modifier = cymmerian_invasion_modifier
+		}
+		has_country_modifier = cymmerian_invasion_modifier
+	}
+	
+	option = {
+		name = alessian_revolt.5.a
+		if = {
+			limit = {
+				NOT = {
+					capital_scope = {
+						province_id = 1288
+					}
+				}
+			}
+			set_capital = 1288
+			hidden_effect = {
+				p:1288.state = {
+					set_state_capital = 1288
+				}
+			}
+		}
+		p:1288 = {
+			capital_formable_medium_effect = yes
+			formable_capital_modifier_normal_effect = yes
+		}
+		add_stability = 25
+	}
+}
+
+alessian_revolt.6 = { # Pelinal Leadership
+	type = country_event
+	title = "alessian_revolt.6.t"
+	desc = "alessian_revolt.6.desc"
+	fire_only_once = yes
+	picture = alessian_revolution
+	
+	left_portrait = scope:pelinal_gov
+	
+	trigger = {
+		has_country_modifier = cymmerian_invasion_modifier
+		exists = scope:pelinal_gov 
+		stability <= 30
+	}
+	
+	option = {
+		name = alessian_revolt.6.a
+		add_stability = 50
+	}
+}
+
+alessian_revolt.7 = { # The Atatar Intervention in Besarabic Lands
+	type = country_event
+	hidden = yes
+	fire_only_once = yes
+	picture = alessian_revolution
+	
+	trigger = {
+		AND = {
+			NOT = { p:1609.owner = c:CCE }
+			NOT = { p:1594.owner = c:CCE }
+			NOT = { p:1542.owner = c:CCE }
+		}
+		NOT = { has_global_variable = atacon }
+	}
+	
+	immediate = {
+		set_global_variable = {
+			name = atacon
+		}
+		p:1609 = { #Welke
+	    	create_country = {
+				change_government = despotic_monarchy
+				set_primary_culture = besarabicelves
+				set_country_religion = deadric_pantheon
+				set_country_heritage = altmer_heritage
+			}
+		}
+		p:1599 = {
+			set_conquered_by = p:1609.owner
+		}
+		p:1598 = {
+			set_conquered_by = p:1609.owner
+		}
+		p:1596 = {
+			set_conquered_by = p:1609.owner
+		}
+		p:1610 = {
+			set_conquered_by = p:1609.owner
+		}
+		p:1605 = { #Morahame
+	    	create_country = {
+				change_government = despotic_monarchy
+				set_primary_culture = besarabicelves
+				set_country_religion = deadric_pantheon
+				set_country_heritage = altmer_heritage
+			}
+		}
+		p:1600 = {
+			set_conquered_by = p:1605.owner
+		}
+		p:1597 = {
+			set_conquered_by = p:1605.owner
+		}
+		p:1595 = {
+			set_conquered_by = p:1605.owner
+		}
+		p:1590 = {
+			set_conquered_by = p:1605.owner
+		}
+		p:1604 = {
+			set_conquered_by = p:1605.owner
+		}
+		p:1589 = {
+			set_conquered_by = p:1605.owner
+		}
+		p:1594 = { #Wendelbeck
+	    	create_country = {
+				change_government = despotic_monarchy
+				set_primary_culture = besarabicelves
+				set_country_religion = deadric_pantheon
+				set_country_heritage = altmer_heritage
+			}
+		}
+		p:1611 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1593 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1585 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1586 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1574 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1575 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1583 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1582 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1584 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1576 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1579 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1578 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1581 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1577 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1580 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1566 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1565 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1573 = {
+			set_conquered_by = p:1594.owner
+		}
+		p:1542 = { #High Fane
+	    	create_country = {
+				change_government = despotic_monarchy
+				set_primary_culture = besarabicelves
+				set_country_religion = deadric_pantheon
+				set_country_heritage = altmer_heritage
+			}
+		}
+		p:1541 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1509 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1510 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1545 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1544 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1543 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1539 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1546 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1547 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1561 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1562 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1568 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1567 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1564 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1563= {
+			set_conquered_by = p:1542.owner
+		}
+		p:1548 = {
+			set_conquered_by = p:1542.owner
+		}
+		p:1549 = {
+			set_conquered_by = p:1542.owner
+		}
+		#For Nenalata
+		p:1572 = {
+			set_conquered_by = p:1557.owner
+		}
+		p:1588 = {
+			set_conquered_by = p:1557.owner
+		}
+	}
+}

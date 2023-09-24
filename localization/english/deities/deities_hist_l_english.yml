@@ -1,0 +1,17 @@
+﻿l_english:
+ ## Default ##
+ deity_strengthofhist:0 "$omen_strengthofhist$"
+ omen_strengthofhist:1 "Strength of Hist"
+ omen_strengthofhist_desc:4 "Hists form a somewhat symbiotic relationship with the Argonians. Trees, through their sap consumed during various ceremonies, give the Argonians the ability to communicate with them, so they can warn them of dangers, and even change their physiognomy, such as increasing their strength or fertility."
+ deity_loveofhist:0 "$omen_loveofhist$"
+ omen_loveofhist:1 "Love of Hist"
+ omen_loveofhist_desc:4 "Hists form a somewhat symbiotic relationship with the Argonians. Trees, through their sap consumed during various ceremonies, give the Argonians the ability to communicate with them, so they can warn them of dangers, and even change their physiognomy, such as increasing their strength or fertility."
+ deity_wisdomofhist:0 "$omen_wisdomofhist$"
+ omen_wisdomofhist:1 "Wisdom of Hist"
+ omen_wisdomofhist_desc:4 "Hists form a somewhat symbiotic relationship with the Argonians. Trees, through their sap consumed during various ceremonies, give the Argonians the ability to communicate with them, so they can warn them of dangers, and even change their physiognomy, such as increasing their strength or fertility."
+ deity_growthofhist:0 "$omen_growthofhist$"
+ omen_growthofhist:1 "Growth of Hist"
+ omen_growthofhist_desc:4 "Hists form a somewhat symbiotic relationship with the Argonians. Trees, through their sap consumed during various ceremonies, give the Argonians the ability to communicate with them, so they can warn them of dangers, and even change their physiognomy, such as increasing their strength or fertility."
+ deity_dreadfather:0 "$omen_dreadfather$"
+ omen_dreadfather:1 "Sithis the Dread Father"
+ omen_dreadfather_desc:4 "Sithis is more than a deity. It is the primal force responsible for nothingness. In ancient times, probably before the arrival of the Hist, the Argonians worshiped him by making offerings in the great temples called Xanmeer. Though after a reform called Duskfall, the Argonians believe their ancestors' fear of death was wrong, they still worship their dread father."

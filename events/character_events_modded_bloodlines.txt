@@ -1,0 +1,379 @@
+﻿
+character_events.35 = {
+	type = character_event
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				is_alive = yes
+				exists = father
+				father = {
+					OR = {
+						has_trait = aranas
+						has_trait = unfeathered
+						has_trait = atatar
+						has_trait = dynar
+						has_trait = ulorome
+						has_trait = tor
+						has_trait = ceyatar
+						has_trait = ninendava
+						has_trait = miscarcandite
+						has_trait = camoran
+						has_trait = direnni
+						has_trait = alesh
+						has_trait = corelanya
+						has_trait = banequina
+						has_trait = dragonblood
+						has_trait = tharn
+					}
+				}
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = aranas
+					}
+					NOT = {
+						has_trait = aranas
+					}
+				}
+				add_trait = aranas
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = unfeathered
+					}
+					NOT = {
+						has_trait = unfeathered
+					}
+				}
+				add_trait = unfeathered
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = atatar
+					}
+					NOT = {
+						has_trait = atatar
+					}
+				}
+				add_trait = atatar
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = dynar
+					}
+					NOT = {
+						has_trait = dynar
+					}
+				}
+				add_trait = dynar
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = tor
+					}
+					NOT = {
+						has_trait = tor
+					}
+				}
+				add_trait = tor
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = ceyatar
+					}
+					NOT = {
+						has_trait = ceyatar
+					}
+				}
+				add_trait = ceyatar
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = ninendava
+					}
+					NOT = {
+						has_trait = ninendava
+					}
+				}
+				add_trait = ninendava
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = miscarcandite
+					}
+					NOT = {
+						has_trait = miscarcandite
+					}
+				}
+				add_trait = miscarcandite
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = camoran
+					}
+					NOT = {
+						has_trait = camoran
+					}
+				}
+				add_trait = camoran
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = direnni
+					}
+					NOT = {
+						has_trait = direnni
+					}
+				}
+				add_trait = direnni
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = alesh
+					}
+					NOT = {
+						has_trait = alesh
+					}
+				}
+				add_trait = alesh
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = corelanya
+					}
+					NOT = {
+						has_trait = corelanya
+					}
+				}
+				add_trait = corelanya
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = banequina
+					}
+					NOT = {
+						has_trait = banequina
+					}
+				}
+				add_trait = banequina
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = dragonblood
+					}
+					NOT = {
+						has_trait = dragonblood
+					}
+				}
+				add_trait = dragonblood
+			}
+			if = {
+				limit = {
+					father = {
+						has_trait = tharn
+					}
+					NOT = {
+						has_trait = tharn
+					}
+				}
+				add_trait = tharn
+			}
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = aranas
+				}
+				NOT = {
+					has_trait = aranas
+				}
+			}
+			add_trait = aranas	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = unfeathered
+				}
+				NOT = {
+					has_trait = unfeathered
+				}
+			}
+			add_trait = unfeathered	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = atatar
+				}
+				NOT = {
+					has_trait = atatar
+				}
+			}
+			add_trait = atatar	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = dynar
+				}
+				NOT = {
+					has_trait = dynar
+				}
+			}
+			add_trait = dynar	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = tor
+				}
+				NOT = {
+					has_trait = tor
+				}
+			}
+			add_trait = tor	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = ceyatar
+				}
+				NOT = {
+					has_trait = ceyatar
+				}
+			}
+			add_trait = ceyatar	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = ninendava
+				}
+				NOT = {
+					has_trait = ninendava
+				}
+			}
+			add_trait = ninendava	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = miscarcandite
+				}
+				NOT = {
+					has_trait = miscarcandite
+				}
+			}
+			add_trait = miscarcandite	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = camoran
+				}
+				NOT = {
+					has_trait = camoran
+				}
+			}
+			add_trait = camoran	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = direnni
+				}
+				NOT = {
+					has_trait = direnni
+				}
+			}
+			add_trait = direnni	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = alesh
+				}
+				NOT = {
+					has_trait = alesh
+				}
+			}
+			add_trait = alesh	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = corelanya
+				}
+				NOT = {
+					has_trait = corelanya
+				}
+			}
+			add_trait = corelanya	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = banequina
+				}
+				NOT = {
+					has_trait = banequina
+				}
+			}
+			add_trait = banequina	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = dragonblood
+				}
+				NOT = {
+					has_trait = dragonblood
+				}
+			}
+			add_trait = dragonblood	
+		}
+		if = {
+			limit = {
+				exists = mother
+				mother = {
+					has_trait = tharn
+				}
+				NOT = {
+					has_trait = tharn
+				}
+			}
+			add_trait = tharn	
+		}
+	}
+}

@@ -1,0 +1,284 @@
+﻿namespace = vampirism
+
+vampirism.10 = {
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		current_ruler = {
+			has_trait = full_vampire
+		}
+		religion = night_pantheon
+	}
+	
+	immediate = { 
+		random_character = {
+			limit = {
+				employer = { 
+					has_land = yes
+				}
+				is_alive = yes
+				is_adult = yes
+				NOT = {	has_trait = lower_vampire }
+				NOT = {	has_trait = half_vampire }
+				NOT = {	has_trait = full_vampire }
+				NOT = {	has_trait = werewolf }
+			}
+			save_scope_as = candidate_gov
+		}
+		trigger_event = {
+			id = vampirism.1
+		}
+	}
+	
+}
+
+vampirism.1 = {
+	type = country_event
+	title = "vampirism.1.t"
+	desc = "vampirism.1.desc"
+	picture = vampirism_spread
+	
+	left_portrait = root.current_ruler
+	right_portrait = scope:candidate_gov
+	
+	trigger = {
+		
+	}
+	
+	option = { # Change faith
+		name = "vampirism.1.a"
+		scope:candidate_gov = { add_trait = lower_vampire }
+		ai_chance = {
+            factor = 40
+        }
+	}
+	
+	option = { 
+		name = "vampirism.1.b"
+		scope:candidate_gov = { add_trait = half_vampire }
+		ai_chance = {
+            factor = 5
+        }
+	}
+	
+	option = { 
+		name = "vampirism.1.c"
+		trigger = { 
+        	tag = VBM
+        }
+		scope:candidate_gov = { add_trait = werewolf }
+		ai_chance = {
+            factor = 15
+        }
+	}
+	
+	option = { 
+		name = "vampirism.1.d"
+		ai_chance = {
+            factor = 40
+        }
+	}
+}
+
+vampirism.2 = {
+	type = country_event
+	title = "vampirism.2.t"
+	desc = "vampirism.2.desc"
+	picture = vampirism_spread
+	
+	left_portrait = root.current_ruler
+	
+	trigger = {
+		current_ruler = {
+			NOT = {	has_trait = full_vampire }
+		}
+		religion = night_pantheon
+	}
+	
+	option = { 
+		name = "vampirism.2.a"
+		current_ruler = {
+			remove_trait = werewolf
+			remove_trait = lower_vampire
+			remove_trait = half_vampire
+			add_trait = full_vampire 
+		}
+		capital_scope = {
+			while = {
+				count = 2
+				random_pops_in_province = {
+					kill_pop = yes
+				}
+			}
+		}
+	}
+}
+
+vampirism.3 = {
+	type = country_event
+	title = "vampirism.3.t"
+	desc = "vampirism.3.desc"
+	picture = vampirism_spread
+	
+	left_portrait = root.current_ruler
+	right_portrait = root.consort
+	
+	trigger = {
+		religion = night_pantheon
+		root.consort = {
+			NOT = {	has_trait = full_vampire }
+		}
+	}
+	
+	option = { 
+		name = "vampirism.3.a"
+		trigger = { 
+        	root.consort = {
+				is_female = yes
+			}
+        }
+		root.consort = {
+			remove_trait = werewolf
+			remove_trait = lower_vampire
+			remove_trait = half_vampire
+			add_trait = full_vampire 
+		}
+		random = {
+			chance = 25
+			root.consort = { add_trait = depressed }
+		}
+		random = {
+			chance = 25
+			root.consort = { add_trait = schizophrenic }
+		}
+		capital_scope = {
+			while = {
+				count = 2
+				random_pops_in_province = {
+					kill_pop = yes
+				}
+			}
+		}
+	}
+	
+	option = { 
+		name = "vampirism.3.b"
+		trigger = { 
+        	root.consort = {
+				is_female = no
+			}
+        }
+		root.consort = {
+			remove_trait = werewolf
+			remove_trait = lower_vampire
+			remove_trait = half_vampire
+			add_trait = full_vampire 
+		}
+		capital_scope = {
+			while = {
+				count = 2
+				random_pops_in_province = {
+					kill_pop = yes
+				}
+			}
+		}
+	}
+	
+	#option = { 
+	#	name = "vampirism.3.b"
+	#}
+}
+
+vampirism.4 = {
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		religion = night_pantheon
+	}
+	
+	immediate = {
+		every_character = {
+			limit = {
+				is_alive = yes
+				OR = {
+					exists = father
+					exists = mother
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						father = {
+							has_trait = full_vampire
+							is_ruler = yes
+						}
+						mother = {
+							has_trait = full_vampire
+							is_ruler = yes
+						}
+					}
+					NOT = {	has_trait = full_vampire }
+				}
+				save_scope_as = childofnight
+			}
+		}
+		trigger_event = {
+			id = vampirism.5
+		}
+	}
+}
+
+vampirism.5 = {
+	type = country_event
+	title = "vampirism.5.t"
+	desc = "vampirism.5.desc"
+	picture = vampirism_spread
+	
+	left_portrait = scope:childofnight
+	
+	trigger = {
+		scope:childofnight = {
+			NOT = {	has_trait = full_vampire }
+		}
+	}
+	
+	option = { 
+		name = "vampirism.5.a"
+		scope:childofnight = {
+			remove_trait = werewolf
+			remove_trait = lower_vampire
+			remove_trait = half_vampire
+			add_trait = full_vampire 
+		}
+		if = {
+			limit = {
+				scope:childofnight = {
+					is_female = yes
+				}
+			}
+			random = {
+				chance = 25
+				scope:childofnight = { add_trait = depressed }
+			}
+			random = {
+				chance = 25
+				scope:childofnight = { add_trait = schizophrenic }
+			}
+		}
+		
+		capital_scope = {
+			while = {
+				count = 2
+				random_pops_in_province = {
+					kill_pop = yes
+				}
+			}
+		}
+	}
+	
+	#option = { 
+	#	name = "vampirism.5.b"
+	#}
+}

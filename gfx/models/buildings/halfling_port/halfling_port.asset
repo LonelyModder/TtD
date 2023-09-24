@@ -1,0 +1,25 @@
+pdxmesh = {
+	name = "halfling_gfx_port_mesh"
+	file = "halfling_port.mesh"
+
+	meshsettings = {
+		name = "halfling_portShape"
+		index = 0
+		texture_diffuse = "halfling_building_diffuse.dds"
+		texture_normal = "halfling_building_normal.dds"
+		texture_specular = "halfling_building_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "halfling_gfx_port_entity"
+	pdxmesh = "halfling_gfx_port_mesh"
+	default_state = "default"
+	
+	state = {
+		name = default
+		start_event = { trigger_once = yes sound = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Naval/sfx_amb_3d_naval_port" } keep_sound = yes }
+	}
+}

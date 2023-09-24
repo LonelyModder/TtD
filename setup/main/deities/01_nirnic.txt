@@ -1,0 +1,21 @@
+deity_manager = {
+	deities_database = { ### KEYS 10221-10240 ###
+		10221 = {
+			key = omen_dwemerspirit
+			deity = deity_dwemerspirit
+		}
+		10222 = {
+			key = omen_cruelnature
+			deity = deity_cruelnature
+		}
+		10223 = {
+			key = omen_compulsoryeducation
+			deity = deity_compulsoryeducation
+		}
+		10224 = {
+			key = omen_heartspower
+			deity = deity_heartspower
+		}
+	}
+}
+

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "orcish_toplayer_helmet_mesh"
+	file = "orc_helmet1.mesh"
+
+	meshsettings = {
+		name = "orc_helmet1Shape"
+		index = 0
+		texture_diffuse = "orc_helmet1_diffuse.dds"
+		texture_normal = "orc_helmet1_normal.dds"
+		texture_specular = "orc_helmet1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "orcish_toplayer_helmet_entity"
+	pdxmesh = "orcish_toplayer_helmet_mesh"
+}

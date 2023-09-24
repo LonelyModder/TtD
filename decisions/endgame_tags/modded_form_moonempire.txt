@@ -1,0 +1,113 @@
+﻿country_decisions = {
+	
+	# Form Moon Empire
+	form_emoonempire = {
+		
+		potential = {
+			country_culture_group = khajiit
+			#is_tribal = yes
+			NOT = {
+				tag = XME
+			}
+			NOR = {
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 3557
+					province_id = 3606
+					province_id = 3646
+					province_id = 3680
+					province_id = 3592
+					province_id = 3492
+					province_id = 3536
+					province_id = 3444
+					province_id = 1173
+					province_id = 1215
+					province_id = 1771
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = emoonempire_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XME
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns = 3492
+			owns_or_subject_owns = 3557
+			owns_or_subject_owns = 3606
+			owns_or_subject_owns = 3646
+			owns_or_subject_owns = 3680
+			owns_or_subject_owns = 3592
+			owns_or_subject_owns = 3492
+			owns_or_subject_owns = 3536
+			owns_or_subject_owns = 3444
+			owns_or_subject_owns = 1173
+			owns_or_subject_owns = 1215
+			owns_or_subject_owns = 1771
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "EMoonEmpire_name"
+			change_country_flag = EMoonEmpire_flag
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = aristocratic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "EMoonEmpire_adj"
+				change_country_color =  "EMoonEmpire_color"
+				change_country_tag = XME
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 3492
+						}
+					}
+				}
+				set_capital = 3492
+				hidden_effect = {
+					p:3492.state = {
+						set_state_capital = 3492
+					}
+				}
+				p:3492 = {
+					capital_formable_medium_effect = yes
+					formable_capital_modifier_normal_effect = yes
+				}
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_reapersmarch_region = { formable_region_province_effect = yes }
+				region:modded_scar_region = { formable_region_province_effect = yes }
+				region:modded_quinrawlpeninsula_region = { formable_region_province_effect = yes }
+				area:leyawiin_area = { formable_area_province_effect = yes }
+				area:telepe_area = { formable_area_province_effect = yes }
+				area:arenthia_area = { formable_area_province_effect = yes }
+				area:sphinxmoth_area = { formable_area_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

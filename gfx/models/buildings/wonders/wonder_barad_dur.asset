@@ -1,0 +1,37 @@
+pdxmesh = {
+	name = "wonder_barad_dur_mesh"
+	file = "wonder_barad_dur.mesh"
+
+	meshsettings = {
+		name = "barad_dur"
+		index = 0
+		texture_diffuse = "barad_dur_diffuse.dds"
+		texture_normal = "barad_dur_normal.dds"
+		texture_specular = "barad_dur_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "barad_dur_rocks"
+		index = 0
+		texture_diffuse = "wonder_acropolis_rock_diffuse.dds"
+		texture_normal = "wonder_acropolis_rock_normal.dds"
+		texture_specular = "wonder_acropolis_rock_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = { #lighthouse_fire_01_effect
+	name = "wonder_barad_dur_entity"
+	pdxmesh = "wonder_barad_dur_mesh"	
+	
+	default_state = "idle"
+	state = {
+		name = "idle"
+		state_time = 10
+		start_event = { node = barad_dur_flame_l particle = "environment/colossus_of_rhodes_fire_effect" trigger_once = yes }
+		start_event = { node = barad_dur_flame_r particle = "environment/colossus_of_rhodes_fire_effect" trigger_once = yes }
+	}
+}

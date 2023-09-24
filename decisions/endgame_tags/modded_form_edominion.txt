@@ -1,0 +1,133 @@
+﻿country_decisions = {
+	
+	# Form Empire of Cyrod
+	form_edominion = {
+		
+		potential = {
+			OR = {
+				country_culture_group = bosmer
+				country_culture_group = altmer
+				country_culture_group = khajiit
+			}
+			#is_tribal = yes
+			NOT = {
+				tag = XAD
+			}
+			NOR = {
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 453
+					province_id = 1895
+					province_id = 1843
+					province_id = 1771
+					province_id = 1988
+					province_id = 2076
+					province_id = 2052
+					province_id = 453
+					province_id = 426
+					province_id = 508
+					province_id = 616
+					province_id = 660
+					province_id = 628
+					province_id = 591
+					province_id = 547
+					province_id = 722
+					province_id = 677
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = edominion_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XAD
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns = 453
+			owns_or_subject_owns = 1895
+			owns_or_subject_owns = 1843
+			owns_or_subject_owns = 1771
+			owns_or_subject_owns = 1988
+			owns_or_subject_owns = 2076
+			owns_or_subject_owns = 2052
+			owns_or_subject_owns = 426
+			owns_or_subject_owns = 508
+			owns_or_subject_owns = 616
+			owns_or_subject_owns = 660
+			owns_or_subject_owns = 628
+			owns_or_subject_owns = 591
+			owns_or_subject_owns = 547
+			owns_or_subject_owns = 722
+			owns_or_subject_owns = 677
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "EDominion_name"
+			change_country_flag = hk_alinor
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = aristocratic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "EDominion_adj"
+				change_country_color =  "HKAlinor_color"
+				change_country_tag = XAD
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 453
+						}
+					}
+				}
+				set_capital = 453
+				hidden_effect = {
+					p:453.state = {
+						set_state_capital = 453
+					}
+				}
+				p:453 = {
+					capital_formable_medium_effect = yes
+					formable_capital_modifier_normal_effect = yes
+				}
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_southpoint_region = { formable_region_province_effect = yes }
+				region:modded_grahtwood_region = { formable_region_province_effect = yes }
+				region:modded_xolo_region = { formable_region_province_effect = yes }
+				region:modded_westernreapersmarch_region = { formable_region_province_effect = yes }
+				region:modded_greenshade_region = { formable_region_province_effect = yes }
+				region:modded_dusk_region = { formable_region_province_effect = yes }
+				region:modded_shimmerene_region = { formable_region_province_effect = yes }
+				region:modded_etonnir_region = { formable_region_province_effect = yes }
+				region:modded_alinor_region = { formable_region_province_effect = yes }
+				region:modded_auridon_region = { formable_region_province_effect = yes }
+				region:modded_reapersmarch_region = { formable_region_province_effect = yes }
+				region:modded_scar_region = { formable_region_province_effect = yes }
+				region:modded_quinrawlpeninsula_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

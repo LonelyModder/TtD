@@ -1,0 +1,204 @@
+﻿namespace = refugees
+
+refugees.1 = { # Arrival of Corelanya Clan
+	type = country_event
+	title = "refugees.1.t"
+	desc = "refugees.1.desc"
+	fire_only_once = yes
+	picture = corelanya_clan
+	
+	left_portrait = root.current_ruler
+	
+	trigger = {
+		tag = VAS
+		NOT = { exists = AAW }
+		p:2329.owner = {
+			tag = VAS
+		}
+	}
+	
+	option = {
+		name = refugees.1.a
+		p:2329 = {
+            while = {
+                count = 10
+                define_pop = {
+                type = citizen
+                culture = sommersetic
+                religion = deadric_pantheon
+                }
+            }                
+        }
+		create_character = {
+			family_name = "Corelanya"
+			no_stats = yes
+			add_trait="altmer"
+			add_trait="corelanya"
+			add_trait="pure"
+			culture = sommersetic
+			religion = deadric_pantheon
+			age = 25
+			good_martial_effect = yes
+			good_charisma_effect = yes
+			average_finesse_effect = yes
+			bad_zeal_effect = yes
+			save_scope_as = charone_gov
+		}
+		create_character = {
+			family_name = "Corelanya"
+			no_stats = yes
+			add_trait="altmer"
+			add_trait="corelanya"
+			add_trait="pure"
+			culture = sommersetic
+			religion = deadric_pantheon
+			female = yes
+			age = 20
+			good_martial_effect = yes
+			good_charisma_effect = yes
+			average_finesse_effect = yes
+			bad_zeal_effect = yes
+			save_scope_as = chartwo_gov
+			marry_character = scope:charone_gov
+		}
+		create_character = {
+			family_name = "Corelanya"
+			no_stats = yes
+			add_trait="altmer"
+			add_trait="corelanya"
+			add_trait="pure"
+			culture = sommersetic
+			religion = deadric_pantheon
+			female = yes
+			age = 12
+			good_martial_effect = yes
+			good_charisma_effect = yes
+			average_finesse_effect = yes
+			bad_zeal_effect = yes
+			save_scope_as = charthree_gov
+			father = scope:charone_gov
+			mother = scope:chartwo_gov
+		}
+		add_treasury = 200
+		add_stability = -10
+		ai_chance = {
+            factor = 80
+        }
+	}
+	
+	option = {
+		name = refugees.1.b
+		ai_chance = {
+            factor = 20
+        }
+	}
+}
+
+refugees.2 = { # Ayleid Refugees from Jerall Mountains
+	type = country_event
+	title = "refugees.2.t"
+	desc = "refugees.2.desc"
+	fire_only_once = yes
+	picture = corelanya_clan
+	
+	left_portrait = root.current_ruler
+	
+	trigger = {
+		tag = VAS
+		NOT = { exists = CBN } 
+		NOT = { exists = CBS }
+		NOT = { exists = CAW }
+		NOT = { exists = CAY }
+		NOT = { exists = CBG }
+		NOT = { exists = CBH }
+		NOT = { exists = CBL }
+		p:1330.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:1360.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:1342.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:1316.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:1306.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:1291.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:1288.owner = {
+			OR = {
+				religion = nedic_pantheon
+				religion = nordic_pantheon
+				religion = imperial_pantheon
+			}
+		}
+		p:2162.owner = {
+			tag = VAS
+		}
+	}
+	
+	option = {
+		name = refugees.2.a
+		p:2329 = {
+            while = {
+                count = 3
+                define_pop = {
+                type = citizen
+                culture = heartlanderelves
+                religion = deadric_pantheon
+                }
+            }
+			while = {
+                count = 8
+                define_pop = {
+                type = freemen
+                culture = heartlanderelves
+                religion = deadric_pantheon
+                }
+            } 			
+        }
+		add_treasury = 200
+		add_stability = -10
+		ai_chance = {
+            factor = 80
+        }
+	}
+	
+	option = {
+		name = refugees.2.b
+		ai_chance = {
+            factor = 20
+        }
+	}
+}
+	
+	

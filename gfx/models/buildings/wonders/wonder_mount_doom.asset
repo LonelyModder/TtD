@@ -1,0 +1,32 @@
+pdxmesh = {
+	name = "wonder_mount_doom_mesh"
+	file = "wonder_mount_doom.mesh"
+
+	meshsettings = {
+		name = "MountDoom"
+		index = 0
+		texture_diffuse = "wonder_mount_doom_diffuse.dds"
+		texture_normal = "wonder_mount_doom_normal.dds"
+		texture_specular = "wonder_mount_doom_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "wonder_mount_doom_entity"
+	pdxmesh = "wonder_mount_doom_mesh"
+	
+	locator = { name = "fire_locator_doom" position = { 0.0 2 0.0 } }
+	locator = { name = "splash_locator_doom" position = { 0.0 4 0.0 } }
+	locator = { name = "lava_locator_doom" position = { 0.0 3.3 0.2 } }
+	
+	default_state = "idle"
+	state = { 
+		name = "idle"
+		state_time = 5
+		start_event = { node = fire_locator_doom particle = "environment/volcano_continued" trigger_once = yes }
+		start_event = { node = splash_locator_doom particle = "environment/volcano_lava_splash" trigger_once = yes }
+		start_event = { node = lava_locator_doom particle = "environment/volcano_lava_cooldown" trigger_once = yes }
+	}
+}

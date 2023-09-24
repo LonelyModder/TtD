@@ -1,0 +1,8 @@
+﻿reachmenic = { # Reachmen names
+	1071 = PROV1071_nede #Imperial City
+	1084 = PROV1084_nede #Imperial Bastion
+	976 = PROV976_nede #Ceyatatar
+	1288 = PROV1288_nede #Sancre Tor
+	1542 = PROV1542_nede #Malada
+	2441 = PROV2441_nede #Rihad
+}

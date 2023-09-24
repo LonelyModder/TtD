@@ -1,0 +1,569 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_azura = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			
+			deity:omen_azura = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_azura
+	passive_modifier = { happiness_for_same_culture_modifier = deity_happiness_for_same_culture_modifier_svalue }
+	omen = { global_population_happiness = omen_global_population_happiness } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_boethiah = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_boethiah = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_boethiah
+	passive_modifier = { fabricate_claim_speed = deity_fabricate_claim_speed_svalue }
+	omen = { war_no_cb_cost_modifier = omen_war_no_cb_cost_modifier_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = war #This Deity uses a war slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_clavicusvile = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = night_pantheon
+			}
+			deity:omen_boethiah = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_clavicusvile
+	passive_modifier = { civic_tech_investment = deity_civic_tech_investment_svalue }
+	omen = { global_tax_modifier = omen_global_tax_modifier_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = economy #This Deity uses a economy slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_hermeusmora = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			
+			deity:omen_hermeusmora = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_hermeusmora
+	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
+	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_hircine = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = night_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+			deity:omen_hircine = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_hircine
+	passive_modifier = { global_monthly_food_modifier = deity_global_monthly_food_modifier_svalue }
+	omen = { agressive_expansion_monthly_change = omen_agressive_expansion_monthly_change_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = war #This Deity uses a war slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_jyggalag = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			
+			deity:omen_jyggalag = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_jyggalag
+	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
+	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_malacath = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+			deity:omen_malacath = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_malacath
+	passive_modifier = { war_exhaustion = deity_war_exhaustion_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = war #This Deity uses a war slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_mechrunesdagon = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_mechrunesdagon = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_mechrunesdagon
+	passive_modifier = { war_score_cost = deity_war_score_cost_svalue }
+	omen = { assault_ability = omen_assault_ability_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = war #This Deity uses a war slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_mephala = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			
+			deity:omen_mephala = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_mephala
+	passive_modifier = { stability_cost_modifier = deity_stability_cost_modifier }
+	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_meridia = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			deity:omen_meridia = {
+				holy_site_deity_check_trigger = yes
+			}	
+		}
+		NAND = {
+			has_deity_in_pantheon = deity:omen_molagbal
+			deity:omen_molagbal = { has_holy_site = yes }
+		}
+	}
+	icon = deity_meridia
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { army_weight_modifier = omen_army_weight_modifier } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_molagbal = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = night_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+			deity:omen_molagbal = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+		NAND = {
+			has_deity_in_pantheon = deity:omen_meridia
+			deity:omen_meridia = { has_holy_site = yes }
+		}
+	}
+	icon = deity_molagbal
+	passive_modifier = { global_slaves_output = deity_global_slaves_output_svalue }
+	omen = { global_slaves_output = omen_global_slaves_output_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = war #This Deity uses a war slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_namira = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_namira = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_namira
+	passive_modifier = { global_food_capacity = deity_global_food_capacity_svalue }
+	omen = { global_monthly_food_modifier = omen_global_monthly_food_modifier } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = economy #This Deity uses a economy slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_nocturnal = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = night_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_nocturnal = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_nocturnal
+	passive_modifier = { monthly_corruption = deity_monthly_corruption_svalue }
+	omen = { global_tax_modifier = omen_global_tax_modifier_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = economy #This Deity uses a economy slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_peryite = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = reachmen_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_peryite = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_peryite
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_sanguine = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = nedic_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = night_pantheon
+			}
+			deity:omen_sanguine = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_sanguine
+	passive_modifier = { global_population_happiness = omen_global_population_happiness }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_sheogorath = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_sheogorath = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_sheogorath
+	passive_modifier = { happiness_for_same_religion_modifier = deity_happiness_for_same_religion_modifier }
+	omen = { happiness_for_same_religion_modifier = omen_happiness_for_same_religion_modifier_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_vermina = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_vermina = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_vermina
+	passive_modifier = { call_omen_cost_modifier = deity_call_omen_cost_modifier_svalue }
+	omen = { monthly_corruption = omen_monthly_corruption } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_umaril = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = deadric_pantheon
+			}
+			deity:omen_umaril = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_umaril
+	passive_modifier = { monthly_experience_gain = deity_monthly_experience_gain_svalue }
+	omen = { agressive_expansion_monthly_change = omen_agressive_expansion_monthly_change_svalue } #Bonus from Omen
+	religion = deadric_pantheon
+	deity_category = war #This Deity uses a war slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}

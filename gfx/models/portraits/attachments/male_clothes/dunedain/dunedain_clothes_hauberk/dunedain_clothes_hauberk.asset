@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "dunedain_clothes_hauberk_mesh"
+	file = "dunedain_clothes_hauberk.mesh"
+
+	meshsettings = {
+		name = "gondor_military_clothesShape"
+		index = 0
+		texture_diffuse = "arnor_armour_diffuse.dds"
+		texture_normal = "dunedain_armour_normal.dds"
+		texture_specular = "gondor_armor_hauberk_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "dunedain_clothes_hauberk_entity"
+	pdxmesh = "dunedain_clothes_hauberk_mesh"
+}

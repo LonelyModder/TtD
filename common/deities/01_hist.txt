@@ -1,0 +1,114 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_strengthofhist = {
+	trigger = {
+		religion = hist_pantheon
+	}
+	icon = deity_strengthofhist
+	passive_modifier = { land_morale_modifier = deity_land_morale_modifier_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = hist_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		if = {
+			limit = { manpower_percentage < 0.8 }
+			add_manpower = 1.5
+		}
+		else = {
+			add_military_experience = 2
+		}
+	}
+}
+
+deity_loveofhist = {
+	trigger = {
+		religion = hist_pantheon
+	}
+	icon = deity_loveofhist
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_monthly_food_modifier = omen_global_monthly_food_modifier } #Bonus from Omen
+	religion = hist_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	on_activate = {
+		capital_scope = {
+			create_2_freemen_effect = yes
+		}
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_wisdomofhist = {
+	trigger = {
+		religion = hist_pantheon
+	}
+	icon = deity_wisdomofhist
+	passive_modifier = { agressive_expansion_monthly_change = deity_aggressive_expansion_monthly_change_svalue }
+	omen = { happiness_for_same_religion_modifier = omen_happiness_for_same_religion_modifier_svalue } #Bonus from Omen
+	religion = hist_pantheon
+	deity_category = culture #This Deity uses a Culture Slot'
+	on_activate = {
+		add_research = {
+			technology = religious_tech
+			value = 10
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_growthofhist = {
+	trigger = {
+		religion = hist_pantheon
+	}
+	icon = deity_growthofhist
+	passive_modifier = { global_capital_trade_routes = deity_global_capital_trade_routes_svalue }
+	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
+	religion = hist_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		capital_scope = {
+			create_2_citizens_effect = yes
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_dreadfather = {
+	trigger = {
+		religion = hist_pantheon
+	}
+	icon = deity_dreadfather
+	passive_modifier = { happiness_for_same_religion_modifier = deity_happiness_for_same_religion_modifier }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = hist_pantheon
+	deity_category = war #This Deity uses a War slot.
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		if = {
+			limit = { manpower_percentage < 0.8 }
+			add_manpower = 1.5
+		}
+		else = {
+			add_military_experience = 2
+		}
+	}
+}

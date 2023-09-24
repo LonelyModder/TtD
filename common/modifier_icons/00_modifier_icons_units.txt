@@ -1,0 +1,539 @@
+﻿#Light Infantry
+
+lv_lightinfantry_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+lv_lightinfantry_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+lv_lightinfantry_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+lv_lightinfantry_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+lv_lightinfantry_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+lv_lightinfantry_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+lv_lightinfantry_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_lightinfantry.dds"
+}
+
+#Heavy Infantry
+
+lv_heavyinfantry_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+lv_heavyinfantry_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+lv_heavyinfantry_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+lv_heavyinfantry_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+lv_heavyinfantry_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+lv_heavyinfantry_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+lv_heavyinfantry_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_heavyinfantry.dds"
+}
+
+#Archers
+
+lv_archers_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+lv_archers_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+lv_archers_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+lv_archers_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+lv_archers_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+lv_archers_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+lv_archers_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_archers.dds"
+}
+
+#Crossbowmen
+
+lv_crossbowmen_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+lv_crossbowmen_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+lv_crossbowmen_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+lv_crossbowmen_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+lv_crossbowmen_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+lv_crossbowmen_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+lv_crossbowmen_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_crossbowmen.dds"
+}
+
+#Camels
+
+lv_camels_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+lv_camels_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+lv_camels_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+lv_camels_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+lv_camels_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+lv_camels_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+lv_camels_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_camels.dds"
+}
+
+#Mages
+
+lv_mages_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+lv_mages_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+lv_mages_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+lv_mages_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+lv_mages_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+lv_mages_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+lv_mages_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_mages.dds"
+}
+
+#Cavalry
+
+lv_cavalry_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+lv_cavalry_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+lv_cavalry_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+lv_cavalry_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+lv_cavalry_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+lv_cavalry_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+lv_cavalry_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_cavalry.dds"
+}
+
+#Guar Cavalry
+
+lv_guarcavalry_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+lv_guarcavalry_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+lv_guarcavalry_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+lv_guarcavalry_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+lv_guarcavalry_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+lv_guarcavalry_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+lv_guarcavalry_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_guarcavalry.dds"
+}
+
+#Horse Archers
+
+lv_horsearchers_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+lv_horsearchers_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+lv_horsearchers_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+lv_horsearchers_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+lv_horsearchers_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+lv_horsearchers_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+lv_horsearchers_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_horsearchers.dds"
+}
+
+#Dremoras
+
+lv_dremoras_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+lv_dremoras_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+lv_dremoras_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+lv_dremoras_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+lv_dremoras_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+lv_dremoras_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+lv_dremoras_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_dremoras.dds"
+}
+
+#Undead
+
+lv_undead_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+lv_undead_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+lv_undead_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+lv_undead_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+lv_undead_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+lv_undead_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+lv_undead_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_undead.dds"
+}
+
+#Gryphons
+
+lv_gryphons_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+lv_gryphons_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+lv_gryphons_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+lv_gryphons_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+lv_gryphons_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+lv_gryphons_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+lv_gryphons_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_gryphons.dds"
+}
+
+#Warriors
+
+lv_warriors_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+lv_warriors_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+lv_warriors_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+lv_warriors_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+lv_warriors_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+lv_warriors_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+lv_warriors_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_warriors.dds"
+}
+
+#Raiders
+
+lv_raiders_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+lv_raiders_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+lv_raiders_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+lv_raiders_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+lv_raiders_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+lv_raiders_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+lv_raiders_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_raiders.dds"
+}
+
+#Atronach
+
+lv_atronach_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+lv_atronach_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+lv_atronach_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+lv_atronach_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+lv_atronach_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+lv_atronach_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+lv_atronach_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_atronach.dds"
+}
+
+#Clanfear
+
+lv_clanfear_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+lv_clanfear_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+lv_clanfear_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+lv_clanfear_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+lv_clanfear_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+lv_clanfear_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+lv_clanfear_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_clanfear.dds"
+}
+
+#Bonelord
+
+lv_bonelord_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+lv_bonelord_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+lv_bonelord_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+lv_bonelord_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+lv_bonelord_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+lv_bonelord_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+lv_bonelord_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonelord.dds"
+}
+
+#Bonewalker
+
+lv_bonewalker_discipline = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}
+
+lv_bonewalker_morale = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}
+
+lv_bonewalker_offensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}
+
+lv_bonewalker_defensive = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}
+
+lv_bonewalker_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}
+
+lv_bonewalker_maintenance_cost = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}
+
+lv_bonewalker_movement_speed = {
+    positive = "gfx/interface/icons/font_icons/font_icon_lv_bonewalker.dds"
+}

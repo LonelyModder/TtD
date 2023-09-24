@@ -1,0 +1,31 @@
+﻿#Temp fix to sauron character portrait - Needs actual fix in portrait editor - Pureon
+
+clothes = {	
+	sauron_clothing_replace = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = nazgul_clothes
+			}	
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}	
+		}
+		weight = {
+			base = 0
+			
+			modifier = {
+				add = 100
+				this = char:3
+				employer = {
+					tag = MOR
+				}
+				is_female = no
+			}
+		}
+	}
+}
+

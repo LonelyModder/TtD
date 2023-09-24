@@ -1,0 +1,14 @@
+﻿l_english:
+ ## Default ##
+ deity_dwemerspirit:0 "$omen_dwemerspirit$"
+ omen_dwemerspirit:1 "Soul Binding"
+ omen_dwemerspirit_desc:4 "The dwemer used souls of other races as a fuel for their machinery. In their eyes their spirits were already lost to the false gods so at least they could be used for 'good' purposes. "
+ deity_cruelnature:0 "$omen_cruelnature$"
+ omen_cruelnature:1 "Necessary Evil"
+ omen_cruelnature_desc:4 "Maintaining technologically advanced society is difficult without slave labour. Dwemer used many techniques, also blinding poisons, to keep their slave population from revolting. "
+ deity_compulsoryeducation:0 "$omen_compulsoryeducation$"
+ omen_compulsoryeducation:1 "Higher Education"
+ omen_compulsoryeducation_desc:4 "In Dwemer society the knowledge meant power and only the most educated were able to achieve high social status. Thats why Deep Elves were the most educated society on Tamriel. They often started from the young age and continued studies on various fields like for example tonal architecture(reality manipulation)."
+ deity_heartspower:0 "$omen_heartspower$"
+ omen_heartspower:1 "Heart of Nirn"
+ omen_dheartspower_desc:4 "The biggest achivement kept hidden even from their own kind was a discovery of the Lorkans Heart under the Red Mountain. Dwemer believe that Nirn is in some sense santient and this only strengthen that belief. The heart is the source of power for all machinery on Vvardenfell."

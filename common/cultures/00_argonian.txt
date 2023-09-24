@@ -1,0 +1,38 @@
+﻿argonian = {	
+	color = hsv { 0.34 0.88 0.36 }
+
+	primary = lv_archers
+	second = lv_warriors
+	flank = lv_guarcavalry
+
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_argonian
+
+	male_names = {
+		 Ushezara Deekwul Hulenesh Neetzara Derneen Jeetrenaza Tee-Teemeeta Haj-Dum Gah-Tei 
+		 Deeeepa Neetkeethus Reeiar Pilesi Busei Hulsei Wih-Kai Ajum-Jah Wanan-Kiurz Tee-Ei Nimean
+	}
+	female_names = {
+		Euteen Beeeedutsee Deejeva Beeresh Okureeta Gilmaree Nem-Ranier Mim-Lursha Sheef-Meeka Amee-Mei 
+		Beektvee Beeja Neeseen Kastalg Okuja Beelei Muz-Leef Mim-Nevus Meem-Rajee Kelo-Meik 
+	}
+	family = {
+		Theerlus Pehrdeseer Medeseer Geelrean Mereecles Nefetus Androteus Careegoulus Thefinaresh Caydeseer
+		Theergalus Caesar Careegalus Endoresifon Endoremareen Megulus Cayamean Xeirgalus
+	}
+	culture = {
+		argblackwood = {}
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = argonian_gfx
+	ethnicities = {
+		10 = orcish_ethnicity
+	}
+}

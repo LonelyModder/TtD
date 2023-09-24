@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "wonder_gates_of_argonath_right_mesh"
+	file = "wonder_gates_of_argonath_right.mesh"
+
+	meshsettings = {
+		name = "gates_of_argonath_right"
+		index = 0
+		texture_diffuse = "wonder_acropolis_rock_diffuse.dds"
+		texture_normal = "wonder_acropolis_rock_normal.dds"
+		texture_specular = "wonder_acropolis_rock_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+
+}
+
+entity = {
+	name = "wonder_gates_of_argonath_right_entity"
+	pdxmesh = "wonder_gates_of_argonath_right_mesh"
+}

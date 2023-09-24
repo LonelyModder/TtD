@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "wonder_erebor_gate_mesh"
+	file = "wonder_erebor_gate.mesh"
+
+	meshsettings = {
+		name = "erebor_gate"
+		index = 0
+		texture_diffuse = "wonder_erebor_gate_diffuse.dds"
+		texture_normal = "wonder_erebor_gate_normal.dds"
+		texture_specular = "wonder_erebor_gate_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "erebor_gate_rocks"
+		index = 0
+		texture_diffuse = "wonder_acropolis_rock_diffuse.dds"
+		texture_normal = "wonder_acropolis_rock_normal.dds"
+		texture_specular = "wonder_acropolis_rock_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "wonder_erebor_gate_entity"
+	pdxmesh = "wonder_erebor_gate_mesh"	
+}

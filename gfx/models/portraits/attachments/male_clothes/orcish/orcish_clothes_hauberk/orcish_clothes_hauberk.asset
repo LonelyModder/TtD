@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "orcish_clothes_hauberk_mesh"
+	file = "orcish_clothes_hauberk.mesh"
+
+	meshsettings = {
+		name = "orc_clothes_1Shape"
+		index = 0
+		texture_diffuse = "orc_clothes1_diffuse.dds"
+		texture_normal = "orc_clothes1_normal.dds"
+		texture_specular = "orc_clothes1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "orcish_clothes_hauberk_entity"
+	pdxmesh = "orcish_clothes_hauberk_mesh"
+}

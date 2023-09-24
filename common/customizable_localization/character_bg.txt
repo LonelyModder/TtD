@@ -1,0 +1,44 @@
+﻿character_bg = {
+  type = character
+
+  #text = {
+  #  localization_key = background_shire_gardener
+  #  trigger = {
+  #    employer = {
+  #      is_republic = yes
+  #      country_culture_group = halfling_group
+  #    }
+  #    is_adult = yes
+  #    party_type = gardeners_party
+  #  }
+  #}
+
+  text = {
+    localization_key = background_isengard
+    trigger = {
+      is_at_location = p:2531
+    }
+  }
+  
+  text = {
+    localization_key = background_whitegold
+    trigger = {
+      is_at_location = p:1071
+    }
+  }
+  
+  text = {
+    localization_key = background_bosmer
+    trigger = {
+	  is_at_location = p:1895
+    }
+  }
+  
+  text = {
+    localization_key = background_adamantia
+    trigger = {
+	  is_at_location = p:2162
+    }
+  }
+  
+}

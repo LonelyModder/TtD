@@ -1,0 +1,32 @@
+﻿l_english:
+
+ aestian:2 "Heretic"
+ matrist_religion:0 "Heresy"
+
+ ia_colonize_button_confirm_t:0 "Colonization"
+ ia_colonize_button_confirm_desc:0 "Are you sure you want to colonize the territory?"
+
+ CURRENT_DATE_TOOLTIP:2 "#T Current Date#!\n The people of Tamriel count time from the founding of the first kingdom on Tamriel by king Eplear in Valenwood.\n\n#TF Time. Time is an artificial construct. An arbitrary system based on the idea that events occur in a linear direction at all times. - Sheogorath#!"
+ DATE_TOOLTIP:0 "[Date.GetTimeUntil]\n years since founding of Valenwood."
+ THE_WORLD:1 "[GetDateString]#T  FA"
+ THE_WORLD_TOOLTIP:1 "#T Current Date#!\n FA stands for First Age. The year 113 FA was chosen as the starting date because this year king Harald was born. He was the first historical Nordic ruler."
+ 
+ 
+ AlinorINTRO:0 "#T Alinor#!\nDifficulty: #Y Easy#!\n\n At first, Alinor was one of the many city-states on the Sommerset Islands. A certain isolation from the continent meant that these countries gradually grew in strength and began to absorb smaller cities. The lords of Alinor skillfully used the terrain that turned their land into a fortress and steaks of goblin slaves grew to be the strongest candidate to unite the islands."
+ DirenniINTRO:0 "#T Direnni Hegemony#!\nDifficulty: #Y Easy#!\n\n Clan Direnni originated on Sommerset where they earned their status by the usage of their alchemy skills. To this day clan Direnni have alchemy symbol on their banner. At some point from unknown reasons part of the house decided to move into Iliac Bay. Thanks to their riches and liberal approach to the local population they manage to bring most of the region under their rule."
+ GreyINTRO:0 "#T Grey Host#!\nDifficulty: #Y Medium#!\n\n Grey Host is an allience of vampires and werewolves under the banner of vampire-king Styriche of Verkarth. Grey Host is one of the oldest vampire covens in the region. They try to keep the local humans as far from their true nature as they can to keep them in line. In time thou this can become imposible to achive because to conquer Tamriel the cooperation of mortals might become necessary."
+ Alinor:0 "Alinor"
+ DirenniHegemony:0 "Direnni Hegemony"
+ GreyHost:0 "Grey Host"
+ Alinor2:0 "Alinor"
+ DirenniHegemony2:0 "Direnni Hegemony"
+ GreyHost2:0 "Grey Host"
+ NRINTRO:0 "#T Nedic Revolt#!\nDifficulty: #Y Hard#!\n\n Tires by the cruel treatment by their elven masters nedic humans rise the banner of rebellion. They believe that the Ayleids lost their gods favor because of their dealings with the Daedric Lords. As a result the Ayleid empire is in a state of civil war. Such opportunity might not repeat itself!"
+ NedicRevolt:0 "Nedic Revolt"
+ NedicRevolt2:0 "Nedic Revolt"
+ 
+ owns_any_neighboring_province:0 "Owns any neighbour province"
+ owns_any_neighboring_province_culture:0 "Any owned #Y neighbour#! province must fulfill one of the following: \n  Dominant province culture is an #Y integrated#! culture \n  Dominant province culture is #Y [THIS.GetProvince.GetCulture.GetName]#!"
+ no_neighbor_has_colonization_progress:0 "No neighbour has #Y Colonization Progress#!"
+ owns_no_neighboring_province:0 "Owns no neighbouring province"
+ 

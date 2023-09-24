@@ -1,0 +1,123 @@
+﻿#####################################
+#									#
+# 			Dunedain Clothes		#
+#									#
+#####################################
+
+dunedain_clothes_soldier = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_soldier_entity }
+}
+
+dunedain_clothes_hauberk = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_hauberk_entity }
+}
+
+
+dunedain_clothes_arnor_soldier = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_arnor_soldier_entity }
+}
+
+dunedain_clothes_arnor_hauberk = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_arnor_hauberk_entity }
+}
+
+
+dunedain_clothes_arthedain_soldier = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_arthedain_soldier_entity }
+}
+
+dunedain_clothes_arthedain_hauberk = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_arthedain_hauberk_entity }
+}
+
+
+dunedain_clothes_cardolan_soldier = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_cardolan_soldier_entity }
+}
+
+dunedain_clothes_cardolan_hauberk = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_cardolan_hauberk_entity }
+}
+
+
+dunedain_clothes_rhudaur_soldier = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_rhudaur_soldier_entity }
+}
+
+dunedain_clothes_rhudaur_hauberk = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_rhudaur_hauberk_entity }
+}
+
+
+dunedain_clothes_gondor_soldier = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_gondor_soldier_entity }
+}
+
+dunedain_clothes_gondor_hauberk = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_clothes_gondor_hauberk_entity }
+}
+
+dunedain_royal_armor = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dunedain_royal_armor_entity }
+}
+
+#####################################
+#									#
+# 			Orcish Clothes			#
+#									#
+#####################################
+
+
+orcish_clothes_hauberk  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = orcish_clothes_hauberk_entity }
+}
+
+orcish_hair_helmet  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = orcish_toplayer_helmet_entity }
+}
+
+#####################################
+#									#
+# 			Elven Clothes			#
+#									#
+#####################################
+
+elf_clothes_soldier_blue  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = elf_clothes_soldier_blue_entity }
+}
+
+elf_clothes_soldier_green  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = elf_clothes_soldier_green_entity }
+}
+
+elf_clothes_soldier_gray  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = elf_clothes_soldier_gray_entity }
+}
+
+elf_clothes_soldier_purple  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = elf_clothes_soldier_purple_entity }
+}
+
+#####################################
+#									#
+# 			Nazgul Clothes			#
+#									#
+#####################################
+
+nazgul_clothes_1  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = nazgul_clothes_1_entity }
+}
+
+witchking_clothes  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = witchking_clothes_entity }
+}
+
+#####################################
+#									#
+# 			Dwarven Clothes			#
+#									#
+#####################################
+
+dwarf_helmet_1  = {
+	entity = { required_tags = ""		node = shared_pose_entity		entity = dwarf_helmet_1_entity }
+}

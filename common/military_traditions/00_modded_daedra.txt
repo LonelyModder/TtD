@@ -1,0 +1,173 @@
+﻿daedra_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = daedra_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					AND = {
+						any_owned_province = {
+							OR = {
+								is_importing_trade_good = cabal_of_witches
+								trade_goods = cabal_of_witches
+							}					
+						}
+						OR = {
+							AND = {
+								has_deity_in_pantheon = deity:omen_molagbal
+								deity:omen_molagbal = { has_holy_site = yes }
+							}
+							AND = {
+								has_deity_in_pantheon = deity:omen_mechrunesdagon
+								deity:omen_mechrunesdagon = { has_holy_site = yes }
+							}
+							AND = {
+								has_deity_in_pantheon = deity:omen_meridia
+								deity:omen_meridia = { has_holy_site = yes }
+							}
+						}
+					}
+					religion = deadric_pantheon
+				}
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			OR = {
+				AND = {
+					any_owned_province = {
+						OR = {
+							is_importing_trade_good = cabal_of_witches
+							trade_goods = cabal_of_witches
+						}					
+					}
+					OR = {
+						AND = {
+							has_deity_in_pantheon = deity:omen_molagbal
+							deity:omen_molagbal = { has_holy_site = yes }
+						}
+						AND = {
+							has_deity_in_pantheon = deity:omen_mechrunesdagon
+							deity:omen_mechrunesdagon = { has_holy_site = yes }
+						}
+						AND = {
+							has_deity_in_pantheon = deity:omen_meridia
+							deity:omen_meridia = { has_holy_site = yes }
+						}
+					}
+				}
+				religion = deadric_pantheon
+				}
+		}
+		trigger_else = {
+			custom_tooltip = {
+				text = tradition_unlock_requirement_daedra
+				AND = {
+					any_owned_province = {
+						OR = {
+							is_importing_trade_good = cabal_of_witches
+							trade_goods = cabal_of_witches
+						}					
+					}
+					OR = {
+						AND = {
+							has_deity_in_pantheon = deity:omen_molagbal
+							deity:omen_molagbal = { has_holy_site = yes }
+						}
+						AND = {
+							has_deity_in_pantheon = deity:omen_mechrunesdagon
+							deity:omen_mechrunesdagon = { has_holy_site = yes }
+						}
+						AND = {
+							has_deity_in_pantheon = deity:omen_meridia
+							deity:omen_meridia = { has_holy_site = yes }
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	daedra_path_1 = { ###altmer path
+		modifier = { 
+			lv_dremoras_discipline = 0.1
+		}
+		icon = daedra_mini_trad
+		requires = {}
+	}
+	
+	daedra_path_2 = { ###altmer path
+		modifier = { 
+			levy_size_multiplier = 0.025
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_1}
+	}
+	
+	daedra_path_2a = { ###altmer path
+		modifier = { 
+			lv_clanfear_offensive = 0.2
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_2}
+	}
+	
+	daedra_path_3a = { ###altmer path
+		modifier = { 
+			lv_atronach_offensive = 0.2
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_2a}
+	}
+	
+	daedra_path_4a = { ###altmer path
+		modifier = { 
+			army_movement_speed = 0.2
+			movement_speed_if_no_road = 0.2
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_3a}
+	}
+	
+	daedra_path_2b = { ###altmer path
+		modifier = { 
+			manpower_recovery_speed = 0.2
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_2}
+	}
+	
+	daedra_path_3b = { ###altmer path
+		modifier = { 
+			siege_ability = 0.2
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_2b}
+	}
+	
+	daedra_path_4b = { ###altmer path
+		modifier = { 
+			assault_ability = 0.5
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_3b}
+	}
+	
+	daedra_path_5b = { ###altmer path
+		modifier = { 
+			land_morale_modifier = 0.2
+		}
+		icon = daedra_mini_trad
+		requires = {daedra_path_4b}
+	}
+	
+	daedra_states_path_end_bonus = {
+		modifier = { 
+			lv_dremoras_offensive = 0.15
+			global_manpower_modifier = 0.5
+		}
+		requires = { daedra_path_4a daedra_path_5b } 
+		icon = daedra_mini_trad 
+	}
+}

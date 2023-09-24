@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "dunedain_royal_armor_mesh"
+	file = "dunedain_royal_armor.mesh"
+
+	meshsettings = {
+		name = "dunedain_royal_helmShape"
+		index = 0
+		texture_diffuse = "dunedain_royal_helm_diffuse.dds"
+		texture_normal = "dunedain_royal_helm_normal.dds"
+		texture_specular = "dunedain_royal_helm_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+	
+		meshsettings = {
+		name = "gondor_military_clothes_armorShape"
+		index = 0
+		texture_diffuse = "arnor_armour_diffuse.dds"
+		texture_normal = "dunedain_armour_normal.dds"
+		texture_specular = "gondor_armor_p_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "dunedain_royal_armor_entity"
+	pdxmesh = "dunedain_royal_armor_mesh"
+}

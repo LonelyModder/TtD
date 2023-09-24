@@ -1,0 +1,328 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_trinimac = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = goblin_pantheon
+			}
+			deity:omen_trinimac = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_trinimac
+	passive_modifier = { land_morale_modifier = deity_land_morale_modifier_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_syrabane = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			
+			
+			deity:omen_syrabane = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_syrabane
+	passive_modifier = { oratory_tech_investment = deity_oratory_tech_investment_svalue }
+	omen = { civic_tech_investment = omen_civic_tech_investment_svalue } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_jephre = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = druidic_pantheon
+			}
+			
+			deity:omen_jephre = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_jephre
+	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
+	omen = { global_monthly_food_modifier = omen_global_monthly_food_modifier } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = economy #This Deity uses a Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_xarxes = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			
+			deity:omen_xarxes = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_xarxes
+	passive_modifier = { global_citizen_output = deity_global_citizen_output_svalue }
+	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_income_effect = yes
+	}
+}
+
+deity_auriel = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			
+			deity:omen_auriel = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_auriel
+	passive_modifier = { global_monthly_state_loyalty = deity_global_monthly_state_loyalty_svalue }
+	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_mara = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			
+			deity:omen_mara = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_mara
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_magnus = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			
+			
+			deity:omen_magnus = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_magnus
+	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
+	omen = { 
+		new_he_battlemages_offensive = 0.1 
+		new_ay_mages_offensive = 0.1 
+	} #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_income_effect = yes
+	}
+}
+
+deity_stendarr = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			common_deity_trigger = {
+				RELIGION = green_pantheon
+			}
+			
+			
+			deity:omen_stendarr = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_stendarr
+	passive_modifier = { monthly_corruption = deity_monthly_corruption_svalue }
+	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_phynaster = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			
+			
+			deity:omen_phynaster = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_phynaster
+	passive_modifier = { monthly_political_influence_modifier = deity_monthly_political_influence_modifier_svalue }
+	omen = { global_population_happiness = omen_global_population_happiness } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_elvenancestors = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = elven_pantheon
+			}
+			country_culture_group = altmer
+			deity:omen_elvenancestors = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_elvenancestors
+	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
+	omen = { monthly_corruption = omen_monthly_corruption } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_beeloni = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			primary_culture = besarabicelves
+			primary_culture = heartlanderelves
+			deity:omen_beeloni = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_beeloni
+	passive_modifier = { global_tax_modifier = deity_global_tax_modifier_svalue }
+	omen = { global_commerce_modifier = omen_global_commerce_modifier_svalue } #Bonus from Omen
+	religion = elven_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}

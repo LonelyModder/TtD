@@ -1,0 +1,289 @@
+﻿aldmer_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = aldmer_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					country_culture_group = altmer 
+					country_culture_group = falmer
+					country_culture_group = bosmer
+					country_culture_group = breton
+					country_culture_group = imga
+				}
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			OR = {
+				country_culture_group = altmer
+				country_culture_group = falmer
+				country_culture_group = bosmer
+				country_culture_group = breton
+				country_culture_group = imga
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:altmer
+						OR = {
+							this.culture.culture_group = culture_group:altmer
+							this.culture.culture_group = culture_group:falmer
+							this.culture.culture_group = culture_group:bosmer
+							this.culture.culture_group = culture_group:breton
+							this.culture.culture_group = culture_group:imga
+						}
+					}
+				}
+			}
+			any_country_culture = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					custom_tooltip = {
+						text = tradition_unlock_requirement_short
+						is_integrated = yes
+						OR = {
+							this.culture.culture_group = culture_group:altmer
+							this.culture.culture_group = culture_group:falmer
+							this.culture.culture_group = culture_group:bosmer
+							this.culture.culture_group = culture_group:breton
+							this.culture.culture_group = culture_group:imga
+						}
+					}
+				}
+			}
+		}
+		trigger_else = {
+			AND = {
+				OR = {
+					has_military_bonus = argonian_states_path_end_bonus
+					has_military_bonus = orcish_states_path_end_bonus
+					has_military_bonus = khajiit_states_path_end_bonus
+					has_military_bonus = nede_states_path_end_bonus
+					has_military_bonus = nordic_states_path_end_bonus
+					has_military_bonus = dwemer_states_path_end_bonus
+				}
+				custom_tooltip = {
+					text = "tradition_unlock_requirement_aldmer"
+					any_country_culture = {
+						is_integrated = yes
+						OR = {
+							this.culture.culture_group = culture_group:altmer
+							this.culture.culture_group = culture_group:falmer
+							this.culture.culture_group = culture_group:bosmer
+							this.culture.culture_group = culture_group:breton
+							this.culture.culture_group = culture_group:imga
+						}	
+					}
+				}
+			}
+		}
+	}
+	
+	altmer_path_1 = { ###altmer path
+		modifier = { 
+			lv_mages_offensive = 0.1
+		}
+		icon = mer_mini_trad
+		requires = {}
+	}
+	
+	altmer_path_1a = { ###altmer path
+		modifier = { 
+			lv_lightinfantry_offensive = 0.1
+			lv_lightinfantry_defensive = 0.1
+		}
+		icon = mer_mini_trad
+		requires = {altmer_path_1}
+	}
+	
+	altmer_path_2a = { ###altmer path
+		modifier = { 
+			lv_lightinfantry_discipline = 0.1
+		}
+		enable_tactic = greek_phalanx
+		icon = mer_mini_trad
+		requires = {altmer_path_1a}
+	}
+	
+	altmer_path_3a = { ###altmer path
+		modifier = { 
+			lv_mages_offensive = 0.15
+			lv_mages_defensive = 0.15
+			lv_mages_discipline = 0.2
+		}
+		icon = mer_mini_trad
+		requires = {altmer_path_2a}
+	}
+	
+	altmer_path_4a = { ###altmer path
+		modifier = { 
+			lv_cavalry_offensive = 0.15
+			lv_cavalry_maintenance_cost = -0.2
+		}
+		icon = mer_mini_trad
+		requires = {altmer_path_3a}
+	}
+	
+	altmer_path_5a = { ###altmer path
+		modifier = { 
+			lv_gryphons_offensive = 0.1
+			lv_gryphons_discipline = 0.1
+		}
+		icon = mer_mini_trad
+		requires = {altmer_path_4a}
+	}
+	
+	bosmer_path_1b = { ###bosmer path
+		modifier = { 
+			lv_archers_offensive = 0.2
+			lv_archers_discipline = 0.2
+		}
+		enable_tactic = hit_and_run_tactics
+		icon = mer_mini_trad
+		requires = {altmer_path_1}
+	}
+	
+	bosmer_path_2b = { ###bosmer path
+		modifier = { 
+			lv_warriors_offensive = 0.1
+			jungle_combat_bonus = 0.1
+			forest_combat_bonus = 0.1
+		}
+		icon = mer_mini_trad
+		requires = {bosmer_path_1b}
+	}
+	
+	bosmer_path_3b = { ###bosmer path
+		modifier = { 
+			lv_horsearchers_offensive = 0.2
+			lv_guarcavalry_offensive = 0.1
+		}
+		icon = mer_mini_trad
+		requires = {bosmer_path_2b}
+	}
+	
+	adaptation_path_1c = { ###altmer path
+		modifier = { 
+			levy_size_multiplier = 0.025
+			lv_warriors_discipline = 0.1
+		}
+		icon = mer_mini_trad
+		requires = {altmer_path_1}
+	}
+	
+	adaptation_path_2c = { ###altmer path
+		modifier = { 
+			fort_limit = 1
+			global_defensive = 0.1
+		}
+		
+		on_activate = {
+			capital_scope = {
+				add_building_level = fortress_building
+			}
+		}
+		icon = mer_mini_trad
+		requires = {adaptation_path_1c}
+	}
+	
+	adaptation_path_3c = { ###altmer path
+		modifier = { 
+			ship_cost = -0.15
+		}
+		on_activate = {
+			ordered_owned_province = {	
+				limit = {
+					is_coastal = yes
+					has_building = port_building
+					can_build_building = port_building
+				}
+				alternative_limit = {
+					is_coastal = yes
+					can_build_building = port_building
+				}
+				order_by = total_population
+				add_building_level = port_building
+				add_building_level = port_building
+			}
+		}
+		icon = mer_mini_trad
+		requires = {adaptation_path_2c}
+	}
+	
+	adaptation_path_4c = { ###altmer path
+		modifier = { 
+			naval_damage_done = 0.2
+		}
+		allow_unit_type = octere
+		on_activate = {
+			random_owned_province = {
+				limit = {
+					num_of_port_building > 0 
+				}
+				owner = {
+					create_unit = {
+						navy = yes
+						location = prev.prev
+						add_subunit = octere
+						add_subunit = octere
+					}
+				}
+			}
+		}
+		icon = mer_mini_trad
+		requires = {adaptation_path_3c}
+	}
+	
+	adaptation_path_5c = { ###altmer path
+		modifier = { 
+			ocean_combat_bonus = 0.1
+			coastal_terrain_combat_bonus = 0.1
+		}
+		allow_unit_type = mega_galley
+		on_activate = {
+			random_owned_province = {
+				limit = {
+					num_of_port_building > 0 
+				}
+				owner = {
+					create_unit = {
+						navy = yes
+						location = prev.prev
+						add_subunit = mega_galley
+					}
+				}
+			}
+		}
+		icon = mer_mini_trad
+		requires = {adaptation_path_4c}
+	}
+	
+	altmer_states_path_end_bonus = {
+		modifier = { 
+			lv_mages_offensive = 0.15
+			ocean_combat_bonus = 0.1
+		}
+		requires = { altmer_path_5a bosmer_path_3b adaptation_path_5c } 
+		icon = mer_mini_trad 
+	}
+}

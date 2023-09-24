@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "wonder_minas_tirith_mesh"
+	file = "wonder_minas_tirith.mesh"
+
+	meshsettings = {
+		name = "wonder_minas_tirith_lod0Shape"
+		index = 0
+		texture_diffuse = "dunedain_building_diffuse.dds"
+		texture_normal = "dunedain_building_normal.dds"
+		texture_specular = "dunedain_building_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "wonder_minas_tirith_entity"
+	pdxmesh = "wonder_minas_tirith_mesh"
+}

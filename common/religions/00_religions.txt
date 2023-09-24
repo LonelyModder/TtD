@@ -1,0 +1,192 @@
+﻿elven_pantheon = { # Altmer Faith
+	color = hsv { 0.12 0.81 0.96 }
+	modifier = { 
+		global_monthly_civilization = 0.2
+		research_points_modifier = 0.2
+		global_pop_conversion_speed_modifier = -0.5
+	}
+	religion_category = pantheon
+}
+
+khajiiti_pantheon = { # Khajiit Faith
+	color = hsv { 0.06 0.94 0.86 }
+	modifier = { 
+		agressive_expansion_impact = -0.05
+		global_manpower_modifier = 0.1
+		character_loyalty = -0.1
+	}
+	religion_category = pantheon
+}
+
+hist_pantheon = { # Argonian Faith
+	color = hsv { 0.34 0.88 0.36 }
+	modifier = { 
+		omen_power = 0.2
+		omen_duration = 0.2
+		stability_cost_modifier = 0.2
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+}
+
+oldelven_pantheon = { # Psijic Faith
+	color = hsv { 0.07 0.98 0.64 }
+	modifier = { 
+		stability_cost_modifier = -0.25
+		research_points_modifier = 0.5
+		global_pop_conversion_speed_modifier = -0.5
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+	sacrifice_icon = sacrifice_incense
+	sacrifice_sound = "event:/SFX/UI/Religion/sfx_ui_religion_generic_sacrifice"
+}
+
+nedic_pantheon = { # Nedic Faith
+	color = hsv { 0.04 0.55 0.81 }
+	modifier = { 
+		war_exhaustion = -0.025
+		ruler_popularity_gain = 0.05
+		stability_cost_modifier = 0.2
+	}
+	religion_category = pantheon
+}
+
+goblin_pantheon = { # Goblin Faith
+	color = hsv { 0.23 0.77 0.87 }
+	modifier = { 
+		agressive_expansion_monthly_change = -0.025
+		global_manpower_modifier = 0.05
+		diplomatic_reputation = -2
+	}
+	religion_category = pantheon
+}
+
+codeofmalacath_pantheon = { # Orcish Faith
+	color = hsv { 0.30 0.81 0.49 }
+	modifier = { 
+		agressive_expansion_monthly_change = -0.025
+		global_manpower_modifier = 0.05
+		diplomatic_relations = -2
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+}
+
+green_pantheon = { # Bosmer Faith
+	color = hsv { 0.34 0.86 0.77 }
+	modifier = { 
+		global_capital_trade_routes = 2
+		land_morale_modifier = 0.1
+		stability_cost_modifier = 0.2
+	}
+	religion_category = pantheon
+	can_deify_ruler = no
+}
+
+deadric_pantheon = { # Deadric Faith
+	color = hsv { 0.01 0.95 0.92 }
+	modifier = { 
+		agressive_expansion_monthly_change = -0.025
+		levy_size_multiplier = 0.05
+		monthly_tyranny = 0.02
+	}
+	religion_category = pantheon
+}
+
+nordic_pantheon = { # Nordic Faith
+	color = rgb { 17 25 247 }
+	modifier = { 
+		global_manpower_modifier = 0.1
+		war_exhaustion = -0.025
+		stability_cost_modifier = 0.2
+	}
+	religion_category = pantheon
+}
+
+slavic_pantheon = { # Heretic Faith
+	color = hsv { 0.14 0.52 1 }
+	modifier = { 
+		monthly_tyranny = -0.2
+		global_slaves_output = 0.15
+		global_slaves_happiness = -0.1
+	}
+	religion_category = pantheon
+}
+
+imperial_pantheon = { # Eight Devines Faith
+	color = hsv { 0.85 0.93 0.79 }
+	modifier = { 
+		stability_cost_modifier = -0.2
+		global_monthly_state_loyalty = 0.04
+		improve_relation_impact = -0.1
+	}
+	religion_category = pantheon
+}
+
+druidic_pantheon = { # Druidic Faith
+	color = rgb { 0 235 63 }
+	modifier = { 
+		omen_power = 0.2
+		global_monthly_state_loyalty = 0.04
+		stability_cost_modifier = 0.2
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+}
+
+wyrdite_pantheon = { # Wyrd Faith
+	color = rgb { 59 94 34 }
+	modifier = { 
+		omen_power = 0.2
+		global_monthly_state_loyalty = 0.04
+		stability_cost_modifier = 0.2
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+}
+
+nirnic_pantheon = { # Dwemer Faith
+	color = rgb { 99 94 93 }
+	modifier = { 
+		research_points_modifier = 0.2
+		global_monthly_state_loyalty = 0.04
+		diplomatic_reputation = -2
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+	sacrifice_icon = sacrifice_incense
+	sacrifice_sound = "event:/SFX/UI/Religion/sfx_ui_religion_generic_sacrifice"
+}
+
+night_pantheon = { # Vampire/Werewolf Faith
+	color = rgb { 44 45 46 }
+	modifier = { 
+		omen_power = 0.2
+		levy_size_multiplier = 0.05
+		diplomatic_reputation = -2
+	}
+	religion_category = pantheon
+	can_deify_ruler = no
+}
+
+idealmasters_pantheon = { # Ideal Masters Faith
+	color = rgb { 20 16 16 }
+	modifier = { 
+		omen_power = 0.2
+		levy_size_multiplier = 0.05
+		diplomatic_reputation = -2
+	}
+	religion_category = prophets
+	can_deify_ruler = no
+}
+
+reachmen_pantheon = { # Reachmen Faith
+	color = rgb { 130 72 10 }
+	modifier = { 
+		war_exhaustion = -0.025
+		agressive_expansion_monthly_change = -0.025
+		stability_cost_modifier = 0.2
+	}
+	religion_category = pantheon
+}

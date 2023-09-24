@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "halfling_center_mesh"
+	file = "halfling_center.mesh"
+
+	meshsettings = {
+		name = "halfling_centerShape"
+		index = 0
+		texture_diffuse = "halfling_building_diffuse.dds"
+		texture_normal = "halfling_building_normal.dds"
+		texture_specular = "halfling_building_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "halfling_center_entity"
+	pdxmesh = "halfling_center_mesh"
+}

@@ -1,0 +1,101 @@
+pdxmesh = {
+	name = "elf_clothes_soldier_mesh"
+	file = "elf_clothes_soldier.mesh"
+
+		meshsettings = {
+			name = "elf_clothes_helmet1Shape"
+			index = 0
+			texture_diffuse = "elf_clothes_helmet1_diffuse.dds"
+			texture_normal = "elf_clothes_helmet1_normal.dds"
+			texture_specular = "elf_clothes_helmet1_p_properties.dds"
+			shader = "portrait_attachment"
+			shader_file = "gfx/FX/portrait.shader"
+		}
+
+		meshsettings = {
+			name = "elf_clothes_armor1Shape"
+			index = 0
+			texture_diffuse = "elf_clothes_armor1_blue_diffuse.dds"
+			texture_normal = "elf_clothes_armor1_normal.dds"
+			texture_specular = "elf_clothes_armor1_properties.dds"
+			shader = "portrait_attachment"
+			shader_file = "gfx/FX/portrait.shader"
+		}
+}
+
+entity = {
+	name = "elf_clothes_soldier_blue_entity"
+	pdxmesh = "elf_clothes_soldier_mesh"
+}
+
+entity = {
+	name = "elf_clothes_soldier_green_entity"
+	pdxmesh = "elf_clothes_soldier_mesh"
+	meshsettings = {
+		name = "elf_clothes_helmet1Shape"
+		index = 0
+		texture_diffuse = "elf_clothes_helmet1_diffuse.dds"
+		texture_normal = "elf_clothes_helmet1_normal.dds"
+		texture_specular = "elf_clothes_helmet1_p_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "elf_clothes_armor1Shape"
+		index = 0
+		texture_diffuse = "elf_clothes_armor1_green_diffuse.dds"
+		texture_normal = "elf_clothes_armor1_normal.dds"
+		texture_specular = "elf_clothes_armor1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "elf_clothes_soldier_gray_entity"
+	pdxmesh = "elf_clothes_soldier_mesh"
+	meshsettings = {
+		name = "elf_clothes_helmet1Shape"
+		index = 0
+		texture_diffuse = "elf_clothes_helmet1_diffuse.dds"
+		texture_normal = "elf_clothes_helmet1_normal.dds"
+		texture_specular = "elf_clothes_helmet1_p_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "elf_clothes_armor1Shape"
+		index = 0
+		texture_diffuse = "elf_clothes_armor1_gray_diffuse.dds"
+		texture_normal = "elf_clothes_armor1_normal.dds"
+		texture_specular = "elf_clothes_armor1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "elf_clothes_soldier_purple_entity"
+	pdxmesh = "elf_clothes_soldier_mesh"
+	meshsettings = {
+		name = "elf_clothes_helmet1Shape"
+		index = 0
+		texture_diffuse = "elf_clothes_helmet1_diffuse.dds"
+		texture_normal = "elf_clothes_helmet1_normal.dds"
+		texture_specular = "elf_clothes_helmet1_p_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+
+	meshsettings = {
+		name = "elf_clothes_armor1Shape"
+		index = 0
+		texture_diffuse = "elf_clothes_armor1_purple_diffuse.dds"
+		texture_normal = "elf_clothes_armor1_normal.dds"
+		texture_specular = "elf_clothes_armor1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}

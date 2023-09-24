@@ -1,0 +1,97 @@
+﻿country_decisions = {
+	
+	# Form High Kingdom of Alinor
+	form_auridon = {
+		
+		potential = {
+			country_culture_group = altmer
+			#is_tribal = yes
+			NOR = {
+				tag = XAU
+				tag = AAA
+			}
+			NOR = {
+				is_tier_1_formable_trigger = yes
+				is_tier_2_formable_trigger = yes
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 722
+					province_id = 677
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = auridon_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XAU
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns_or_subject_owns = 722
+			owns = 677
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "KAuridon_name"
+			change_country_flag = auridon_FLAG
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "KAuridon_adj"
+				change_country_color =  "KAuridon_color"
+				change_country_tag = XAU
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 677
+						}
+					}
+				}
+				set_capital = 677
+				hidden_effect = {
+					p:677.state = {
+						set_state_capital = 677
+					}
+				}
+			}
+			#p:677 = {
+			#	if = {
+			#		limit = { has_city_status = no }
+			#		set_city_status = city
+			#	}
+			#}
+			p:677 = {
+				capital_formable_medium_effect = yes
+				formable_capital_modifier_normal_effect = yes
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_auridon_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

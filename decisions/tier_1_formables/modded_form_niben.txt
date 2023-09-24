@@ -1,0 +1,105 @@
+﻿country_decisions = {
+	
+	# Form High Kingdom of Alinor
+	form_niben = {
+		
+		potential = {
+			OR = {
+				country_culture_group = nede
+				country_culture_group = altmer
+			}
+			#is_tribal = yes
+			NOT = {
+				tag = XNI
+			}
+			NOR = {
+				is_tier_1_formable_trigger = yes
+				is_tier_2_formable_trigger = yes
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 1173
+					province_id = 1215
+					province_id = 1412
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = niben_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XNI
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns= 1173
+			owns_or_subject_owns = 1215
+			owns_or_subject_owns = 1412
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "KNiben_name"
+			change_country_flag = niben_FLAG
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "KNiben_adj"
+				change_country_color =  "KNiben_color"
+				change_country_tag = XNI
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 1173
+						}
+					}
+				}
+				set_capital = 1173
+				hidden_effect = {
+					p:1173.state = {
+						set_state_capital = 1173
+					}
+				}
+			}
+			#p:1173 = {
+			#	if = {
+			#		limit = { has_city_status = no }
+			#		set_city_status = city
+			#	}
+			#}
+			p:1173 = {
+				capital_formable_medium_effect = yes
+				formable_capital_modifier_normal_effect = yes
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_lowerniben_region = { formable_region_province_effect = yes }
+				region:modded_chaydinhal_region = { formable_region_province_effect = yes }
+				region:modded_valus_region = { formable_region_province_effect = yes }
+				region:modded_nibenbasin_region = { formable_region_province_effect = yes }
+				region:modded_westweald_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

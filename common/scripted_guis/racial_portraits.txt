@@ -1,0 +1,336 @@
+﻿#Altmer
+is_an_altmer_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = altmer
+		is_male = yes
+    }
+}
+
+is_an_altmer_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = altmer
+		is_male = no
+    }
+}
+#Falmer
+is_an_falmer_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = falmer
+		is_male = yes
+    }
+}
+
+is_an_falmer_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = falmer
+		is_male = no
+    }
+}
+#Dwemer
+is_an_dwemer_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = dwemer
+		is_male = yes
+    }
+}
+
+is_an_dwemer_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = dwemer
+		is_male = no
+    }
+}
+#Breton
+is_an_breton_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = breton
+		is_male = yes
+    }
+}
+
+is_an_breton_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = breton
+		is_male = no
+    }
+}
+#Bosmer
+is_an_bosmer_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = bosmer
+		is_male = yes
+    }
+}
+
+is_an_bosmer_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = bosmer
+		is_male = no
+    }
+}
+#Nede
+is_an_nede_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = tnede
+		is_male = yes
+    }
+}
+
+is_an_nede_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = tnede
+		is_male = no
+    }
+}
+#Goblin
+is_an_goblin_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = goblin
+		is_male = yes
+    }
+}
+
+is_an_goblin_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = goblin
+		is_male = no
+    }
+}
+#Orc
+is_an_orc_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = orc
+		is_male = yes
+    }
+}
+
+is_an_orc_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = orc
+		is_male = no
+    }
+}
+#Minotaur
+is_an_minotaur_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = minotaur
+		is_male = yes
+    }
+}
+
+is_an_minotaur_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = minotaur
+		is_male = no
+    }
+}
+#Khajiit
+is_an_khajiit_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = khajiit
+		is_male = yes
+    }
+}
+
+is_an_khajiit_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = khajiit
+		is_male = no
+    }
+}
+#Argonian
+is_an_argonian_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = argonian
+		is_male = yes
+    }
+}
+
+is_an_argonian_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = argonian
+		is_male = no
+    }
+}
+#Imga
+is_an_imga_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = imga
+		is_male = yes
+    }
+}
+
+is_an_imga_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = imga
+		is_male = no
+    }
+}
+#Nord
+is_an_nord_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = nord
+		is_male = yes
+    }
+}
+
+is_an_nord_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = nord
+		is_male = no
+    }
+}
+#Half-Auroran
+is_an_halfauroran_male = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = halfauroran
+		is_male = yes
+    }
+}
+
+is_an_halfauroran_female = {
+    scope = character
+ 
+    saved_scopes = {
+ 
+    }
+    is_shown = {
+        has_trait = halfauroran
+		is_male = no
+    }
+}

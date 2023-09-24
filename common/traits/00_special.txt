@@ -1,0 +1,60 @@
+﻿shezzarine = {
+	type = status
+	
+	prominence = 20
+	martial = 10
+	charisma = 6
+}
+
+lower_vampire = {
+	type = status
+	
+	fertility = -0.3
+	health = 5.0
+	martial = 3
+	finesse = 1
+}
+
+half_vampire = {
+	type = status
+	
+	fertility = -0.3
+	health = 5.0
+	martial = 6
+	finesse = 2
+}
+
+full_vampire = {
+	type = status
+	
+	fertility = -0.3
+	health = 5.0
+	martial = 10
+	finesse = 5
+}
+
+werewolf = {
+	type = status
+	
+	health = 5.0
+	martial = 6
+	finesse = 2
+}
+
+lesser_lich = {
+	type = status
+	
+	fertility = -0.3
+	health = 5.0
+	martial = 6
+	finesse = 2
+}
+
+lich = {
+	type = status
+	
+	fertility = -0.3
+	health = 5.0
+	martial = 8
+	finesse = 5
+}

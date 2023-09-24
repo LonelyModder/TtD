@@ -1,0 +1,211 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_shor = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_shor = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_shor
+	passive_modifier = { land_morale_modifier = deity_land_morale_modifier_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_tsun = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_tsun = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tsun
+	passive_modifier = { global_freemen_output = deity_global_freemen_output_svalue }
+	omen = { agressive_expansion_monthly_change = omen_agressive_expansion_monthly_change_svalue } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_stuhn = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_stuhn = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_stuhn
+	passive_modifier = { fabricate_claim_speed = deity_fabricate_claim_speed_svalue }
+	omen = { global_slaves_output = omen_global_slaves_output_svalue } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_kyne = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_kyne = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_kyne
+	passive_modifier = { global_tax_modifier = deity_global_tax_modifier_svalue }
+	omen = { civic_tech_investment = omen_civic_tech_investment_svalue } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = economy #This Deity uses a economy slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_nmara = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_nmara = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_mara
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = fertility #This Deity uses a fertility slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_ndibella = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_ndibella = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_dibella
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { happiness_for_same_culture_modifier = omen_happiness_for_same_culture_modifier_svalue } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = fertility #This Deity uses a fertility slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_orkey = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_orkey = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_orkey
+	passive_modifier = { stability_monthly_change = deity_stability_monthly_change }
+	omen = { war_exhaustion = omen_war_exhaustion } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_ysmir = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = nordic_pantheon
+			}
+			deity:omen_orkey = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_ysmir
+	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
+	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	religion = nordic_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}

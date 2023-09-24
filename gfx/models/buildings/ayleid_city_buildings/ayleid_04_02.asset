@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "ayleid_gfx_04_02_mesh"
+	file = "ayleid_04_02.mesh"
+
+	meshsettings = {
+		name = "highelves_04_02Shape"
+		index = 0
+		texture_diffuse = "IC_diffuse.dds"
+		texture_normal = "highelves_fort_normal.dds"
+		texture_specular = "highelves_fort_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "ayleid_gfx_04_02_entity"
+	pdxmesh = "ayleid_gfx_04_02_mesh"
+}

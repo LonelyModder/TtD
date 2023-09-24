@@ -1,0 +1,19 @@
+﻿besarabic_war_conflict_effect = {
+	c:CBP = {
+		add_alliance = CBO
+		add_alliance = CCB
+		add_alliance = CCD
+	} 
+	c:CCE = {
+		declare_war_with_wargoal = {
+			war_goal = conquer_wargoal
+		    province = p:1618
+			target = c:CBP
+		}
+	}
+	c:CBP = {
+		break_alliance = CBO
+		break_alliance = CCB
+		break_alliance = CCD
+	} 
+}

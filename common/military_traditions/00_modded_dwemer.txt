@@ -1,0 +1,166 @@
+﻿dwemer_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = dwemer_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { 
+					country_culture_group = dwemer
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = dwemer
+		}
+		trigger_else_if = {
+			limit = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+					}
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:dwemer
+					}
+				}
+			}
+			any_country_culture = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+					}
+					custom_tooltip = {
+						text = tradition_unlock_requirement_short
+						is_integrated = yes
+						this.culture.culture_group = culture_group:dwemer
+					}
+				}
+			}
+		}
+		trigger_else = {
+			AND = {
+				OR = {
+					has_military_bonus = argonian_states_path_end_bonus
+					has_military_bonus = orcish_states_path_end_bonus
+					has_military_bonus = khajiit_states_path_end_bonus
+					has_military_bonus = nede_states_path_end_bonus
+					has_military_bonus = nordic_states_path_end_bonus
+					has_military_bonus = altmer_states_path_end_bonus
+				}
+				custom_tooltip = {
+					text = "tradition_unlock_requirement_aldmer"
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:dwemer
+					}
+				}
+			}
+		}
+	}
+	
+	dwemer_path_1 = { ###altmer path
+		modifier = { 
+			lv_heavyinfantry_discipline = 0.1
+		}
+		enable_ability = road_building
+		enable_tactic = greek_phalanx
+		icon = dwemer_mini_trad
+		requires = {}
+	}
+	
+	dwemer_path_2 = { ###altmer path
+		modifier = { 
+			lv_heavyinfantry_defensive = 0.2
+			lv_heavyinfantry_cost = -0.2
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_1}
+	}
+	
+	dwemer_path_2a = { ###altmer path
+		modifier = { 
+			lv_heavyinfantry_offensive = 0.2
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_2}
+	}
+	
+	dwemer_path_3a = { ###altmer path
+		modifier = { 
+			lv_crossbowmen_offensive = 0.2
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_2a}
+	}
+	
+	dwemer_path_4a = { ###altmer path
+		modifier = { 
+			lv_raiders_offensive = 0.2
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_3a}
+	}
+	
+	dwemer_path_5a = { ###altmer path
+		modifier = { 
+			army_movement_speed = 0.2
+			movement_speed_if_no_road = 0.2
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_4a}
+	}
+	
+	dwemer_path_2b = { ###altmer path
+		modifier = { 
+			cohort_cost = -0.1
+			supply_train_cost = -0.15
+			engineer_cohort_cost = -0.15
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_2}
+	}
+	
+	dwemer_path_3b = { ###altmer path
+		modifier = { 
+			fort_maintenance_cost = -0.15
+			hills_combat_bonus = 0.2
+			mountain_combat_bonus = 0.2
+		}
+		enable_ability = border_forts
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_2b}
+	}
+	
+	dwemer_path_4b = { ###altmer path
+		modifier = { 
+			fort_limit = 1
+			global_defensive = 0.1
+		}
+		icon = dwemer_mini_trad
+		requires = {dwemer_path_3b}
+		on_activate = {
+			capital_scope = {
+				add_building_level = fortress_building
+			}
+		}
+	}
+	
+	dwemer_states_path_end_bonus = {
+		modifier = { 
+			lv_heavyinfantry_offensive = 0.15
+			mountain_combat_bonus = 0.2
+		}
+		requires = { dwemer_path_5a dwemer_path_4b } 
+		icon = dwemer_mini_trad 
+	}
+}

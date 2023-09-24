@@ -1,0 +1,41 @@
+﻿reachmenic = {	
+	color = hsv { 0 0.86 0.89 }
+
+	primary = lv_archers
+	second = lv_warriors
+	flank = lv_raiders
+	
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_reachmen
+
+	male_names = {
+		 Dahi Rystedok Rehres Urder Zavnizos Bilron Vrenas Rerlen Yneth Nhudraozes
+		 Hylon Kivnith Zaohleven Baokhec Istuzes Raadan Dahlec Haadiven Mikes
+		 Lymrerok Myhlec Gemunok Gulroth
+	}
+	female_names = {
+		Zashati Delader Ratae Lannemaen Vassidil Dallae Rolloten Vata Dennav Hemal
+		Venname Nera Tonul Nashul Rahemul Oselav Hara Maren Miviniv Hatur Messidu
+		Itilin Volatir
+	}
+	family = {
+		Aalrath Imik Enis Vudren Vruna Gutyzir Zylar Ginic Nevmoc Kurlanoth
+		Venaula Nhidec Rumroc Diredon Limic Zadac Hukith Nhehlaudar Zaalranik
+		Hanison
+	}
+	culture = {
+		reachmen = {}
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = celtic_gfx
+	ethnicities = {
+		10 = dunedain
+	}
+}

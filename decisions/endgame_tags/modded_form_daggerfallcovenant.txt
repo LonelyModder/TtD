@@ -1,0 +1,121 @@
+﻿country_decisions = {
+	
+	# Form Daggerfall Covenant
+	form_dcovenant = {
+		
+		potential = {
+			OR = {
+				country_culture_group = altmer
+				country_culture_group = breton
+				country_culture_group = reachmenic
+				country_culture_group = keptu
+				country_culture_group = druid
+				country_culture_group = orcish
+			}
+			#is_tribal = yes
+			NOT = {
+				tag = XDC
+			}
+			NOR = {
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 2162 #Balfiera
+					province_id = 2295 #Sentinel
+					province_id = 2322 #Hagathe
+					province_id = 2530 #Skaven
+					province_id = 2441 #Rihad
+					province_id = 2650 #Elinhir
+					province_id = 2608 #Skyreach
+					province_id = 2954 #Daggerfall
+					province_id = 3012 #Camlorn
+					province_id = 3176 #Wayrest
+					province_id = 3085 #Shornhelm
+					province_id = 3149 #Orsinium 
+					province_id = 3276 #Fharun 
+					province_id = 3280 #Jehenna
+					province_id = 3209 #Evermoore
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = dcovenant_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XDC
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns_or_subject_owns = 2162 #Balfiera
+			owns_or_subject_owns = 2295 #Sentinel
+			owns_or_subject_owns = 2322 #Hagathe
+			owns_or_subject_owns = 2530 #Skaven
+			owns_or_subject_owns = 2441 #Rihad
+			owns_or_subject_owns = 2650 #Elinhir
+			owns_or_subject_owns = 2608 #Skyreach
+			owns_or_subject_owns = 2954 #Daggerfall
+			owns_or_subject_owns = 3012 #Camlorn
+			owns = 3176 #Wayrest
+			owns_or_subject_owns = 3085 #Shornhelm
+			owns_or_subject_owns = 3149 #Orsinium 
+			owns_or_subject_owns = 3276 #Fharun 
+			owns_or_subject_owns = 3280 #Jehenna
+			owns_or_subject_owns = 3209 #Evermoore
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "EDcovenant_name"
+			change_country_flag = HKHighRock_FLAG
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = aristocratic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "EDcovenant_adj"
+				change_country_color =  "EDcovenant_color"
+				change_country_tag = XDC
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 3176
+						}
+					}
+				}
+				set_capital = 3176
+				hidden_effect = {
+					p:3176.state = {
+						set_state_capital = 3176
+					}
+				}
+				p:3176 = {
+					capital_formable_medium_effect = yes
+					formable_capital_modifier_normal_effect = yes
+				}
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_southpoint_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

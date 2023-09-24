@@ -1,0 +1,128 @@
+﻿# Receives data from /genes
+# Ethnicities are used in /cultures 
+
+
+mixed_dunedain = {
+	template = "ethnities_template"
+
+	skin_color = {
+		10 = { 0.1 0.1 0.1 0.1 }
+	}
+	eye_color = {
+		#Grey
+		25 = { 0.0 0.00 0.00 0.00 }
+		#Blue
+		25 = { 0.0 0.35 0.33 0.65 }
+		#Green
+		25= { 0.33 0.35 0.67 0.65 }
+		#Brown
+		25 = { 0.67 0.5 1.0 1.0 }				
+	}
+	hair_color = {
+		# Blonde
+		12 = { 0.25 0.2 0.75 0.3 }
+		# Dark Blonde
+		15 = { 0.25 0.3 0.45 0.5 }
+		# Brown
+		5 = { 0.45 0.5 0.7 0.8 }		
+		# Dark Brown
+		15 = { 0.15 0.8 0.45 0.9 }
+		# Auburn
+		20 = { 0.8 0.5 1.0 0.8 }
+		# Red
+		2 = { 0.95 0.0 1.0 0.4 }
+		# Black
+		33 = { 0.0 0.9 0.15 1.0 }
+		## # Gray
+		# 5 = { 0.0 0.3 0.15 0.5 }
+		## # White
+		# 5 = { 0.0 0.0 0.25 0.25 }										
+	}	
+	
+hairstyles = {
+    10 = { name = dunedain_hairstyles          range = { 0.0 1.0 } }
+}
+
+eyebrows = {
+    10 = { name = caucasian_eyebrows        range = { 0.0 1.0 } }
+}
+
+beards = {
+    10 = { name = dunedain_beards          range = { 0.0 1.0 } }
+}
+
+clothes = {
+    10 = { name = dunedain_clothes            range = { 0.0 1.0 } }
+}
+
+clothes_layer2 = {
+    10 = { name = dunedain_top_layer            range = { 0.0 1.0 } }
+}
+
+complexion = {
+    10 = { name = roman_1            range = { 0.0 1.0 } }
+    10 = { name = roman_2            range = { 0.0 1.0 } }
+    10 = { name = roman_3            range = { 0.0 1.0 } }
+    10 = { name = roman_4            range = { 0.0 1.0 } }
+    10 = { name = roman_5            range = { 0.0 1.0 } }
+}
+gene_eye_depth = {
+    2 = { name = eye_depth_low    range = { 0.1 0.3 }    }
+    5 = { name = eye_depth_midLow    range = { 0.3 0.4 }    }
+    86 = { name = eye_depth_normal    range = { 0.6 0.8 }    }
+    5 = { name = eye_depth_midHigh    range = { 0.6 0.7 }    }
+    2 = { name = eye_depth_high    range = { 0.7 0.9 }    }
+}
+gene_eye_height = {
+    2 = { name = eye_height_low    range = { 0.1 0.3 }    }
+    5 = { name = eye_height_midLow    range = { 0.3 0.4 }    }
+    86 = { name = eye_height_normal    range = { 0.5 0.6 }    }
+    5 = { name = eye_height_midHigh    range = { 0.6 0.7 }    }
+    2 = { name = eye_height_high    range = { 0.7 0.9 }    }
+}
+gene_eye_distance = {
+    2 = { name = eye_distance_low    range = { 0.1 0.3 }    }
+    2 = { name = eye_distance_midLow    range = { 0.3 0.4 }    }
+    86 = { name = eye_distance_normal    range = { 0.5 0.7 }    }
+    2 = { name = eye_distance_midHigh    range = { 0.6 0.7 }    }
+    2 = { name = eye_distance_high    range = { 0.7 0.9 }    }
+}
+gene_eye_shut = {
+    2 = { name = eye_shut_low    range = { 0.1 0.3 }    }
+    2 = { name = eye_shut_midLow    range = { 0.3 0.4 }    }
+    86 = { name = eye_shut_normal    range = { 0.00 0.25 }    }
+    2 = { name = eye_shut_midHigh    range = { 0.6 0.7 }    }
+    2 = { name = eye_shut_high    range = { 0.6 0.7 }    }
+}
+gene_eye_fold_shape = {
+    2 = { name = eye_fold_shape_low    range = { 0.1 0.3 }    }
+    2 = { name = eye_fold_shape_midLow    range = { 0.3 0.4 }    }
+    86 = { name = eye_fold_shape_normal    range = { 0.7 0.99 }    }
+    2 = { name = eye_fold_shape_midHigh    range = { 0.6 0.7 }    }
+    2 = { name = eye_fold_shape_high    range = { 0.7 0.9 }    }
+}
+gene_eye_size = {
+    2 = { name = eye_size_low    range = { 0.1 0.3 }    }
+    2 = { name = eye_size_midLow    range = { 0.3 0.4 }    }
+    90 = { name = eye_size_normal    range = { 0.8 0.99 }    }
+    2 = { name = eye_size_midHigh    range = { 0.6 0.7 }    }
+    2 = { name = eye_size_high    range = { 0.7 0.9 }    }
+}
+pose = {
+		1 = { name = pose_1            range = { 0.2 1.0 } }
+		1 = { name = pose_2            range = { 0.2 1.0 } }
+		1 = { name = pose_3            range = { 0.2 1.0 } }    
+		1 = { name = pose_4            range = { 0.2 1.0 } }    
+		1 = { name = pose_5            range = { 0.2 1.0 } }    
+		1 = { name = pose_6            range = { 0.2 1.0 } }   
+		#1 = { name = pose_7            range = { 0.3 1.0 } }   
+		1 = { name = pose_8            range = { 0.2 1.0 } }  
+		1 = { name = pose_9            range = { 0.3 1.0 } }  
+		#1 = { name = pose_10            range = { 0.3 1.0 } }  
+		#1 = { name = pose_11            range = { 0.3 1.0 } }  
+		1 = { name = pose_12            range = { 0.3 1.0 } }                           
+		1 = { name = pose_13            range = { 0.3 1.0 } }  
+
+	}
+}
+

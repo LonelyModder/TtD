@@ -1,0 +1,49 @@
+deity_manager = {
+	deities_database = { ### KEYS 10001-10020 ###
+		10001 = {
+			key = omen_trinimac
+			deity = deity_trinimac
+		}
+		10002 = {
+			key = omen_syrabane
+			deity = deity_syrabane
+		}
+		10003 = {
+			key = omen_jephre
+			deity = deity_jephre
+		}
+		10004 = {
+			key = omen_xarxes
+			deity = deity_xarxes
+		}
+		10005 = {
+			key = omen_mara
+			deity = deity_mara
+		}
+		10006 = {
+			key = omen_magnus
+			deity = deity_magnus
+		}
+		10007 = {
+			key = omen_stendarr
+			deity = deity_stendarr
+		}
+		10008 = {
+			key = omen_phynaster
+			deity = deity_phynaster
+		}
+		10009 = {
+			key = omen_auriel
+			deity = deity_auriel
+		}
+		10010 = {
+			key = omen_elvenancestors
+			deity = deity_elvenancestors
+		}
+		10011 = {
+			key = omen_beeloni
+			deity = deity_beeloni
+		}
+	}
+}
+

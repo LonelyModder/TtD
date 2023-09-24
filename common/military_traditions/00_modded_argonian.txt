@@ -1,0 +1,176 @@
+﻿argonian_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = argonian_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { country_culture_group = argonian }
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			country_culture_group = argonian
+		}
+		trigger_else_if = {
+			limit = {
+				AND = {
+					OR = {
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:argonian
+					}
+				}
+			}
+			any_country_culture = {
+				AND = {
+					OR = {
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					custom_tooltip = {
+						text = tradition_unlock_requirement_short
+						is_integrated = yes
+						this.culture.culture_group = culture_group:argonian
+					}
+				}
+			}
+		}
+		trigger_else = {
+			AND = {
+				OR = {
+					has_military_bonus = orcish_states_path_end_bonus
+					has_military_bonus = nede_states_path_end_bonus
+					has_military_bonus = khajiit_states_path_end_bonus
+					has_military_bonus = altmer_states_path_end_bonus
+					has_military_bonus = nordic_states_path_end_bonus
+					has_military_bonus = dwemer_states_path_end_bonus
+				}
+				custom_tooltip = {
+					text = "tradition_unlock_requirement_argonian"
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:argonian	
+					}
+				}
+			}
+		}
+	}
+	
+	argonian_path_1 = { ###argonian path
+		modifier = { 
+			marsh_combat_bonus = 0.1
+		}
+		icon = argon_mini_trad
+		requires = {}
+	}
+	
+	argonian_path_2 = { ###argonian path
+		modifier = { 
+			lv_archers_offensive = 0.1
+		}
+		enable_tactic = hit_and_run_tactics
+		icon = argon_mini_trad
+		requires = {argonian_path_1}
+	}
+	
+	argonian_path_3 = { ###argonian path
+		modifier = { 
+			lv_guarcavalry_offensive = 0.1
+			lv_guarcavalry_discipline = 0.1
+		}
+		icon = argon_mini_trad
+		requires = {argonian_path_2}
+	}
+	
+	argonian_path_3a = { ###argonian path
+		modifier = { 
+			lv_warriors_offensive = 0.1
+			lv_warriors_defensive = 0.1
+		}
+		icon = argon_mini_trad
+		requires = {argonian_path_3}
+	}
+	
+	argonian_path_4a = { ###argonian path
+		modifier = { 
+			land_morale_modifier = 0.1
+		}
+		icon = argon_mini_trad
+		requires = {argonian_path_3a}
+	}
+	
+	argonian_path_5a = { ###argonian path
+		modifier = { 
+			fort_limit = 1
+		}
+		on_activate = {
+			capital_scope = {
+				add_building_level = fortress_building
+			}
+		}
+		icon = argon_mini_trad
+		requires = {argonian_path_4a}
+	}
+	
+	argonian_path_3b = { ###argonian path
+		modifier = { 
+			ship_cost = -0.15
+		}
+		on_activate = {
+			ordered_owned_province = {	
+				limit = {
+					is_coastal = yes
+					has_building = port_building
+					can_build_building = port_building
+				}
+				alternative_limit = {
+					is_coastal = yes
+					can_build_building = port_building
+				}
+				order_by = total_population
+				add_building_level = port_building
+				add_building_level = port_building
+			}
+		}
+		icon = argon_mini_trad
+		requires = {argonian_path_3}
+	}
+	
+	argonian_path_4b = { ###argonian path
+		modifier = { 
+			coastal_terrain_combat_bonus = 0.1
+			riverine_terrain_combat_bonus = 0.15
+		}
+		icon = argon_mini_trad
+		requires = {argonian_path_3b}
+	}
+	
+	argonian_path_5b = { ###argonian path
+		modifier = { 
+			naval_damage_done = 0.1
+		}
+		enable_ability = naval_raiding
+		icon = argon_mini_trad
+		requires = {argonian_path_4b}
+	}
+	
+	argonian_states_path_end_bonus = {
+		modifier = { 
+			lv_warriors_offensive = 0.15
+			marsh_terrain_bonus = 0.1
+		}
+		requires = { argonian_path_5a argonian_path_5b } 
+		icon = argon_mini_trad 
+	}
+	
+}

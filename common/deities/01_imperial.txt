@@ -1,0 +1,213 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_istendarr = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_istendarr = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_stendarr
+	passive_modifier = { agressive_expansion_monthly_change = deity_agressive_expansion_monthly_change_svalue }
+	omen = { stability_monthly_change = omen_stability_monthly_change_svalue } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+
+
+deity_ikynareth = { 
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_ikynareth = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_kynareth
+	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
+	omen = { global_monthly_food = omen_global_monthly_food_modifier } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = economy #This Deity uses a economy slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_izenithar = { 
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_izenithar = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_zenit
+	passive_modifier = { global_capital_trade_routes = deity_global_capital_trade_routes_svalue }
+	omen = { global_commerce_modifier = omen_global_commerce_modifier_svalue } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = economy #This Deity uses a economy slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_idibella = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_idibella = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_dibella
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = fertility #This Deity uses a fertility slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_imara = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_idibella = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_mara
+	passive_modifier = { global_monthly_food_modifier = deity_global_monthly_food_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = fertility #This Deity uses a fertility slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_iakatosh = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_iakatosh = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_akatosh
+	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
+	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_iarkay = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_iarkay = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_arkay
+	passive_modifier = { stability_monthly = deity_stability_monthly_decay }
+	omen = { civic_tech_investment = omen_civic_tech_investment_svalue } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_ijulianos = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = imperial_pantheon
+			}
+			deity:omen_ijulianos = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_julianos
+	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
+	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	religion = imperial_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}

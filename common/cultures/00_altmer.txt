@@ -1,0 +1,127 @@
+﻿altmer = {	
+	color = hsv { 0.12 0.81 0.96 }
+
+	primary = lv_mages
+	second = lv_lightinfantry
+	flank = lv_cavalry
+
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_sommersetan
+
+	male_names = {
+		Eariielandil Rimarnimarco Kaelaril Merived Trecerion Yaronniss Angamon Ingarmowe Suurntar Gyron
+		Vinalmo Estrim Uulochtus Kaearion Eramircil Aslimo Hidle Erunrionamion Lylimilrmerel Rulirynil 
+		Quaewynn Arrmaillin Tumrynil Ungadurcar Ulunndilnalus Ravelcalin Solierion Morontar Tusaliongrim 
+		Ryatarandil 
+	}
+	female_names = {
+		Camunayne Arision Giarie Elawen Helefire Arqkrand Camiine Eilente Erranwe Arienn Celsha Sondsse 
+		Caraion Curen Estitelle Angnde Carmia Tenril Aranwy Erranande Iniorne Taairdalin Mirarie
+		Eilesse Curna Varende Elarane Ardassa Elanarume 
+	}
+	family = {
+		Khraemlock Aedoth Salingorin Aedosin Spellihle Laemahl Grayaere Gaethfaere Laraethious Aedbinder 
+		Aedaire Thromorinh Chamiane Faethaer Tahrombinder Aelsoniuth Siliniane Aedahl Chaefaere Silinifeth
+		Loraethor Chaebinder Tahromian Salinguseus Khraeman Saelinorin
+	}
+	culture = {
+		awrothgari = {levy_template = levy_awrothgari}
+		sommersetic = {} 
+		auridonic = {levy_template = levy_auridonic}
+		colovianelves = {
+			levy_template = levy_ayleid
+			male_names = {
+				Ruuluamalor Fidelirint Djym Nyl Hessel Laleyttemis Luudhun Cenralind Reynris Timerogal
+				Djol Rem Foleshame Gyradhunys Verhel Heyrerrunt Dulo Tendordol Duusta Vuastur
+			}
+			female_names = {
+				Vuhaa Cerol Hahannas Lallol Mannyrri Ollinwu Hyrreth Wyhurroth Oramith Pomie
+				Luzen Cyrra Nihornu Devin Perraldel Sezil Salli Navulse Lirelash Ezamnula
+			}
+			family = {
+				Lumerugum Qun Adim Gamon Dogestadul Donhel Fus Rimdind Loneysdudond Vonyscasa
+				Gesdim Fuadunt Gonuattimi Rinhuulasont Lomhesdisynt Fiduulmugus Hegydhar Nend Garettagus 
+				Nisdyruusem
+			}
+		}
+		northelves = {
+			levy_template = levy_ayleid
+			male_names = {
+				Ruuluamalor Fidelirint Djym Nyl Hessel Laleyttemis Luudhun Cenralind Reynris Timerogal
+				Djol Rem Foleshame Gyradhunys Verhel Heyrerrunt Dulo Tendordol Duusta Vuastur
+			}
+			female_names = {
+				Vuhaa Cerol Hahannas Lallol Mannyrri Ollinwu Hyrreth Wyhurroth Oramith Pomie
+				Luzen Cyrra Nihornu Devin Perraldel Sezil Salli Navulse Lirelash Ezamnula
+			}
+			family = {
+				Lumerugum Qun Adim Gamon Dogestadul Donhel Fus Rimdind Loneysdudond Vonyscasa
+				Gesdim Fuadunt Gonuattimi Rinhuulasont Lomhesdisynt Fiduulmugus Hegydhar Nend Garettagus 
+				Nisdyruusem
+			}
+		}
+		deathelves = {
+			levy_template = levy_ayleid
+			male_names = {
+				Ruuluamalor Fidelirint Djym Nyl Hessel Laleyttemis Luudhun Cenralind Reynris Timerogal
+				Djol Rem Foleshame Gyradhunys Verhel Heyrerrunt Dulo Tendordol Duusta Vuastur
+			}
+			female_names = {
+				Vuhaa Cerol Hahannas Lallol Mannyrri Ollinwu Hyrreth Wyhurroth Oramith Pomie
+				Luzen Cyrra Nihornu Devin Perraldel Sezil Salli Navulse Lirelash Ezamnula
+			}
+			family = {
+				Lumerugum Qun Adim Gamon Dogestadul Donhel Fus Rimdind Loneysdudond Vonyscasa
+				Gesdim Fuadunt Gonuattimi Rinhuulasont Lomhesdisynt Fiduulmugus Hegydhar Nend Garettagus 
+				Nisdyruusem
+			}
+		}
+		besarabicelves = {
+			levy_template = levy_ayleid
+			male_names = {
+				Ruuluamalor Fidelirint Djym Nyl Hessel Laleyttemis Luudhun Cenralind Reynris Timerogal
+				Djol Rem Foleshame Gyradhunys Verhel Heyrerrunt Dulo Tendordol Duusta Vuastur
+			}
+			female_names = {
+				Vuhaa Cerol Hahannas Lallol Mannyrri Ollinwu Hyrreth Wyhurroth Oramith Pomie
+				Luzen Cyrra Nihornu Devin Perraldel Sezil Salli Navulse Lirelash Ezamnula
+			}
+			family = {
+				Lumerugum Qun Adim Gamon Dogestadul Donhel Fus Rimdind Loneysdudond Vonyscasa
+				Gesdim Fuadunt Gonuattimi Rinhuulasont Lomhesdisynt Fiduulmugus Hegydhar Nend Garettagus 
+				Nisdyruusem
+			}
+		}
+		heartlanderelves = {
+			levy_template = levy_ayleid
+			male_names = {
+				Ruuluamalor Fidelirint Djym Nyl Hessel Laleyttemis Luudhun Cenralind Reynris Timerogal
+				Djol Rem Foleshame Gyradhunys Verhel Heyrerrunt Dulo Tendordol Duusta Vuastur
+			}
+			female_names = {
+				Vuhaa Cerol Hahannas Lallol Mannyrri Ollinwu Hyrreth Wyhurroth Oramith Pomie
+				Luzen Cyrra Nihornu Devin Perraldel Sezil Salli Navulse Lirelash Ezamnula
+			}
+			family = {
+				Lumerugum Qun Adim Gamon Dogestadul Donhel Fus Rimdind Loneysdudond Vonyscasa
+				Gesdim Fuadunt Gonuattimi Rinhuulasont Lomhesdisynt Fiduulmugus Hegydhar Nend Garettagus 
+				Nisdyruusem
+			}
+		}
+		iliacite = {levy_template = levy_auridonic}
+		hiforested = {levy_template = levy_auridonic}
+		psijic = {levy_template = levy_psijic}
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = noldor_gfx
+	ethnicities = {
+		10 = noldor
+	}
+}

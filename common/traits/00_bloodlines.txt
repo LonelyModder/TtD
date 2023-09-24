@@ -1,0 +1,239 @@
+﻿aranas = {
+	type = status
+	
+	prominence = 20
+	charisma = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		stability_cost_modifier = -0.2
+		global_monthly_state_loyalty = 0.05
+	}
+	
+}
+
+ulorome = {
+	type = status
+	
+	prominence = 20
+	charisma = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_gryphons_offensive = 0.1
+		global_monthly_state_loyalty = 0.05
+	}
+	
+}
+
+unfeathered = {
+	type = status
+	
+	prominence = 20
+	zeal = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_mages_offensive = 0.1
+		land_morale_modifier = 0.1
+	}
+	
+}
+
+atatar = {
+	type = status
+	
+	prominence = 20
+	martial = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_lightinfantry_offensive = 0.1
+		land_morale_modifier = 0.1
+	}
+	
+}
+
+dynar = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		global_commerce_modifier = 0.1
+		discipline = 0.1
+	}
+	
+}
+
+tor = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		global_capital_trade_routes = 1
+		research_points_modifier = 0.1
+	}
+	
+}
+
+ceyatar = {
+	type = status
+	
+	prominence = 20
+	martial = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_lightinfantry_offensive = 0.1
+		lv_mages_defensive = 0.1
+	}
+	
+}
+
+ninendava = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_mages_offensive = 0.1
+		omen_power = 0.1
+	}
+	
+}
+
+miscarcandite = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_mages_offensive = 0.1
+		siege_ability = 0.1
+	}
+	
+}
+
+camoran = {
+	type = status
+	
+	prominence = 20
+	martial = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_archars_offensive = 0.1
+		monthly_legitimacy = 0.05
+	}
+	
+}
+
+direnni = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_mages_offensive = 0.1
+		research_points_modifier = 0.05
+	}
+	
+}
+
+corelanya = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		global_capital_trade_routes = 2
+		global_commerce_modifier = 0.15
+	}
+	
+}
+
+banequina = {
+	type = status
+	
+	prominence = 20
+	martial = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		lv_archars_offensive = 0.1
+		ruler_popularity_gain = 0.05
+	}
+	
+}
+
+tharn = {
+	type = status
+	
+	prominence = 20
+	finesse = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		global_tax_modifier = 0.10
+		global_slaves_output = 0.1
+	}
+	
+}
+
+alesh = {
+	type = status
+	
+	prominence = 20
+	martial = 1
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		monthly_legitimacy = 0.05
+		ruler_popularity_gain = 0.05
+	}
+	
+}
+
+dragonblood = {
+	type = status
+	
+	prominence = 20
+	martial = 10
+	
+	support_for_character_as_heir = 10
+
+	country = {
+		agressive_expansion_impact = -0.1
+		agressive_expansion_monthly_change = -0.1
+	}
+	
+}

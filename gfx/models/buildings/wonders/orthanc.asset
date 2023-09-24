@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "orthanc_mesh"
+	file = "orthanc.mesh"
+
+	meshsettings = {
+		name = "Orthanc_LowShape"
+		index = 0
+		texture_diffuse = "orthanc_diffuse.dds"
+		texture_normal = "orthanc_normal.dds"
+		texture_specular = "orthanc_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+	
+	meshsettings = {
+		name = "Orthanc_LowShape"
+		index = 1
+		texture_diffuse = "orthanc_wall_low_Diffuse.dds"
+		texture_normal = "orthanc_wall_low_Normal.dds"
+		texture_specular = "orthanc_wall_low_Properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "orthanc_entity"
+	pdxmesh = "orthanc_mesh"
+}

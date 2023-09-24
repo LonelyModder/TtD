@@ -1,0 +1,90 @@
+﻿##On Game Initialized Events
+
+on_game_initialized = {
+	effect = {
+		basic_unit_setup = yes
+		add_innovation = {
+			value = oratory_tech
+		}
+		add_innovation = {
+			value = military_tech
+		}
+		add_innovation = {
+			value = civic_tech
+		}
+		add_innovation = {
+			value = religious_tech
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_variable = province_init_done
+				}
+			}
+			every_province = {
+				limit = {
+					NOR = {
+						is_sea = yes
+						terrain = riverine_terrain
+					}
+				}
+				add_neighbor_city_modifier_effect = yes
+			}
+			set_global_variable = {
+				name = province_init_done
+				value = 1
+			}
+			every_province = {
+				limit = {
+					is_sea = no
+				}
+				civilization_level_effect = yes
+			}
+			#every_country = {
+			#	militarisation_level_effect = yes
+				#hidden_equipment_effect = yes
+			#}
+			besarabic_war_conflict_effect = yes
+		}
+	}
+	#Events
+	events = {
+		units_allowance_events.1
+		race_startup.1 
+		#Startup info
+		esfa_startup.1
+		esfa_startup.2
+		esfa_startup.3
+		esfa_startup.4
+		esfa_startup.5
+		esfa_startup.6
+		esfa_startup.7
+		esfa_startup.8
+		esfa_startup.9
+		esfa_startup.10
+		esfa_startup.11
+		esfa_startup.12
+		esfa_startup.13
+		esfa_startup.14
+		esfa_startup.15
+		#Bloodlines
+		bloodlines_startup.1  #Aranas
+		bloodlines_startup.2  #Umaril
+		bloodlines_startup.3  #Atatar Clan
+		bloodlines_startup.4  #Dynar Clan
+		bloodlines_startup.5  #Ulorome lineage
+		bloodlines_startup.6  #Tor Clan
+		bloodlines_startup.7  #Ceya-Tar Clan
+		bloodlines_startup.8  #Ninendava Clan
+		bloodlines_startup.9  #Miscarcand Clan
+		bloodlines_startup.10  #Camoran Clan
+		bloodlines_startup.11  #Direnni Clan
+		bloodlines_startup.12  #Direnni Clan - Shimmerene
+		bloodlines_startup.13  #Anequina Clan
+		bloodlines_startup.14  #Tharn Family
+		bloodlines_startup.15  #Alessias Clan
+		#Militarism level mechanic
+		militarism_events.1
+	}
+}
+

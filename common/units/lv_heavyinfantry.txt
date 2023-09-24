@@ -1,0 +1,48 @@
+﻿lv_heavyinfantry = {
+		
+	army = yes
+	assault = yes
+	enable=yes
+	
+	levy_tier = basic	
+	
+	allow = {
+		trade_good_surplus = { target = iron value > 0 }
+	}
+	
+	maneuver = 1
+	movement_speed = 2.5
+	build_time = 30
+	
+	lv_lightinfantry = 1.3	
+	lv_heavyinfantry = 1	
+	lv_archers =  1.3		
+	lv_crossbowmen = 0.7	
+	lv_camels = 1.3	
+	lv_mages = 0.7	
+	lv_cavalry = 1.3		
+	lv_guarcavalry = 0.9
+	lv_horsearchers = 0.7	
+	lv_dremoras = 	0.7	
+	lv_undead = 0.9	
+	lv_gryphons = 0.5	
+	lv_warriors = 1.3	
+	lv_raiders = 1.1
+	lv_atronach = 0.7
+	lv_clanfear = 0.9
+	lv_bonelord = 0.9
+	lv_bonewalker = 0.9
+	supply_train = 2.0
+	
+	attrition_weight = 0.5
+	attrition_loss = 0.025
+	
+	food_consumption = 0.10
+	food_storage = 2.4
+	
+	morale_damage_taken = 0.7
+	build_cost = {
+		gold = 14
+		manpower = 1
+	}
+}

@@ -1,0 +1,13 @@
+deity_manager = {
+	deities_database = { ### KEYS 10281-10300 ###
+		10281 = {
+			key = omen_rancestralworship
+			deity = deity_rancestralworship
+		}
+		10282 = {
+			key = omen_hagravens
+			deity = deity_hagravens
+		}
+	}
+}
+

@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "dunedain_port_mesh"
+	file = "dunedain_port.mesh"
+
+	meshsettings = {
+		name = "eastern_portShape"
+		index = 0
+		texture_diffuse = "dunedain_port_diffuse.dds"
+		texture_normal = "dunedain_port_normal.dds"
+		texture_specular = "dunedain_port_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "dunedain_gfx_port_entity"
+	pdxmesh = "dunedain_port_mesh"
+}

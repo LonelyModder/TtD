@@ -1,0 +1,46 @@
+﻿namespace = devine_events
+
+devine_events.1 = {
+	type = country_event
+	title = "devine_events.1.t"
+	desc = "devine_events.1.desc"
+	picture = devine_conversion
+	fire_only_once = yes
+	left_portrait = current_ruler
+	
+	trigger = {
+		OR = {
+			religion = nedic_pantheon
+			religion = nordic_pantheon
+		}
+		owns=1071
+	}
+	
+	option = { # Change faith
+		name = "devine_events.1.a"
+		set_country_religion = imperial_pantheon
+		current_ruler = {
+			set_character_religion = imperial_pantheon
+		}
+		p:1071 = {
+            while = {
+                count = 10
+                define_pop = {
+                type = freemen
+                culture = nednibenese
+                religion = imperial_pantheon
+                }
+            }                
+        }
+		ai_chance = {
+            factor = 70
+        }
+	}
+	
+	option = { # Keep the faith
+		name = "devine_events.1.b"
+		ai_chance = {
+            factor = 30
+        }
+	}
+}

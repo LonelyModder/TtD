@@ -1,0 +1,38 @@
+﻿venedi = {
+
+	primary = lv_scirmishers
+	second = lv_lightinfantry
+	flank = lv_archers
+
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_nedichoplites
+	
+	color = hsv { 0.14 0.52 1 }
+	
+	male_names = {
+		 Ruuluamalor Fidelirint Djym Nyl Hessel Laleyttemis Luudhun Cenralind Reynris Timerogal
+		 Djol Rem Foleshame Gyradhunys Verhel Heyrerrunt Dulo Tendordol Duusta Vuastur
+	}
+	female_names = {
+		Vuhaa Cerol Hahannas Lallol Mannyrri Ollinwu Hyrreth Wyhurroth Oramith Pomie
+		Luzen Cyrra Nihornu Devin Perraldel Sezil Salli Navulse Lirelash Ezamnula
+	}
+	family = {
+		Lumerugum Qun Adim Gamon Dogestadul Donhel Fus Rimdind Loneysdudond Vonyscasa
+		Gesdim Fuadunt Gonuattimi Rinhuulasont Lomhesdisynt Fiduulmugus Hegydhar Nend Garettagus 
+		Nisdyruusem
+	}
+	culture = {
+		wvenedi = {}
+		auroran = {}
+	}
+	barbarian_names = { SITONES FENNI VENEDAE NAVARI VELTAE }
+	
+	graphical_culture = orcish_gfx
+	ethnicities = {
+		10 = noldor
+	}
+}

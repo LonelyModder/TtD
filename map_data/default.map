@@ -1,0 +1,19 @@
+﻿definitions = "definition.csv"
+provinces = "provinces.png"
+positions = "positions.txt"
+rivers = "rivers.png"
+topology = "heightmap.heightmap"
+adjacencies = "adjacencies.csv"
+areas = "areas.txt"
+regions = "regions.txt"
+ports = "ports.csv"
+climate = "climate.txt"
+
+#Seazones, list:
+sea_zones = LIST {  }
+impassable_terrain = LIST {  }  
+wasteland = LIST { 1 2 }
+lakes = LIST {  }
+
+
+

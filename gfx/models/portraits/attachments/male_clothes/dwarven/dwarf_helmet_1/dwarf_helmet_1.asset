@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "dwarf_helmet_1_mesh"
+	file = "dwarf_helmet_1.mesh"
+
+	meshsettings = {
+		name = "dwarf_helmet_1Shape"
+		index = 0
+		texture_diffuse = "dwarf_helmet_1_diffuse.dds"
+		texture_normal = "dwarf_helmet_1_normal.dds"
+		texture_specular = "dwarf_helmet_1_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "dwarf_helmet_1_entity"
+	pdxmesh = "dwarf_helmet_1_mesh"
+}

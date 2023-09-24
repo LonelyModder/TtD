@@ -1,0 +1,48 @@
+﻿bosmer = {	
+	color = hsv { 0.34 0.86 0.77 }
+
+	primary = lv_archers
+	second = lv_lightinfantry
+	flank = lv_horsearchers
+
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_bosmer
+
+	male_names = {
+		 Nirahen Thauchor Threr Riallion Uuraast Pervir Barahndil Aenras Pegalem Hagborn 
+		 Vallir Ungedan Agachalas Uungthroth Valiel Anorlem Ritndis Ungleg Edoien Nalum 
+		 Alvas Bralleb Ulwronor Angldriel Mengvir Fargborn 
+	}
+	female_names = {
+		Anurdil Huuneth Ulanhredhel Syelnwen Lilisndra Milthia Menegina Dairbereth Ciiweneval 
+		Milbaen Naetenandriah Anedeylin Boroduin Telingil Borwthel Falfina Desngaer Uldil 
+		Hynsse Alaolian Anreenena Areanlin Eindaeneth 
+	}
+	family = {
+		Riverthorn Applewing Nightbrook Rivergrove Shadyblossom Rosegrass Applemire Lumberwind Fernwing Rosevale
+		Shadybrook Elmvale Acorngrove Sagewing Nightthorn Forestsky Springlock Willowlake Pinerun Pinelake 
+		Roseblossom Rosebranch Balfrun Sagethorn Softdale Barkgrove Applewood Forestblossom Riverlake
+	}
+	culture = {
+		bosiliacite = {}
+		bosmalabal = {}
+		bosgrahtwood = {}
+		bosgreenheart = {}
+		bosgreenshade = {}
+		boscrescent = {}
+		bostalandan = {}
+		bosmarcher = {}	
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = teleri_gfx
+	ethnicities = {
+		10 = teleri
+	}
+}

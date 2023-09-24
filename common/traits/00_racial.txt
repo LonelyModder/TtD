@@ -1,0 +1,140 @@
+﻿altmer = {
+	type = status
+	
+	fertility = -0.3
+	health = 5.0
+	charisma = 1
+	finesse = 3
+	zeal = 2
+	
+}
+
+breton = {
+	type = status
+	
+	health = -0.1
+	charisma = 1
+	finesse = 3
+	martial = 2
+	
+}
+
+tnede = {
+	type = status
+	charisma = 2
+	zeal = 1
+	martial = 3
+}
+
+goblin = {
+	type = status
+	charisma = -2
+	zeal = 2
+	martial = 2
+}
+
+orc = {
+	type = status
+	charisma = -1
+	zeal = 1
+	martial = 5
+}
+
+nord = {
+	type = status
+	charisma = 1
+	zeal = 1
+	martial = 4
+}
+
+khajiit = {
+	type = status
+	charisma = 2
+	zeal = 2
+	martial = 2
+}
+
+argonian = {
+	type = status
+	charisma = -1
+	zeal = 2
+	martial = 4
+}
+
+imga = {
+	type = status
+	charisma = 5
+	zeal = 1
+	martial = -2
+}
+
+minotaur = {
+	type = status
+	charisma = 1
+	zeal = 1
+	martial = 4
+}
+
+falmer = {
+	type = status
+	
+	fertility = -0.3
+	health = 3.0
+	finesse = 1
+	martial = 3
+	zeal = 2
+	
+}
+
+dwemer = {
+	type = status
+	
+	fertility = -0.3
+	health = 3.0
+	finesse = 3
+	martial = 2
+	charisma = 1
+	
+}
+
+bosmer = {
+	type = status
+	
+	fertility = -0.3
+	health = 3.0
+	charisma = 2
+	martial = 3
+	zeal = 1
+	
+}
+
+pure = {
+	type = personality
+	opposites = {
+		impure
+	}
+	charisma = 2
+}
+
+impure = {
+	type = personality
+	opposites = {
+		pure
+	}
+	charisma = -2
+}
+
+halfauroran = {
+	type = status
+	
+	fertility = -1.0
+	health = 10.0
+	charisma = 8
+	martial = 10
+	zeal = -6
+	country = {
+		lv_mages_offensive = 0.1
+		monthly_legitimacy = 0.05
+	}
+	
+}

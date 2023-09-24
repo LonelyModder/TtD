@@ -1,0 +1,20 @@
+﻿l_english:
+ ## Default ##
+ deity_donotsteal:0 "$omen_donotsteal$"
+ omen_donotsteal:1 "Patron of the Disfavored"
+ omen_donotsteal_desc:4 "Orcs follow the code of Malacath, the Daedric god of oaths, the rejected and unwanted creatures of Tamriel. As a result, his followers lead a harsh life to prepare them for the hostility of the outside world."
+ deity_donotkill:0 "$omen_donotkill$"
+ omen_donotkill:1 "Defender of the Damned"
+ omen_donotkill_desc:4 "Orcs are very unforgiving and hold a grudge for a long time. It is somehow sanctioned by religion. Clans are often keeping old grudges in their records and take revenge after many years."
+ deity_donotattackwithoutreason:0 "$omen_donotattackwithoutreason$"
+ omen_donotattackwithoutreason:1 "Cruel Lord"
+ omen_donotattackwithoutreason_desc:4 "Orcs do not have prisons. They believe that the punishment needs to be swift so prisoner will not be burden to society. The known punishments consists of fines or bleeding the prisoner with the required amount of blood being dependant of the victim status. "
+ deity_fightwithhonor:0 "$omen_fightwithhonor$"
+ omen_fightwithhonor:1 "Patron of Warriors"
+ omen_fightwithhonor_desc:4 "Old orcs often travel across Tamriel looking for a honourable death in combat. Usefulness for the tribe is the biggest priority."
+ deity_protectthetribe:0 "$omen_protectthetribe$"
+ omen_protectthetribe:1 "Protector of the Tribes"
+ omen_protectthetribe_desc:4 "Escape from the battlefield is the worst sin the orc can commit. Being a warrior is the essense of orcish life and cowards have no place in their society."
+ 
+ 
+ 

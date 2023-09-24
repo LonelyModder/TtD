@@ -1,0 +1,120 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_vigyld = {
+	trigger = {
+		polytheistic_check_religion_trigger = no
+		OR = {
+			common_deity_trigger = {
+				RELIGION = oldelven_pantheon
+			}
+			deity:omen_vigyld = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_vigyld
+	passive_modifier = { land_morale_modifier = deity_land_morale_modifier_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = oldelven_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		if = {
+			limit = { manpower_percentage < 0.8 }
+			add_manpower = 1.5
+		}
+		else = {
+			add_military_experience = 2
+		}
+	}
+}
+
+deity_sargeld = {
+	trigger = {
+		polytheistic_check_religion_trigger = no
+		OR = {
+			common_deity_trigger = {
+				RELIGION = oldelven_pantheon
+			}
+			deity:omen_sargeld = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_sargeld
+	passive_modifier = { oratory_tech_investment = deity_oratory_tech_investment_svalue }
+	omen = { civic_tech_investment = omen_civic_tech_investment_svalue } #Bonus from Omen
+	religion = oldelven_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		capital_scope = {
+			create_2_citizens_effect = yes
+		}
+	}
+}
+
+deity_anuion = {
+	trigger = {
+		polytheistic_check_religion_trigger = no
+		OR = {
+			common_deity_trigger = {
+				RELIGION = oldelven_pantheon
+			}
+			deity:omen_anuion = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_anuion
+	passive_modifier = { global_monthly_state_loyalty = deity_global_monthly_state_loyalty_svalue }
+	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
+	religion = oldelven_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		add_research = {
+			technology = religious_tech
+			value = 10
+		}
+	}
+}
+
+deity_moawita = {
+	trigger = {
+		polytheistic_check_religion_trigger = no
+		OR = {
+			common_deity_trigger = {
+				RELIGION = oldelven_pantheon
+			}
+			deity:omen_moawita = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_moawita
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_population_growth = omen_global_population_growth } #Bonus from Omen
+	religion = oldelven_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		capital_scope = {
+			create_2_freemen_effect = yes
+		}
+	}
+}

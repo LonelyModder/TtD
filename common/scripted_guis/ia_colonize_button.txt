@@ -1,0 +1,74 @@
+﻿ia_colonize_button = {
+	scope = province
+	confirm_title = "ia_colonize_button_confirm_t"    
+    confirm_text = "ia_colonize_button_confirm_desc" 
+	saved_scopes = {
+		player
+	}
+	ai_is_valid = {
+		hidden:scope:player = {
+			manpower >= 1
+			num_of_ports>=1
+		}
+		control_range = scope:player
+		is_coastal = yes
+	}
+
+	is_valid = {
+		OR = {	
+			AND = {
+				hidden:scope:player = {
+					manpower >= 1
+					num_of_ports>=1
+				}
+				control_range = scope:player
+				is_coastal = yes
+			}
+			AND = {
+				hidden:scope:player = {
+					manpower >= 1
+				}
+				trigger_if = {
+					limit = {	
+						NOT = {
+							any_neighbor_province = {
+								owner = scope:player
+							}
+						}
+					}
+					custom_tooltip = {
+						text = "owns_any_neighboring_province"
+						any_neighbor_province = {
+							owner = scope:player
+						}
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		scope:player = {
+			pay_price = price_colonize
+			add_manpower = -1
+		}
+		if = {
+			limit = {
+				has_owner = no
+			}
+			set_owned_by = scope:player
+		}
+		colonize_effect = yes
+		#pay_colonize_effect = yes
+		every_neighbor_province = {
+			limit = {
+				has_owner = yes
+				NOT = {
+					owner = scope:player
+				}
+			}
+			root = {
+				add_claim = prev.owner
+			}
+		}
+	}
+}

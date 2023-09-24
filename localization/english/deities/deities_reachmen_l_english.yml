@@ -1,0 +1,9 @@
+﻿l_english:
+ ## Default ##
+ deity_rancestralworship:0 "$omen_rancestralworship$"
+ omen_rancestralworship:1 "Ancestral Worship"
+ omen_rancestralworship_desc:4 "Not only elves worship their ancestors. Reachmen have a special class of story-tellers called vateshran. Their job is to commemorate the dead of a clan throu a song. Reachmen believe that their ancestors watch them all the time so they try to live a good life to not ashame them. They also perform animal sacrifices in honour of the ancestors. Sometimes it is believed that the ancestors can communicate with you and share their knowledge. Not all ancestors are equal some are venerated by many clans like for example Naenra Waerr creator of Umbra santient magical sword of deadric prince Clavicus Vile."
+ deity_hagravens:0 "$omen_hagravens$"
+ omen_hagravens:1 "Hagravens"
+ omen_hagravens_desc:4 "Because of their bird-like look they are often deemed to be agents of Nocturnal but they were present during the Bosmer Wild Hunts so if they have a relation with the diety it's probably a deal of sorts. They were once witches and sometimes can take on a humanoid shape. The Reachmen have very different relations with the hagravens depending on a region from reverance to fear and hatered. In case of more tolerant clans the hags are treated as their Matriarchs and leaders."
+ 

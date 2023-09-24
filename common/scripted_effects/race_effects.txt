@@ -1,0 +1,116 @@
+﻿ESFA_on_create_character_effect = {
+	if = {
+		limit = {
+			AND = {
+				NOT = { has_trait = altmer }
+				NOT = { has_trait = pure }
+			}
+			AND = {
+				NOT = { has_trait = altmer }
+				NOT = { has_trait = impure }
+			}
+			NOT = { has_trait = bosmer }
+			NOT = { has_trait = goblin }
+			NOT = { has_trait = tnede }
+			NOT = { has_trait = orc }
+			NOT = { has_trait = minotaur }
+			NOT = { has_trait = khajiit }
+			NOT = { has_trait = argonian }
+			NOT = { has_trait = imga }
+			NOT = { has_trait = nord }
+			NOT = { has_trait = breton }
+			NOT = { has_trait = falmer }
+			NOT = { has_trait = dwemer }
+			NOT = { has_trait = halfauroran }
+		}
+		if = {
+			limit = {
+				OR = {
+					has_culture_group = altmer
+					has_culture_group = venedi
+				}
+			}
+			add_trait = altmer
+			add_trait = pure
+		}
+		else_if = {
+			limit = {
+				has_culture_group = bosmer
+			}
+			add_trait = bosmer
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_culture_group = breton
+					has_culture_group = druid
+				}
+			}
+			add_trait = breton
+		}
+		else_if = {
+			limit = {
+				has_culture_group = falmer
+			}
+			add_trait = falmer
+		}
+		else_if = {
+			limit = {
+				has_culture_group = dwemer
+			}
+			add_trait = dwemer
+		}
+		else_if = {
+			limit = {
+				has_culture_group = goblin
+			}
+			add_trait = goblin
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_culture_group = nede
+					has_culture_group = keptu
+					has_culture_group = reachmenic
+				}
+			}
+			add_trait = tnede
+		}
+		else_if = {
+			limit = {
+				has_culture_group = orcish
+			}
+			add_trait = orc
+		}
+		else_if = {
+			limit = {
+				has_culture_group = minotauric
+			}
+			add_trait = minotaur
+		}
+		else_if = {
+			limit = {
+				has_culture_group = khajiit
+			}
+			add_trait = khajiit
+		}
+		else_if = {
+			limit = {
+				has_culture_group = imga
+			}
+			add_trait = imga
+		}
+		else_if = {
+			limit = {
+				has_culture_group = argonian
+			}
+			add_trait = argonian
+		}
+		else_if = {
+			limit = {
+				has_culture_group = nordic
+			}
+			add_trait = nord
+		}
+	}
+}

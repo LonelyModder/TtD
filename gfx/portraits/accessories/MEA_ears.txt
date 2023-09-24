@@ -1,0 +1,17 @@
+﻿#####################################
+#									#
+# 			Orcish Ears				#
+#									#
+#####################################
+
+orcish_ears = {
+	entity = { required_tags = ""					node = shared_pose_entity		entity = "orcish_ears_entity" }
+}
+
+elven_ears = {
+	entity = { required_tags = ""					node = shared_pose_entity		entity = "elven_ears_entity" }
+}
+
+elven_ears_female = {
+	entity = { required_tags = ""					node = shared_pose_entity		entity = "elven_ears_female_entity" }
+}

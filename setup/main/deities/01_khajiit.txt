@@ -1,0 +1,41 @@
+deity_manager = {
+	deities_database = { ### KEYS 10101-10120 ###
+		10101 = {
+			key = omen_akha
+			deity = deity_akha
+		}
+		10102 = {
+			key = omen_alkosh
+			deity = deity_alkosh
+		}
+		10103 = {
+			key = omen_alkhan
+			deity = deity_alkhan
+		}
+		10104 = {
+			key = omen_baandar
+			deity = deity_baandar
+		}
+		10105 = {
+			key = omen_jakhajay
+			deity = deity_jakhajay
+		}
+		10106 = {
+			key = omen_khenarthi
+			deity = deity_khenarthi
+		}
+		10107 = {
+			key = omen_lorkhaj
+			deity = deity_lorkhaj
+		}
+		10108 = {
+			key = omen_magrus
+			deity = deity_magrus
+		}
+		10109 = {
+			key = omen_nirni
+			deity = deity_nirni
+		}
+	}
+}
+

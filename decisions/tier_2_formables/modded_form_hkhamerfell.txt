@@ -1,0 +1,118 @@
+﻿country_decisions = {
+	
+	# Form Empire of Cyrod
+	form_hkhamerfell = {
+		
+		potential = {
+			OR = {
+				country_culture_group = altmer
+				country_culture_group = keptu
+				country_culture_group = orcish
+				country_culture_group = breton
+			}
+			#is_tribal = yes
+			NOR = {
+				tag = XHM
+				tag = VAS
+			}
+			NOR = {
+				is_tier_2_formable_trigger = yes
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 2295
+					province_id = 2441
+					province_id = 2427
+					province_id = 2322
+					province_id = 2347
+					province_id = 2530
+					province_id = 2608
+					province_id = 2650
+					province_id = 2632
+					province_id = 2583
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = hkhamerfell_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XHM
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns = 2295
+			owns_or_subject_owns = 2441
+			owns_or_subject_owns = 2427
+			owns_or_subject_owns = 2322
+			owns_or_subject_owns = 2347
+			owns_or_subject_owns = 2530
+			owns_or_subject_owns = 2608
+			owns_or_subject_owns = 2650
+			owns_or_subject_owns = 2632
+			owns_or_subject_owns = 2583
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "HKDeathlands_name"
+			change_country_flag = HKDeathlands_FLAG
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = aristocratic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "HKDeathlands_adj"
+				change_country_color =  "HKDeathlands_color"
+				change_country_tag = XHM
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 2295
+						}
+					}
+				}
+				set_capital = 2295
+				hidden_effect = {
+					p:2295.state = {
+						set_state_capital = 2295
+					}
+				}
+			}
+			add_stability = 25
+			p:2295 = {
+				capital_formable_medium_effect = yes
+				formable_capital_modifier_normal_effect = yes
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_uppercraglorn_region = { formable_region_province_effect = yes }
+				region:modded_lowercraglorn_region = { formable_region_province_effect = yes }
+				region:modded_weepingdesert_region = { formable_region_province_effect = yes }
+				region:modded_easternhewsbay_region = { formable_region_province_effect = yes }
+				region:modded_dragontailmountains_region = { formable_region_province_effect = yes }
+				region:modded_hewsbane_region = { formable_region_province_effect = yes }
+				region:modded_alikr_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

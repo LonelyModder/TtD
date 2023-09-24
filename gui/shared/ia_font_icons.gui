@@ -1,0 +1,446 @@
+#Trade Goods
+
+texticon = {
+    icon = beasts
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/beasts.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = cabal_of_witches
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/cabal_of_witches.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = cheese
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/cheese.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = circle_of_mages
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/circle_of_mages.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = durzogs
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/durzogs.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = skooma
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/skooma.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = moonsugar
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/moonsugar.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = sweats
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/sweats.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = ebon
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/ebon.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = coconut
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/coconut.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = griphons
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/griphons.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = kallopi
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/kallopi.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = malachite
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/malachite.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = moonstone
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/moonstone.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = tea
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/tea.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = wool
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/wool.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = stafftrees
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/stafftrees.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = fruitsoftheforest
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/fruitsoftheforest.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = maplesyrup
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/maplesyrup.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = necromancers
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/necromancers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = soul_gems
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/soul_gems.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = aeonstone
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/aeonstone.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = nirnroot
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/nirnroot.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = limestone
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/limestone.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = nirncrux
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/nirncrux.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = dwemersteel
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/dwemersteel.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = dwemerplans
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/dwemerplans.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+texticon = {
+    icon = guar
+    iconsize = {
+        texture = "gfx/interface/icons/tradegoods/guar.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+
+#Units
+
+texticon = {
+    icon = lv_lightinfantry
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_lightinfantry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+texticon = {
+    icon = lv_heavyinfantry
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_heavyinfantry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+texticon = {
+    icon = lv_archers
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_archers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+texticon = {
+    icon = lv_crossbowmen
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_crossbowmen.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_camels
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_camels.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_mages
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_mages.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_cavalry
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_cavalry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_guarcavalry
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_guarcavalry.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+texticon = {
+    icon = lv_horsearchers
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_horsearchers.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+texticon = {
+    icon = lv_dremoras
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_dremoras.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_undead
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_undead.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_gryphons
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_gryphons.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}
+texticon = {
+    icon = lv_warriors
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_warriors.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+}	
+texticon = {
+    icon = lv_raiders
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_raiders.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+} 
+texticon = {
+    icon = lv_atronach
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_atronach.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+} 
+texticon = {
+    icon = lv_clanfear
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_clanfear.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+} 
+texticon = {
+    icon = lv_bonelord
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_bonelord.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+} 
+texticon = {
+    icon = lv_bonewalker
+    iconsize = {
+        texture = "gfx/interface/icons/subunits/lv_bonewalker.dds"
+        size = { 25 25 }
+        offset = { 0 6 }
+        fontsize = 16
+    }
+} 

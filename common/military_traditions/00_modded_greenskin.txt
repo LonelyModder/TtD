@@ -1,0 +1,197 @@
+﻿greenskin_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = greenskin_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					country_culture_group = orcish 
+					country_culture_group = goblin 
+				}
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			OR = {
+				country_culture_group = orcish 
+				country_culture_group = goblin 
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:orcish
+						OR = {
+							this.culture.culture_group = culture_group:orcish
+							this.culture.culture_group = culture_group:goblin
+						}
+					}
+				}
+			}
+			any_country_culture = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = nede_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					custom_tooltip = {
+						text = tradition_unlock_requirement_short
+						is_integrated = yes
+						OR = {
+							this.culture.culture_group = culture_group:orcish
+							this.culture.culture_group = culture_group:goblin
+						}
+					}
+				}
+			}
+		}
+		trigger_else = {
+			AND = {
+				OR = {
+					has_military_bonus = argonian_states_path_end_bonus
+					has_military_bonus = nede_states_path_end_bonus
+					has_military_bonus = khajiit_states_path_end_bonus
+					has_military_bonus = altmer_states_path_end_bonus
+					has_military_bonus = nordic_states_path_end_bonus
+					has_military_bonus = dwemer_states_path_end_bonus
+				}
+				custom_tooltip = {
+					text = "tradition_unlock_requirement_greenskin"
+					any_country_culture = {
+						is_integrated = yes
+						OR = {
+							this.culture.culture_group = culture_group:orcish
+							this.culture.culture_group = culture_group:goblin
+						}	
+					}
+				}
+			}
+		}
+	}
+	
+	orcish_path_1 = { ###orcish path
+		modifier = {
+			lv_warriors_offensive = 0.1
+			lv_warriors_discipline = 0.1
+		}
+		icon = orc_mini_trad
+		requires = {}
+	}
+	
+	orcish_path_2 = { ###orcish path
+		modifier = {
+			monthly_legitimacy = 0.01
+		}
+		on_activate = {
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = victorious
+				}
+			}
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_1}
+	}
+	
+	orcish_path_2a = { ###orcish path
+		modifier = { 
+			lv_heavyinfantry_offensive = 0.1
+			lv_heavyinfantry_discipline = 0.1
+		}
+		enable_tactic = greek_phalanx
+		icon = orc_mini_trad
+		requires = {orcish_path_2}
+	}
+	
+	orcish_path_3a = { ###orcish path
+		modifier = { 
+			lv_crossbowmen_offensive = 0.1
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_2a}
+	}
+	
+	orcish_path_4a = { ###orcish path
+		modifier = { 
+			fort_limit = 1
+			fort_maintenance_cost = -0.2
+		}
+		on_activate = {
+			capital_scope = {
+				add_building_level = fortress_building
+			}
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_3a}
+	}
+	
+	orcish_path_5a = { ###orcish path
+		modifier = { 
+			hills_terrain_bonus = 0.1
+			mountain_terrain_bonus = 0.1
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_4a}
+	}
+	
+	orcish_path_6a = { ###orcish path
+		modifier = { 
+			global_cohort_start_experience = 5
+			experience_decay = -0.005
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_5a}
+	}
+	
+	orcish_path_2b = { ###orcish path
+		modifier = { 
+			lv_archers_offensive = 0.1
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_2}
+	}
+	
+	orcish_path_3b = { ###orcish path
+		modifier = { 
+			lv_raiders_offensive = 0.1
+		}
+		enable_tactic = hit_and_run_tactics
+		icon = orc_mini_trad
+		requires = {orcish_path_2b}
+	}
+	
+	orcish_path_4b = { ###orcish path
+		modifier = { 
+			jungle_terrain_bonus = 0.1
+			forest_terrain_bonus = 0.1
+		}
+		icon = orc_mini_trad
+		requires = {orcish_path_3b}
+	}
+	
+	orcish_states_path_end_bonus = {
+		modifier = { 
+			lv_heavyinfantry_offensive = 0.15
+			fort_limit = 1
+		}
+		requires = {orcish_path_6a orcish_path_4b } 
+		icon = orc_mini_trad 
+	}
+}

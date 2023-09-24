@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "dunedain_clothes_cardolan_soldier_mesh"
+	file = "dunedain_clothes_soldier.mesh"
+
+	meshsettings = {
+		name = "gondor_military_clothes_helmetShape"
+		index = 0
+		texture_diffuse = "Dunedain_Helmet_Diffuse.dds"
+		texture_normal = "Dunedain_Helmet_Normal.dds"
+		texture_specular = "gondor_helmet_p_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+	
+		meshsettings = {
+		name = "gondor_military_clothes_armorShape"
+		index = 0
+		texture_diffuse = "cardolan_armour_diffuse.dds"
+		texture_normal = "dunedain_armour_normal.dds"
+		texture_specular = "gondor_armor_p_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "dunedain_clothes_cardolan_soldier_entity"
+	pdxmesh = "dunedain_clothes_cardolan_soldier_mesh"
+}

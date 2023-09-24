@@ -1,0 +1,12 @@
+﻿
+modded_sea_region = {
+	areas = {
+		sea_area
+	}
+}
+
+modded_tmp_region = {
+	areas = {
+		tmp_area
+	}
+}

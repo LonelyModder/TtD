@@ -1,0 +1,19 @@
+pdxmesh = {
+	name = "wonder_imperial_city_mesh"
+	file = "wonder_imperial_city.mesh"
+
+	meshsettings = {
+		name = "wonder_imperial_cityShape"
+		index = 0
+		texture_diffuse = "highelves_fort_diffuse.dds"
+		texture_normal = "highelves_fort_normal.dds"
+		texture_specular = "highelves_fort_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "wonder_imperial_city_entity"
+	pdxmesh = "wonder_imperial_city_mesh"
+}

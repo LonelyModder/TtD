@@ -1,0 +1,102 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_dwemerspirit = {
+	trigger = {
+		religion = nirnic_pantheon
+	}
+	icon = deity_dwemerspirit
+	passive_modifier = { global_tax_modifier = deity_global_tax_modifier_svalue }
+	omen = { civic_tech_investment = omen_civic_tech_investment_svalue } #Bonus from Omen
+	religion = nirnic_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		capital_scope = {
+			create_2_citizens_effect = yes
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_cruelnature = {
+	trigger = {
+		religion = nirnic_pantheon
+	}
+	icon = deity_cruelnature
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_slaves_output = omen_global_slaves_output_svalue } #Bonus from Omen
+	religion = nirnic_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	on_activate = {
+		capital_scope = {
+			create_2_slaves_effect = yes
+		}
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_compulsoryeducation = {
+	trigger = {
+		religion = nirnic_pantheon
+	}
+	icon = deity_compulsoryeducation
+	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
+	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	religion = nirnic_pantheon
+	deity_category = culture #This Deity uses a Culture Slot'
+	on_activate = {
+		add_research = {
+			technology = civic_tech
+			value = 5
+		}
+		add_research = {
+			technology = oratory_tech
+			value = 5
+		}
+		add_research = {
+			technology = religious_tech
+			value = 5
+		}
+		add_research = {
+			technology = military_tech
+			value = 5
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_heartspower = {
+	trigger = {
+		religion = nirnic_pantheon
+	}
+	icon = deity_lorkhan
+	passive_modifier = { global_manpower_modifier = deity_global_manpower_modifier_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = nirnic_pantheon
+	deity_category = war #This Deity uses a War slot.
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		if = {
+			limit = { manpower_percentage < 0.8 }
+			add_manpower = 1.5
+		}
+		else = {
+			add_military_experience = 2
+		}
+	}
+}

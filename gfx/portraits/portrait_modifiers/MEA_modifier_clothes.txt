@@ -1,0 +1,701 @@
+﻿clothes = {
+
+###DUNEDAIN###
+	dunedain_clothes_soldier_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template
+				gene = clothes
+				template = dunedain_clothes_soldier_template
+			}		
+			accessory = {
+				mode = replace_template
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				is_ruler = no
+				
+
+				NOT = {	has_trait = nazgul }
+				
+				NOT = {
+					employer = {
+						OR = {
+							tag = ARN
+							tag = ATE
+							tag = CAR
+							tag = GON
+							tag = RHU
+							tag = UMB
+						}
+					}
+				}
+				
+				OR = { 	
+					has_culture_group = edain_group
+					has_culture_group = edain_mixed_group
+				}	
+			
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_clothes_hauberk_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_hauberk_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				NOT = {	has_trait = nazgul }
+
+				NOR = {
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+				
+				NOT = {
+					employer = {
+						OR = {
+							tag = ARN
+							tag = ATE
+							tag = CAR
+							tag = GON
+							tag = RHU
+							tag = UMB
+						}
+					}
+				}
+					
+				OR = { 	
+					has_culture_group = edain_group
+					has_culture_group = edain_mixed_group
+				}	
+				
+				OR = { 		
+					is_ruler = yes
+					is_governor = yes
+					is_party_leader = yes
+					has_martial_office_trigger = yes
+				}
+			}
+		}
+	}
+	
+	
+	dunedain_clothes_arnor_soldier_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_arnor_soldier_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				is_ruler = no
+				
+				NOT = {has_trait = nazgul }
+				
+				employer = {
+					tag = ARN
+				}
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_clothes_arnor_hauberk_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_arnor_hauberk_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+
+				NOR = {
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+				
+				NOT = {has_trait = nazgul }
+	
+				employer = {
+					tag = ARN
+				}	
+				
+				OR = { 		
+					is_ruler = yes
+					is_governor = yes
+					is_party_leader = yes
+					has_martial_office_trigger = yes
+				}
+			}
+		}
+	}
+	
+	
+	dunedain_clothes_arthedain_soldier_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_arthedain_soldier_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				is_ruler = no
+				
+				NOT = {has_trait = nazgul }
+				
+				employer = {
+					tag = ATE
+				}	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_clothes_arthedain_hauberk_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_arthedain_hauberk_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				NOT = {has_trait = nazgul }
+
+				NOR = {
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+				
+				employer = {
+					tag = ATE
+				}		
+				
+				OR = { 		
+					is_ruler = yes
+					is_governor = yes
+					is_party_leader = yes
+					has_martial_office_trigger = yes
+				}
+			}
+		}
+	}
+	
+	
+	dunedain_clothes_cardolan_soldier_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_cardolan_soldier_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				is_ruler = no
+				
+				NOT = {has_trait = nazgul }
+				
+				employer = {
+					tag = CAR
+				}		
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_clothes_cardolan_hauberk_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_cardolan_hauberk_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				NOT = {has_trait = nazgul }
+
+				NOR = {
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+				
+				employer = {
+					tag = CAR
+				}	
+				
+				OR = { 		
+					is_ruler = yes
+					is_governor = yes
+					is_party_leader = yes
+					has_martial_office_trigger = yes
+				}
+			}
+		}
+	}
+	
+	
+	dunedain_clothes_gondor_soldier_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_gondor_soldier_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				is_ruler = no
+				
+				NOT = {has_trait = nazgul }
+				
+				employer = {
+					tag = GON
+				}	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_clothes_gondor_hauberk_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_gondor_hauberk_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				NOT = {has_trait = nazgul }
+
+				NOR = {
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+				
+				employer = {
+					tag = GON
+				}	
+				
+				OR = { 		
+					is_ruler = yes
+					is_governor = yes
+					is_party_leader = yes
+					has_martial_office_trigger = yes
+				}
+			}
+		}
+	}
+	
+	
+	dunedain_clothes_rhudaur_soldier_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_rhudaur_soldier_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				is_ruler = no
+				
+				NOT = {has_trait = nazgul }
+				
+				employer = {
+					tag =RHU
+				}	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_clothes_rhudaur_hauberk_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_clothes_rhudaur_hauberk_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				NOT = { has_trait = nazgul }
+				
+				NOR = {
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+				
+				employer = {
+					tag =RHU
+				}		
+				
+				OR = { 		
+					is_ruler = yes
+					is_governor = yes
+					is_party_leader = yes
+					has_martial_office_trigger = yes
+				}
+			}
+		}
+	}
+	
+	dunedain_royal_armor_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = dunedain_royal_armor_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}		
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100000
+				is_female = no
+				is_ruler = yes
+				
+				NOT = {has_trait = nazgul }
+				
+				OR = { 	
+					has_culture_group = edain_group
+					has_culture_group = edain_mixed_group
+				}	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+###Elven###
+	elven_clothes_soldier_blue_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = elf_clothes_soldier_blue_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}			
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				has_culture_group = altmer	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	elven_clothes_soldier_green_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = elf_clothes_soldier_green_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}			
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				has_culture = talandan
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	elven_clothes_soldier_gray_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = elf_clothes_soldier_gray_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}			
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				
+				OR = { 	
+					has_culture = alinoric
+					has_culture = sunholdic
+					has_culture = duskan
+					has_culture = shimmerinic
+					has_culture = lillandrilan
+					has_culture = cloudrestan
+					has_culture = firstholdan
+					has_culture = skywatchan
+					has_culture = psijic
+				}	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	elven_clothes_soldier_purple_modifier = {
+		dna_modifiers = {
+			accessory = {
+				mode = replace_template				
+				gene = clothes
+				template = elf_clothes_soldier_purple_template
+			}		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = no_top_layer
+			}			
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				has_culture_group = vanyar_group	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+	dwarven_clothes_soldier_modifier = {
+		dna_modifiers = {		
+			accessory = {
+				mode = replace_template				
+				gene = clothes_layer2
+				template = dwarf_helmet_template
+			}			
+		}
+		weight = {
+			base = 0	#if weight is >= 100, this one will be picked without ever doing the weighted random selection
+			
+			modifier = {
+				add = 100 
+				is_female = no
+				has_culture_group = dwarf_group	
+				
+				OR = { 		
+					is_general = yes
+					is_admiral = yes
+					is_mercenary = yes
+				}
+			}
+		}
+	}
+	
+}	

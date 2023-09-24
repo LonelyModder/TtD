@@ -1,0 +1,46 @@
+﻿breton = {	
+	color = hsv { 0.62 0.69 0.96 }
+
+	primary = lv_mages
+	second = lv_heavyinfantry
+	flank = lv_cavalry
+	
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_bretonic
+
+	male_names = {
+		Phanardlan Madersges Varndin Matar Hasdal Brunstien Samonard Debenirus Alixoranin Eugicnach 
+		Celaoneric Fricourtaine Morilleert Amintienic Alabccer Barnnderic Gilnric Lyweent Nolenne 
+		Jadiitusentien Matiendal Aelwrustrel Lewister Strcknis Octorananach Fenaornritus Blaielc 
+		Ambrndert Antooranin Alaastyr 
+	}
+	female_names = {
+		Malies Rhilyn Vivien Eolarine Evanerelie Hendette Bovcha Abeyvyra Laelia Darlie 
+		Rhierelie Fianadette Marieline Adriile Relihelle Angeudette Chanienne Lielile Bothand 
+		Miraitte Matdette Ascigeline Aurnle Rhiile Taltte Evansa Muilin Eolaeline Soriyn 
+		Delnadette 
+	}
+	family = {
+		Lorues Natardl Briencel Briolaude Maseton Lemenitte Thieax Amedeley Nyttte Rostwald
+		Ransley Monearc Monne Geonald Alorry Tilrd Bonardl Liriles Nytocque Gileien Geoorard
+		Maclamont Rolston Nytgette Yeomone Carane Mastush Ereet Luseain Lotcque Genereinace
+	}
+	culture = {
+		balfieric = {}
+		glenumbran = {}
+		rivenite = {}
+		bhavenite = {}
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = breton_gfx
+	ethnicities = {
+		10 = dunedain
+	}
+}

@@ -1,0 +1,240 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_akha = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_akha = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_akha
+	passive_modifier = { call_omen_cost_modifier = deity_call_omen_cost_modifier_svalue }
+	omen = { global_monthly_state_loyalty = omen_global_monthly_state_loyalty } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = culture 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_alkosh = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_alkosh = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_akatosh
+	passive_modifier = { monthly_political_influence_modifier = deity_monthly_political_influence_modifier_svalue }
+	omen = { stability_monthly_change = omen_stability_monthly_change_svalue } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = culture 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_alkhan = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_alkhan = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_alduin
+	passive_modifier = { war_exhaustion = deity_war_exhaustion_svalue }
+	omen = { land_morale_modifier = omen_land_morale_modifier_svalue } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = war 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_defensive_effect = yes
+	}
+}
+
+deity_baandar = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_baandar = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_baandar
+	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
+	omen = { monthly_wage_modifier = omen_monthly_wage_modifier_svalue } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = economy 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_province_improvement_effect = yes
+	}
+}
+
+deity_jakhajay = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_jakhajay = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_jakhajay
+	passive_modifier = { global_tax_modifier = deity_global_tax_modifier_svalue }
+	omen = { build_cost = omen_build_cost_svalue } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = economy 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_income_effect = yes
+	}
+}
+
+deity_khenarthi = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_khenarthi = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_khenarthi
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { global_monthly_food_modifier = omen_global_monthly_food_modifier } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = fertility 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_lorkhaj = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_lorkhaj = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_lorkhan
+	passive_modifier = { monthly_tyranny = deity_monthly_tyranny_svalue }
+	omen = { monthly_corruption = omen_monthly_corruption } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = culture 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_magrus = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_magrus = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_magnus
+	passive_modifier = { research_points_modifier = deity_research_points_modifier_svalue }
+	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = culture 
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_capital_effect = yes
+	}
+}
+
+deity_nirni = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		OR = {
+			common_deity_trigger = {
+				RELIGION = khajiiti_pantheon
+			}
+			deity:omen_nirni = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_nirni
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_population = omen_global_population_growth } #Bonus from Omen
+	religion = khajiiti_pantheon
+	deity_category = fertility	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+
+

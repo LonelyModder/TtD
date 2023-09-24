@@ -1,0 +1,28 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_lamaebal = {
+	trigger = {
+		religion = night_pantheon
+		#NAND = {
+		#	has_deity_in_pantheon = deity:omen_molagbal
+		#	deity:omen_molagbal = { has_holy_site = yes }
+		#}
+	}
+	icon = deity_lamaebal
+	passive_modifier = { monthly_tyranny = deity_monthly_tyranny_svalue }
+	omen = { monthly_tyranny = omen_monthly_tyranny_svalue } #Bonus from Omen
+	religion = night_pantheon
+	deity_category = culture #This Deity uses a Culture Slot'
+	on_activate = {
+		add_research = {
+			technology = civic_tech
+			value = 10
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}

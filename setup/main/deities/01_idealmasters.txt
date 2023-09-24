@@ -1,0 +1,21 @@
+deity_manager = {
+	deities_database = { ### KEYS 10261-10280 ###
+		10261 = {
+			key = omen_soulcairn
+			deity = deity_soulcairn
+		}
+		10262= {
+			key = omen_blackgems
+			deity = deity_blackgems
+		}
+		10263 = {
+			key = omen_idealmasters
+			deity = deity_idealmasters
+		}
+		10264 = {
+			key = omen_damnedsouls
+			deity = deity_damnedsouls
+		}
+	}
+}
+

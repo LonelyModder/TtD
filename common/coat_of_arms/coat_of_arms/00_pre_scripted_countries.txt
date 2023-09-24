@@ -1,0 +1,372 @@
+﻿REB = {
+	pattern = "pattern_diagonal_split_01.tga"
+	color1 = "phrygia_red"
+	color2 = "pitch_black"
+}
+
+BAR = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_black"
+	color2 = "phrygia_red"
+
+	textured_emblem = {
+		texture = "te_skull_goat.dds"
+	}
+}
+
+MER = {
+	pattern = "pattern_solid.tga"
+	color1 = "ck2_black"
+	color2 = "roman_red"
+
+	textured_emblem = {
+		texture = "te_mercenary.dds"
+	}
+}
+
+PIR = {
+	pattern = "pattern_solid.tga"
+	color1 = "pitch_black"
+	color2 = "bone_white"
+
+	colored_emblem = {
+		texture = "ce_pirates.dds"
+		color1 = "bone_white"
+		color2 = "ck2_green"
+	}
+}
+
+VBM = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 150 9 28 }
+	color2 = rgb { 150 9 28 }
+
+	colored_emblem = {
+		texture = "ce_greyhost.dds"
+		color1 = rgb { 36 33 33 }
+	}
+}
+
+#Modded Emblems fo starting countries
+#Also for HK of Alinor
+AAA = { #Alinor
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 234 115 }
+	color2 = rgb { 255 234 115 }
+
+	colored_emblem = {
+		texture = "ce_alinork.dds"
+		color1 = rgb { 71 71 69 }
+	}
+}
+
+AAJ = { #Sunhold
+	pattern = "pattern_solid.tga"
+	color1 = "offwhite"
+	color2 = "offwhite"
+
+	colored_emblem = {
+		texture = "ce_sunhold.dds"
+		color1 = rgb { 217 187 15 }
+	}
+}
+
+AAM = { #Lillandril
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 234 115 }
+	color2 = rgb { 255 234 115 }
+
+	colored_emblem = {
+		texture = "ce_lillandril.dds"
+		color1 = rgb { 245 245 91 }
+		color2 = rgb { 94 94 93 }
+	}
+}
+
+AAN = { #Cloudrest
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 94 94 94 }
+	color2 = rgb { 94 94 94 }
+
+	colored_emblem = {
+		texture = "ce_cloudrest.dds"
+		color1 = rgb { 0 0 0 }
+		color2 = rgb { 252 252 104 }
+	}
+}
+
+AAO = { #Firsthold
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 121 205 247 }
+	color2 = rgb { 121 205 247 }
+
+	colored_emblem = {
+		texture = "ce_firsthold.dds"
+		color1 = rgb { 40 40 41 }
+		color2 = rgb { 255 255 255 }
+	}
+}
+
+AAP = { #Skywatch
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 40 40 41 }
+	color2 = rgb { 40 40 41 }
+
+	colored_emblem = {
+		texture = "ce_skyhaven.dds"
+		color1 = rgb { 242 227 58 }
+	}
+}
+
+AAL = { #Shimmerine
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 119 206 237 }
+	color2 = rgb { 119 206 237 }
+
+	colored_emblem = {
+		texture = "ce_shimmerine.dds"
+		color1 = rgb { 42 25 115 }
+		color2 = rgb { 0 0 0 }
+		color3 = rgb { 119 206 237 }
+	}
+}
+
+VBC = { #Temple of Ancestors
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 255 255 }
+	color2 = rgb { 255 255 255 }
+
+	colored_emblem = {
+		texture = "ce_whitetower.dds"
+		color1 = rgb { 199 193 10 }
+	}
+}
+
+VAA = { #Valenwood
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 255 255 }
+	color2 = rgb { 255 255 255 }
+
+	colored_emblem = {
+		texture = "ce_valenwood.dds"
+		color1 = rgb { 161 96 11 }
+		color2 = rgb { 91 219 44 }
+		color3 = rgb { 0 0 0 }
+	}
+}
+
+CAZ = { #Cyro-Nordic Kingdom
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 194 28 }
+	color2 = rgb { 255 194 28 }
+
+	colored_emblem = {
+		texture = "ce_bruma.dds"
+		color1 = rgb { 0 0 0 }
+	}
+}
+
+VAS = { #Direnni Hegemony
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 140 42 0 }
+	color2 = rgb { 140 42 0 }
+
+	colored_emblem = {
+		texture = "ce_direnni.dds"
+		color1 = rgb { 217 212 212 }
+		color2 = rgb { 64 62 62 }
+	}
+}
+
+# Modded emblems for formables
+
+hk_ayleidoon = { #For the Ayleid Empire
+	pattern = "pattern_solid.tga"
+	color1 = "offwhite"
+	color2 = "offwhite"
+
+	colored_emblem = {
+		texture = "ce_alinor.dds"
+		color1 = rgb { 199 193 10 }
+	}
+}
+
+hk_alinor = { #For the Aldmeri Dominion
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 232 121 9 }
+	color2 = rgb { 232 121 9 }
+
+	colored_emblem = {
+		texture = "ce_alinor.dds"
+		color1 = "offwhite"
+	}
+}
+
+XCY = { #High Kingdom of Cyrod
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 209 14 0 }
+	color2 = rgb { 209 14 0 }
+
+	colored_emblem = {
+		texture = "ce_cyrod.dds"
+		color1 = rgb { 255 216 41 }
+	}
+}
+
+alessian_FLAG = { #Alessians
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 255 255 }
+	color2 = rgb { 255 255 255 }
+
+	colored_emblem = {
+		texture = "ce_cyrod.dds"
+		color1 = rgb { 240 12 12 }
+	}
+}
+
+HAI = { #Kingdom of Orsinium
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 0 0 0 }
+	color2 = rgb { 0 0 0 }
+
+	colored_emblem = {
+		texture = "ce_orsinium.dds"
+		color1 = rgb { 153 20 20 }
+	}
+}
+
+auridon_FLAG = { #Kinlordship of Auridon
+	pattern = "pattern_solid.tga"
+	color1 = "offwhite"
+	color2 = "offwhite"
+
+	colored_emblem = {
+		texture = "ce_sommerset.dds"
+		color1 = rgb { 232 149 26 }
+	}
+}
+
+colovia_FLAG = { #Kingdom of Colovia
+	pattern = "pattern_solid.tga"
+	color1 = "offwhite"
+	color2 = "offwhite"
+
+	colored_emblem = {
+		texture = "ce_colovia.dds"
+		color1 = rgb { 74 74 72 }
+	}
+}
+
+niben_FLAG = { #Kingdom of Nibenay
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 0 0 0 }
+	color2 = rgb { 0 0 0 }
+
+	colored_emblem = {
+		texture = "ce_niben.dds"
+		color1 = rgb { 240 187 12 }
+	}
+}
+
+sommerset_FLAG = { #Kingdom of Nibenay
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 0 0 0 }
+	color2 = rgb { 0 0 0 }
+
+	colored_emblem = {
+		texture = "ce_auridon.dds"
+		color1 = rgb { 255 203 43 }
+	}
+}
+
+cyronordic_FLAG = { #Cyro-Nordic Kingdom
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 255 194 28 }
+	color2 = rgb { 255 194 28 }
+
+	colored_emblem = {
+		texture = "ce_bruma.dds"
+		color1 = rgb { 0 0 0 }
+	}
+}
+
+craglorn_FLAG = { #Craglorn
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 186 72 19 }
+	color2 = rgb { 186 72 19 }
+
+	colored_emblem = {
+		texture = "ce_craglorn.dds"
+		color1 = rgb { 237 198 0 }
+	}
+}
+
+HKDeathlands_FLAG = { #Kingdom of Deathlands
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 247 247 77 }
+	color2 = rgb { 247 247 77 }
+
+	colored_emblem = {
+		texture = "ce_deathlands.dds"
+		color1 = rgb { 61 61 59 }
+	}
+}
+
+HKHighRock_FLAG = { #Kingdom of High Rock
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 29 4 194 }
+	color2 = rgb { 29 4 194 }
+
+	colored_emblem = {
+		texture = "ce_highrock.dds"
+		color1 = rgb { 255 255 255 }
+	}
+}
+
+KAL = { #Kingdom of Anequina
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 105 36 12 }
+	color2 = rgb { 105 36 12 }
+
+	colored_emblem = {
+		texture = "ce_anequina.dds"
+		color1 = rgb { 224 144 22 }
+		color2 = rgb { 255 255 255 }
+	}
+}
+
+KAC = { #Kingdom of Palatine
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 230 150 30 }
+	color2 = rgb { 230 150 30 }
+
+	colored_emblem = {
+		texture = "ce_palatine.dds"
+		color1 = rgb { 69 30 8 }
+		color2 = rgb { 255 255 255 }
+	}
+}
+
+HKElsweyr_flag = { #Kingdom of Elsweyr
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 140 41 24 }
+	color2 = rgb { 140 41 24 }
+
+	colored_emblem = {
+		texture = "ce_elsweyr.dds"
+		color1 = rgb { 184 121 6 }
+		color2 = rgb { 242 187 85 }
+	}
+}
+
+EMoonEmpire_flag = { #Moon Empire
+	pattern = "pattern_solid.tga"
+	color1 = rgb { 140 41 24 }
+	color2 = rgb { 140 41 24 }
+
+	colored_emblem = {
+		texture = "ce_moonempire.dds"
+		color1 = rgb { 184 121 6 }
+		color2 = rgb { 242 187 85 }
+	}
+}

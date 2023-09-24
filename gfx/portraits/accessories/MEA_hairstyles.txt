@@ -1,0 +1,9 @@
+﻿#####################################
+#									#
+# 			Elven Hair				#
+#									#
+#####################################
+
+male_hair_elven_helmet = {
+	entity = { required_tags = ""					node = shared_pose_entity		entity = "male_hair_elven_helmet_entity" }
+}

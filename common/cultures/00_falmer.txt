@@ -1,0 +1,44 @@
+﻿falmer = {	
+	color = rgb { 255 255 255 }
+
+	primary = lv_mages
+	second = lv_lightinfantry
+	flank = lv_cavalry
+
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_falmeri
+
+	male_names = {
+		Ydhering Latgroth Girfaris Girlebor Redfaris Uredanyis Sidakir Wirikaris Girring Nyrhur 
+		Urering Varvus Sidhor Harthur Yrwith Latyor Jathur Celekir Balzius Mirkaris Edring
+		Nyrlor Ydhesur Celehur Balring Birdhor Edvhur Girkir Mirthur Nyrbor Jagriath Redlor 
+		Irenaris Birlebor Redlebor Ireriath Idhelebor Harrilor Lyrdanyis 
+	}
+	female_names = {
+		Lesmeril Unhelselin Minthune Kirpath Peskharise Nythemhes Rynnyish Inhefani Celebora 
+		Kinelori Giswihn Imegeth Uvemeril Heletys Faegreah Rinereno Jevena Centys Prysmeril 
+		Ynheyane Yskyre Unhelher Biregreah Waewihn Zharpath Eldenyse Enpath Kirbora Giswen 
+		Shiyis Enkyre Zidavena Yslenor Helemhes Belrae Sinawihn Termeril Elletys  
+	}
+	family = {
+		Kornaris Sinbath Naraborin Finparwen Iselen Masmeloth Zartaroth Foryrwen Rannoth Nordras 
+		Sinvarys Formyn Norloth Irelvarys Dendras Korfaroth Zonborin Emegoth Denrenoth Narameloth
+		Finnaris Torzoth Zarloth Massaris Kortaroth Caerwenoth Harrenoth Vorsaris Zondras Normyn
+		Berelyloth Tinnaris Tinferys Yreyrwen Pristan Tinzras
+	}
+	culture = {
+		falwestern = {} 
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = noldor_gfx
+	ethnicities = {
+		10 = falmer
+	}
+}

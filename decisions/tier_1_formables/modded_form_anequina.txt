@@ -1,0 +1,110 @@
+﻿country_decisions = {
+	
+	# Form Kingdom of Anequina
+	form_anequina = {
+		
+		potential = {
+			country_culture_group = khajiit
+			#is_tribal = yes
+			NOT = {
+				tag = XAN
+			}
+			NOR = {
+				is_tier_1_formable_trigger = yes
+				is_tier_2_formable_trigger = yes
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 3557
+					province_id = 3606
+					province_id = 3646
+					province_id = 3680
+					province_id = 3592
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = anequina_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XAN
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns = 3557
+			owns_or_subject_owns = 3606
+			owns_or_subject_owns = 3646
+			owns_or_subject_owns = 3680
+			owns_or_subject_owns = 3592
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "KAnequina_name"
+			change_country_flag = KAL
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = despotic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "KAnequina_adj"
+				change_country_color =  "KAnequina_color"
+				change_country_tag = XAN
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 3557
+						}
+					}
+				}
+				set_capital = 3557
+				hidden_effect = {
+					p:3557.state = {
+						set_state_capital = 3557
+					}
+				}
+			}
+			#p:3557 = {
+			#	if = {
+			#		limit = { has_city_status = no }
+			#		set_city_status = city
+			#	}
+			#}
+			p:3557 = {
+				capital_formable_medium_effect = yes
+				formable_capital_modifier_normal_effect = yes
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_reapersmarch_region = { formable_region_province_effect = yes }
+				area:nequinal_area = { formable_area_province_effect = yes }
+				area:darkarn_area = { formable_area_province_effect = yes }
+				area:helkarn_area = { formable_area_province_effect = yes }
+				area:hakoshae_area = { formable_area_province_effect = yes }
+				area:rimmen_area = { formable_area_province_effect = yes }
+				area:talongulch_area = { formable_area_province_effect = yes }
+				area:merryvale_area = { formable_area_province_effect = yes }
+				area:orcrest_area = { formable_area_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

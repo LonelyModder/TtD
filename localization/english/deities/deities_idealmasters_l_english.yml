@@ -1,0 +1,14 @@
+﻿l_english:
+ ## Default ##
+ deity_soulcairn:0 "$omen_soulcairn$"
+ omen_soulcairn:1 "Soul Cairn"
+ omen_soulcairn_desc:4 "Soul Cairn is a realm in Oblivion not controled by the daedric princes but a group of beings called ideal masters. It is not well known how these beings got into posession of this place but the necromancers often travel here for various powers and artifacts."
+ deity_blackgems:0 "$omen_blackgems$"
+ omen_blackgems:1 "Black Gems"
+ omen_blackgems_desc:4 "The saintient beings soul is way too strong to be kept in a regular soul gem. Thats why the black version was created. When soul was used for enchanting it goes straight to Soul Cairn. Noone relly knows who invented the gems but it is known that there is plenty of them in Ideal Masters dimension."
+ deity_idealmasters:0 "$omen_idealmasters$"
+ omen_idealmasters:1 "Ideal Masters"
+ omen_idealmasters_desc:4 "About the masters themselves little is known. We can be sure that they were group of mortal mages. Now they are usually taking form of crystals when dealing with mortals. One should be careful because they sucking the spiritual energy from the surrounding area so the meeting should be short. They are also known as gem vampires."
+ deity_damnedsouls:0 "$omen_damnedsouls$"
+ omen_damnedsouls:1 "Damned Souls"
+ omen_damnedsouls_desc:4 "One of the bonuses from the partnership with Ideal Masters are the legions of the damned souls thou necromancer summoning them should remember that they are tied to soul cairn and cannot be present on Nirn for too long. Also you need to be careful not to end up as one of them yourself."

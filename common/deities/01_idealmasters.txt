@@ -1,0 +1,90 @@
+﻿### General Deity Checks ###
+
+### Exclusive Deity Checks ###
+
+deity_soulcairn = {
+	trigger = {
+		religion = idealmasters_pantheon
+	}
+	icon = deity_soulcairn
+	passive_modifier = { monthly_wage_modifier = deity_monthly_wage_modifier_svalue }
+	omen = { civic_tech_investment = omen_civic_tech_investment_svalue } #Bonus from Omen
+	religion = idealmasters_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	
+	on_activate = {
+		capital_scope = {
+			create_2_citizens_effect = yes
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_blackgems = {
+	trigger = {
+		religion = idealmasters_pantheon
+	}
+	icon = deity_blackgems
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_slaves_output = omen_global_slaves_output_svalue } #Bonus from Omen
+	religion = idealmasters_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	on_activate = {
+		capital_scope = {
+			create_2_slaves_effect = yes
+		}
+	}
+	
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_idealmasters = {
+	trigger = {
+		religion = idealmasters_pantheon
+	}
+	icon = deity_idealmasters
+	passive_modifier = { ruler_popularity_gain = deity_ruler_popularity_gain_svalue }
+	omen = { research_points_modifier = omen_research_points_modifier_svalue } #Bonus from Omen
+	religion = idealmasters_pantheon
+	deity_category = culture #This Deity uses a Culture Slot'
+	on_activate = {
+		add_research = {
+			technology = religious_tech
+			value = 10
+		}
+	}
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+}
+
+deity_damnedsouls = {
+	trigger = {
+		religion = idealmasters_pantheon
+	}
+	icon = deity_damnedsouls
+	passive_modifier = { global_start_experience = deity_global_start_experience_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = idealmasters_pantheon
+	deity_category = war #This Deity uses a War slot.
+
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		if = {
+			limit = { manpower_percentage < 0.8 }
+			add_manpower = 1.5
+		}
+		else = {
+			add_military_experience = 2
+		}
+	}
+}

@@ -1,0 +1,20 @@
+pdxmesh = {
+	name = "elven_shield_mesh"
+	file = "elven_shield.mesh"
+
+	meshsettings = {
+		name = "elven_shieldShape"
+		index = 0
+		texture_diffuse = "elven_shield_diffuse.dds"
+		texture_normal = "elven_shield_normal.dds"
+		texture_specular = "elven_shield_properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "elven_shield_entity"
+	pdxmesh = "elven_shield_mesh"
+	scale = 1
+}

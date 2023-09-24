@@ -1,0 +1,67 @@
+﻿monthly_country_pulse = {
+
+	events = {
+		race_startup.1 
+		race_startup.2
+		family_events.1 #Rise of a Family
+		family_events.2 #Prune Family
+		family_events.5 #Rise of new Royal Dynasty
+		family_events.6 #Tribal family rise
+		family_events.7 #Tribal family fall
+		family_events.9 #Rise of Family in Republics
+		#Modded events
+		#Devines Events
+		devine_events.1
+		#Alessian Revolt
+		alessian_revolt.10
+		alessian_revolt.2
+		alessian_revolt.3
+		alessian_revolt.4
+		alessian_revolt.5
+		alessian_revolt.7
+		#Invasions
+		#cymmerian_invasion.1
+		#Militarism
+		militarism_events.1
+		militarism_events.4
+		#Plague
+		#plague_event.2
+		#plague_event.3
+		#Admin Efficiency
+		#admin_efficiency.1
+		#Units
+		units_allowance_events.1
+		#Modded events
+		#Becoming a Pure-Blood Vampire
+		vampirism.2
+		vampirism.3
+		vampirism.4
+		#Refugees in Direnni lands
+		refugees.1
+		refugees.2
+		#The Pelinal Leadership (workround)
+		alessian_revolt.6 
+	}
+	
+	random_events = {
+		595 = 0
+		5 = comet.4
+		50 = vampirism.10
+	}
+	
+	on_actions = {		
+		dictatorship_power_held_pulse
+		consul_conspiracy_pulse
+		delay = { days = { 1 15 } }
+		dictator_rise_pulse
+		delay = { days = { 1 15 } }
+		passover_supported_characters_pulse
+		monthly_guarantee_pulse
+	}
+
+	effect = {
+		#every_country = {
+		#	hidden_militarism_effect = yes
+		#}
+	}
+}

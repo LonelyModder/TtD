@@ -1,0 +1,42 @@
+﻿imga = {	
+	color = hsv { 0.04 0.70 0.48 }
+
+	primary = lv_archers
+	second = lv_warriors
+	flank = lv_raiders
+	
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_imgan
+
+	male_names = {
+		Eariielandil Rimarnimarco Kaelaril Merived Trecerion Yaronniss Angamon Ingarmowe Suurntar Gyron
+		Vinalmo Estrim Uulochtus Kaearion Eramircil Aslimo Hidle Erunrionamion Lylimilrmerel Rulirynil 
+		Quaewynn Arrmaillin Tumrynil Ungadurcar Ulunndilnalus Ravelcalin Solierion Morontar Tusaliongrim 
+		Ryatarandil Marduk 
+	}
+	female_names = {
+		Camunayne Arision Giarie Elawen Helefire Arqkrand Camiine Eilente Erranwe Arienn Celsha Sondsse 
+		Caraion Curen Estitelle Angnde Carmia Tenril Aranwy Erranande Iniorne Taairdalin Mirarie
+		Eilesse Curna Varende Elarane Ardassa Elanarume 
+	}
+	family = {
+		Khraemlock Aedoth Salingorin Aedosin Spellihle Laemahl Grayaere Gaethfaere Laraethious Aedbinder 
+		Aedaire Thromorinh Chamiane Faethaer Tahrombinder Aelsoniuth Siliniane Aedahl Chaefaere Silinifeth
+		Loraethor Chaebinder Tahromian Salinguseus Khraeman Saelinorin
+	}
+	culture = {
+		gaimga = {}
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = imga_gfx
+	ethnicities = {
+		10 = greek
+	}
+}

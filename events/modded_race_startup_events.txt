@@ -1,0 +1,176 @@
+﻿namespace = race_startup
+
+race_startup.1 = { 
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		
+	}
+	
+	immediate = {
+		every_character = {
+			ESFA_on_create_character_effect = yes
+		}
+	}
+
+}
+
+race_startup.2 = { 
+
+	type = country_event
+	hidden = yes
+	
+	trigger = {
+		
+	}
+	
+	immediate = {
+		every_character = {
+			if = {
+				limit = {
+					NOT = { has_trait = altmer }
+					NOT = { has_trait = bosmer }
+					NOT = { has_trait = goblin }
+					NOT = { has_trait = tnede }
+					NOT = { has_trait = orc }
+					NOT = { has_trait = minotaur }
+					NOT = { has_trait = khajiit }
+					NOT = { has_trait = argonian }
+					NOT = { has_trait = imga }
+					NOT = { has_trait = nord }
+					NOT = { has_trait = breton }
+					NOT = { has_trait = falmer }
+					NOT = { has_trait = dwemer }
+					NOT = { has_trait = halfauroran }
+				}
+				if = {
+					limit = {
+						NOR = {
+							has_culture_group = altmer
+							has_culture_group = venedi
+						}
+					}
+					remove_trait = pure
+					remove_trait = impure
+				}
+				if = {
+					limit = {
+						OR = {
+							has_culture_group = altmer
+							has_culture_group = venedi
+						}
+					}
+					add_trait = altmer
+					add_trait = pure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = bosmer
+					}
+					add_trait = bosmer
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_culture_group = breton
+							has_culture_group = druid
+						}
+					}
+					add_trait = breton
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = falmer
+					}
+					add_trait = falmer
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = dwemer
+					}
+					add_trait = dwemer
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = goblin
+					}
+					add_trait = goblin
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_culture_group = nede
+							has_culture_group = keptu
+							has_culture_group = reachmenic
+						}
+					}
+					add_trait = tnede
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = orcish
+					}
+					add_trait = orc
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = minotauric
+					}
+					add_trait = minotaur
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = khajiit
+					}
+					add_trait = khajiit
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = imga
+					}
+					add_trait = imga
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = argonian
+					}
+					add_trait = argonian
+					remove_trait = pure
+					remove_trait = impure
+				}
+				else_if = {
+					limit = {
+						has_culture_group = nordic
+					}
+					add_trait = nord
+					remove_trait = pure
+					remove_trait = impure
+				}
+			}
+		}
+	}
+
+}
+

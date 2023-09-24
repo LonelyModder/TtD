@@ -1,0 +1,60 @@
+treasure_manager = {
+    database = {
+		#ID ranges:
+		# Joachim 1-60
+		# Joe 61-120
+		# Drikus 121-180
+		# Henrik 181-240
+		
+    }
+}
+family={
+	families={
+		#Numbers do not have to appear in numerical order but do have to be unique:
+		#Current first free ID is 90.
+		#Roman Families on Start:
+		
+		
+		}
+}
+diplomacy = {
+	
+}
+
+provinces = { #Any entry must contain a comment with city name.
+	### TREASURES ###
+	
+
+	#Pirates
+	
+	
+	#Buildings
+	
+	
+	#Passes
+	
+	
+	########################################
+	# Barbarian Spawn Spots
+	########################################
+	
+}
+
+road_network = {
+	
+}
+
+country = {
+	countries = {
+	
+		BAR = {
+			government = tribal_kingdom
+		}
+		#I update
+		
+	}
+}
+
+trade = { #If any are changed also change trade agreements.
+	
+}

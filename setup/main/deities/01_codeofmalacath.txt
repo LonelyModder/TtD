@@ -1,0 +1,25 @@
+deity_manager = {
+	deities_database = { ### KEYS 10141-10160 ###
+		10141 = {
+			key = omen_donotsteal
+			deity = deity_donotsteal
+		}
+		10142 = {
+			key = omen_donotkill
+			deity = deity_donotkill
+		}
+		10143 = {
+			key = omen_donotattackwithoutreason
+			deity = deity_donotattackwithoutreason
+		}
+		10144 = {
+			key = omen_fightwithhonor
+			deity = deity_fightwithhonor
+		}
+		10145 = {
+			key = omen_protectthetribe
+			deity = deity_protectthetribe
+		}
+	}
+}
+

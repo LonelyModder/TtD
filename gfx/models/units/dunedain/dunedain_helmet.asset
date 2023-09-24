@@ -1,0 +1,22 @@
+pdxmesh = {
+	name = "dunedain_helmet_mesh"
+	file = "Dunedain_helmet.mesh"
+	
+	scale = 1
+	
+	
+	meshsettings = {
+		name = "gondor_helmetShape"
+		index = 0
+		texture_diffuse = "Dunedain_Helmet_Diffuse.dds"
+		texture_normal = "Dunedain_Helmet_Normal.dds"
+		texture_specular = "Dunedain_Helmet_Properties.dds"
+		shader = "standard"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "dunedain_helmet_entity"
+	pdxmesh = "dunedain_helmet_mesh"
+}

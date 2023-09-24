@@ -1,0 +1,139 @@
+﻿is_tier_1_formable_trigger = {
+	OR = {
+		tag = XAU #Auridon
+		tag = XCL #Colovia
+		tag = XNI #Nibenay
+		tag = XSO #Sommerset
+		tag = XCN #Cyro-Nordic
+		tag = XCR #Craglorn
+		tag = XAN #Anequina
+		tag = XPL #Pellitine
+	}
+}
+
+is_tier_2_formable_trigger = {
+	OR = {
+		tag = XOR #Kingdom of Orsinium
+		tag = XAL #Kingdom of Alinor
+		tag = XCY #Kingdom of Cyrod
+		tag = VAA #Kingdom of Valenwood
+		tag = XHM #Kingdom of Deathlands
+		tag = XHR #Kingdom of High Rock
+		tag = XEL #Kingdom of Elsweyr
+	}
+}
+
+is_endgame_tag_trigger = {
+	OR = {
+		tag = XAD #Aldmeri Dominion
+		tag = XDC #Dagerfall Covenant
+		tag = XME #Moon Empire
+	}
+}
+
+can_form_nation_trigger = {
+	war = no
+	has_civil_war = no
+}
+
+has_food_trade_good_trigger = {
+	custom_tooltip = {
+		text = food_tradegood_required
+		OR = {
+			trade_goods = grain
+			trade_goods = fish
+			trade_goods = cattle
+			trade_goods = vegetables
+		}
+	}
+}
+
+has_non_food_trade_good_trigger = {
+	NOR = {
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = cattle
+		trade_goods = vegetables
+	}
+}
+
+has_urban_trade_good_trigger = {
+	OR = {
+		trade_goods = papyrus
+		trade_goods = cloth
+		trade_goods = earthware
+		trade_goods = dye
+		trade_goods = glass
+		trade_goods = silk
+	}
+}
+
+has_non_urban_trade_good_trigger = {
+	NOR = {
+		trade_goods = papyrus
+		trade_goods = cloth
+		trade_goods = earthware
+		trade_goods = dye
+		trade_goods = glass
+		trade_goods = silk
+	}
+}
+
+has_minable_trade_good_trigger = {
+	custom_tooltip = {
+		text = minaable_tradegood_required #Needs updating when trigger is updated.
+		OR = {
+			trade_goods = marble
+			trade_goods = stone
+			trade_goods = precious_metals
+			trade_goods = base_metals
+			trade_goods = iron
+			trade_goods = tin
+		}
+	}
+}
+
+has_unminable_trade_good_trigger = {
+	NOR = {
+		trade_goods = marble
+		trade_goods = stone
+		trade_goods = precious_metals
+		trade_goods = base_metals
+		trade_goods = iron
+		trade_goods = tin
+	}
+}
+
+add_scaling_gold_cost_trigger = {
+	trigger_if = {
+		limit = {
+			scope:player = {
+				treasury < root.calc_governor_investment_fee
+				OR = {
+					NOT = {
+						has_variable = free_investments
+					}
+					var:free_investments <= 0
+				}
+			}
+		}
+		scope:player = {
+			treasury >= root.calc_governor_investment_fee
+		}
+	}
+}
+
+treasure_owned_or_altared_trigger = {
+	custom_tooltip = {
+		text = treasure_owned_or_altared_anthologie_tt
+		ROOT = {
+			OR = {
+				any_country_treasure = { THIS = $SHINY$ }
+				any_owned_holy_site = {
+					num_province_treasures > 0
+					any_province_treasure = { THIS = $SHINY$ }
+				}
+			}
+		}
+	}
+}

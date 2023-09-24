@@ -1,0 +1,36 @@
+pdxmesh = {
+	name = "noldor_gfx_port_mesh"
+	file = "highelves_port.mesh"
+
+	meshsettings = {
+		name = "highelves_portShape"
+		index = 0
+		texture_diffuse = "highelves_fort_diffuse.dds"
+		texture_normal = "highelves_fort_normal.dds"
+		texture_specular = "highelves_fort_properties.dds"
+		shader = "standard_snow"
+		shader_file = "gfx/FX/pdxmesh.shader"
+	}
+}
+
+entity = {
+	name = "noldor_gfx_port_entity"
+	pdxmesh = "noldor_gfx_port_mesh"
+	default_state = "default"
+	
+	state = {
+		name = default
+		start_event = { trigger_once = yes sound = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Naval/sfx_amb_3d_naval_port" } keep_sound = yes }
+	}
+}
+
+entity = {
+	name = "sindar_port_entity"
+	pdxmesh = "noldor_gfx_port_mesh"
+	default_state = "default"
+	
+	state = {
+		name = default
+		start_event = { trigger_once = yes sound = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Naval/sfx_amb_3d_naval_port" } keep_sound = yes }
+	}
+}

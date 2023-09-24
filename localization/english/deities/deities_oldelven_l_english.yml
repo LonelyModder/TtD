@@ -1,0 +1,15 @@
+﻿l_english:
+ ## Default ##
+ deity_vigyld:0 "$omen_vigyld$"
+ omen_vigyld:1 "Vigyld"
+ omen_vigyld_desc:4 "Few have witnessed the rituals of the Psijic Order. Only the two Vigyld and Moawita are known. According to the order members their purpose is to empower salutary spirits and debilitate unclean ones but we don't have more knowledge than this."
+ deity_sargeld:0 "$omen_sargeld$"
+ omen_sargeld:1 "Sargeld"
+ omen_sargeld_desc:4 "Few have witnessed the rituals of the Psijic Order. Only the two Vigyld and Moawita are known. According to the order members their purpose is to empower salutary spirits and debilitate unclean ones but we don't have more knowledge than this."
+ deity_anuion:0 "$omen_anuion$"
+ omen_anuion:1 "Anuion"
+ omen_anuion_desc:4 "Few have witnessed the rituals of the Psijic Order. Only the two Vigyld and Moawita are known. According to the order members their purpose is to empower salutary spirits and debilitate unclean ones but we don't have more knowledge than this."
+ deity_moawita:0 "$omen_moawita$"
+ omen_moawita:1 "Moawita"
+ omen_moawita_desc:4 "Few have witnessed the rituals of the Psijic Order. Only the two Vigyld and Moawita are known. According to the order members their purpose is to empower salutary spirits and debilitate unclean ones but we don't have more knowledge than this."
+ 

@@ -1,0 +1,25 @@
+deity_manager = {
+	deities_database = { ### KEYS 100041-10060 ###
+		10041 = {
+			key = omen_lorkhan
+			deity = deity_lorkhan
+		}
+		10042 = {
+			key = omen_dibella
+			deity = deity_dibella
+		}
+		10043 = {
+			key = omen_kynareth
+			deity = deity_kynareth
+		}
+		10044 = {
+			key = omen_celestials
+			deity = deity_celestials
+		}
+		10045 = {
+			key = omen_shada
+			deity = deity_shada
+		}
+	}
+}
+

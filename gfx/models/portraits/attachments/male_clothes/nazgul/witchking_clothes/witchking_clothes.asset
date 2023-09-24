@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "witchking_clothes_mesh"
+	file = "witchking_clothes.mesh"
+
+	meshsettings = {
+		name = "witchking_helmShape"
+		index = 0
+		texture_diffuse = "witchking_helm_diffuse.dds"
+		texture_normal = "witchking_helm_normal.dds"
+		texture_specular = "witchking_helm_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+	
+	meshsettings = {
+		name = "nazgul_helmcloakShape"
+		index = 0
+		texture_diffuse = "nazgul_helmcloak_diffuse.dds"
+		texture_normal = "nazgul_helmcloak_normal.dds"
+		texture_specular = "nazgul_helmcloak_properties.dds"
+		shader = "portrait_attachment"
+		shader_file = "gfx/FX/portrait.shader"
+	}
+}
+
+entity = {
+	name = "witchking_clothes_entity"
+	pdxmesh = "witchking_clothes_mesh"
+}

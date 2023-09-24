@@ -1,0 +1,114 @@
+﻿country_decisions = {
+	
+	# Form Empire of Cyrod
+	form_hkhighrock = {
+		
+		potential = {
+			OR = {
+				country_culture_group = altmer
+				country_culture_group = reachmenic
+				country_culture_group = orcish
+				country_culture_group = breton
+				country_culture_group = druid
+				country_culture_group = dwemer
+			}
+			#is_tribal = yes
+			NOR = {
+				tag = XHR
+				tag = VAS
+			}
+			NOR = {
+				is_tier_2_formable_trigger = yes
+				is_endgame_tag_trigger = yes
+			}
+		}
+		
+		highlight = {
+			scope:province = {
+				OR = {
+					province_id = 3176
+					province_id = 3276
+					province_id = 3280
+					province_id = 3085
+					province_id = 2162
+					province_id = 2954
+					province_id = 3012
+					province_id = 3209
+				}
+			}
+		}
+		
+		allow = {
+			custom_tooltip = {
+				text = hkhighrock_must_not_exist
+				NOT = {
+					any_country = {
+						tag = XHR
+					}
+				}
+			}
+			can_form_nation_trigger = yes
+			owns = 3176
+			owns_or_subject_owns = 3276
+			owns_or_subject_owns = 3280
+			owns_or_subject_owns = 3085
+			owns_or_subject_owns = 2162
+			owns_or_subject_owns = 2954
+			owns_or_subject_owns = 3012
+			owns_or_subject_owns = 3209
+		}
+		
+		effect = {
+			custom_tooltip = "tier_2_formable_tooltip"
+			change_country_name = "HKHighRock_name"
+			change_country_flag = HKHighRock_FLAG
+			if = {
+				limit = { is_tribal = yes }
+				add_country_modifier = {
+					name = civilized_tribe
+					duration = 5475
+				}
+				change_government = aristocratic_monarchy
+				switch_government_type_event_clearup_effect = yes
+			}
+			hidden_effect = {
+				change_country_adjective = "HKHighRock_adj"
+				change_country_color =  "HKHighRock_color"
+				change_country_tag = XHR
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 3176
+						}
+					}
+				}
+				set_capital = 3176
+				hidden_effect = {
+					p:3176.state = {
+						set_state_capital = 3176
+					}
+				}
+			}
+			add_stability = 25
+			p:3176 = {
+				capital_formable_medium_effect = yes
+				formable_capital_modifier_normal_effect = yes
+			}
+			add_2_free_province_investments = yes
+			hidden_effect = {
+				region:modded_wrothgar_region = { formable_region_province_effect = yes }
+				region:modded_stormhaven_region = { formable_region_province_effect = yes }
+				region:modded_rivenspire_region = { formable_region_province_effect = yes }
+				region:modded_glenumbra_region = { formable_region_province_effect = yes }
+				region:modded_lowerglenumbra_region = { formable_region_province_effect = yes }
+			}
+		}
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	
+}

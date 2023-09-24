@@ -1,0 +1,68 @@
+﻿@buildings_per_pop_tier_0 = 1
+@buildings_per_pop_tier_1 = 2
+@buildings_per_pop_tier_2 = 2
+@buildings_per_pop_tier_3 = 2
+
+
+
+Breton = {
+	graphical_culture = "breton_gfx"
+	center_building_mesh = "imperial_city_houses_01_mesh"
+	soundeffect = "event:/SFX/Ambience/3DMapEmitters/Urban/sfx_amb_3d_city_hellenic"
+	tier = {
+		priority = 0
+		population_per_building = @buildings_per_pop_tier_0
+		population_ratio = 1.0
+		rotation_steps = 4
+		rotation_variation = 0
+		meshes = {
+			"imperial_city_houses_02_mesh"
+			"imperial_city_houses_03_mesh"
+			"imperial_city_houses_04_mesh"
+			"imperial_city_houses_05_mesh"
+			"imperial_city_houses_06_mesh"
+		}
+	}
+	tier = {
+		priority = 1
+		population_per_building = @buildings_per_pop_tier_1
+		population_ratio = 0.25
+		rotation_steps = 8
+		rotation_variation = 0
+		meshes = {
+			"imperial_city_houses_02_mesh"
+			"imperial_city_houses_03_mesh"
+			"imperial_city_houses_04_mesh"
+			"imperial_city_houses_05_mesh"
+			"imperial_city_houses_06_mesh"
+		}
+	}
+	tier = {
+		priority = 2
+		population_per_building = @buildings_per_pop_tier_2
+		population_ratio = 0.25
+		rotation_steps = 4
+		rotation_variation = 0
+		meshes = {
+			"imperial_city_houses_02_mesh"
+			"imperial_city_houses_03_mesh"
+			"imperial_city_houses_04_mesh"
+			"imperial_city_houses_05_mesh"
+			"imperial_city_houses_06_mesh"
+		}
+	}
+	tier = {
+		priority = 3
+		population_per_building = @buildings_per_pop_tier_3
+		population_ratio = 0.25
+		rotation_steps = 4
+		rotation_variation = 0
+		meshes = {
+			"imperial_city_houses_02_mesh"
+			"imperial_city_houses_03_mesh"
+			"imperial_city_houses_04_mesh"
+			"imperial_city_houses_05_mesh"
+			"imperial_city_houses_06_mesh"
+		}
+	}
+}

@@ -1,0 +1,44 @@
+﻿dwemer = {	
+	color = rgb { 99 94 93 }
+
+	primary = lv_crossbowmen
+	second = lv_heavyinfantry
+	flank = lv_raiders
+	
+	primary_navy = tetrere
+	secondary_navy = octere
+	flank_navy = liburnian
+	
+	levy_template = levy_dwemer
+
+	male_names = {
+		Achynch Cbramrond Chramin Sthohld Jnafrak Cuoznak Gouthzgar Chralzrak Yafk Yragrac Tzodgir 
+		Nevimgar Chrathld Dzrabond Dadrak Cnagvin Ghrofrak Dhafuan Jnaharn Chuafuan Mihrk Nevigrum 
+		Tnahrek Jlaregrum Jlaregvin Ghalchond Rhzoren Ctuvraz Cnadchu Dazgar Tzofgru Jrudchu Nevizdir 
+		Cuobrec Mzuren Ythanac Nendam Rkugr Bthuvin Ythadchu 
+	}
+	female_names = {
+		Ichugzis Craglern Csinhatch Mraftris Dathanch Kanadis Ryalirda Thrizshen Nriznara Yzraflis Jarevrash 
+		Irdalamch Krihken Morlis Sohvlin Jrimris Yzragrida Chlitchis Chrohken Chlifwinn Mhelnif Chlibwyr 
+		Jarerlis Shigven Ithodilan Chzaglern Jozara Rzubrina Chzaflis Bluvlara Rzuthanch Dremdida Kalirda 
+		Alzibryn Gomzlin Cramdida Tatrez Ichuhzis Chligriln Gomris 
+	}
+	family = {
+		Bregrozsch Ishemratz Bnohuanch Szoglynsh Grimorn Yahuanch Djumorn Asravarn Gebchasz Chralrohn
+		Yagarn Mromratz Kredzach Trohatch Mzagrozsch Trobnanch Gzodchan Nhevarn Kolchanf Brezalf Kzrerzhurk
+		Azanard Mrolchanf Nhelzarf Rhozhurz Snemorn Raovnorz Czazhurz Choatarn Bnozlurch Djugrenz Bredchan
+		Agazlurch Tchavarn Jafnyg Inradchan Bhazalf Azarlatz Jlehron Ynzangnthumz
+	}
+	culture = {
+		dworgothic = {}
+	}
+	
+	barbarian_names = { 
+		ELYMAEI CHALDAEI RHAMBAIOI KARDUCHOI GARAMAIOI
+	}
+	
+	graphical_culture = dwemer_gfx
+	ethnicities = {
+		10 = dwemer
+	}
+}

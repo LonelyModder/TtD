@@ -1,0 +1,258 @@
+﻿nede_philosophy = { 
+	color = hsv { 1.1 1 0.5 }
+	image = nede_philosophy
+	
+	allow = {
+		trigger_if = {
+			limit = { 
+				OR = {
+					country_culture_group = nede
+					country_culture_group = keptu
+					country_culture_group = reachmenic
+					country_culture_group = breton
+					country_culture_group = druid
+					country_culture_group = minotauric
+				}				
+			}
+			custom_tooltip = {
+				text = "began_with_tradition_group"
+			}
+			OR = {
+				country_culture_group = nede
+				country_culture_group = keptu
+				country_culture_group = reachmenic
+				country_culture_group = breton
+				country_culture_group = druid
+				country_culture_group = minotauric
+			}
+		}
+		trigger_else_if = {
+			limit = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					any_country_culture = {
+						is_integrated = yes
+						this.culture.culture_group = culture_group:nede
+						OR = {
+							this.culture.culture_group = culture_group:nede
+							this.culture.culture_group = culture_group:keptu
+							this.culture.culture_group = culture_group:druid
+							this.culture.culture_group = culture_group:reachmenic
+							this.culture.culture_group = culture_group:breton
+							this.culture.culture_group = culture_group:minotauric							
+						}
+					}
+				}
+			}
+			any_country_culture = {
+				AND = {
+					OR = {
+						has_military_bonus = argonian_states_path_end_bonus
+						has_military_bonus = orcish_states_path_end_bonus
+						has_military_bonus = khajiit_states_path_end_bonus
+						has_military_bonus = altmer_states_path_end_bonus
+						has_military_bonus = nordic_states_path_end_bonus
+						has_military_bonus = dwemer_states_path_end_bonus
+					}
+					custom_tooltip = {
+						text = tradition_unlock_requirement_short
+						is_integrated = yes
+						OR = {
+							this.culture.culture_group = culture_group:nede
+							this.culture.culture_group = culture_group:keptu
+							this.culture.culture_group = culture_group:reachmenic
+							this.culture.culture_group = culture_group:breton
+							this.culture.culture_group = culture_group:druid
+							this.culture.culture_group = culture_group:minotauric
+						}
+					}							
+				}
+			}
+		}
+		trigger_else = {
+			AND = {
+				OR = {
+					has_military_bonus = argonian_states_path_end_bonus
+					has_military_bonus = orcish_states_path_end_bonus
+					has_military_bonus = khajiit_states_path_end_bonus
+					has_military_bonus = altmer_states_path_end_bonus
+					has_military_bonus = nordic_states_path_end_bonus
+					has_military_bonus = dwemer_states_path_end_bonus
+				}
+				custom_tooltip = {
+					text = "tradition_unlock_requirement_nede"
+					any_country_culture = {
+						is_integrated = yes
+						OR = {
+							this.culture.culture_group = culture_group:nede
+							this.culture.culture_group = culture_group:keptu
+							this.culture.culture_group = culture_group:reachmenic
+							this.culture.culture_group = culture_group:breton
+							this.culture.culture_group = culture_group:druid
+							this.culture.culture_group = culture_group:minotauric
+						}	
+					}
+				}
+			}
+		}
+	}
+	
+	nede_path_1 = { ###nede path
+		modifier = { 
+			lv_warriors_offensive = 0.1
+		}
+		icon = nede_mini_trad
+		requires = {}
+	}
+	
+	nede_path_2 = { ###nede path
+		modifier = { 
+			lv_heavyinfantry_offensive = 0.1
+		}
+		enable_tactic = greek_phalanx
+		icon = nede_mini_trad
+		requires = {nede_path_1}
+	}
+	
+	nede_path_2a = { ###nede path
+		modifier = { 
+			discipline = 0.1
+			plains_combat_bonus = 0.1
+		}
+		enable_tactic = triplex_acies
+		icon = nede_mini_trad
+		requires = {nede_path_2}
+	}
+	
+	nede_path_3a = { ###nede path
+		modifier = { 
+			lv_cavalry_offensive = 0.1
+			lv_archers_offensive = 0.1
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_2a}
+	}
+	
+	nede_path_4a = { ###nede path
+		modifier = { 
+			general_loyalty = 5
+			heavy_infantry_discipline = 0.1
+		}
+		on_activate = {
+			custom_tooltip = "create_high_martial_rising_star"
+			hidden_effect = {
+				create_character = {
+					add_martial = 8
+					add_trait = victorious
+				}
+			}
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_3a}
+	}
+	
+	nede_path_7a = { ###nede path
+		modifier = { 
+			lv_heavyinfantry_movement_speed = 0.1
+			lv_heavyinfantry_discipline = 0.1
+		}
+		enable_ability = road_building
+		icon = nede_mini_trad
+		requires = {nede_path_4a}
+	}
+	
+	nede_path_5a = { ###nede path
+		modifier = { 
+			cohort_cost = -0.1
+			supply_train_cost = -0.15
+			engineer_cohort_cost = -0.15
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_7a}
+	}
+	
+	nede_path_6a = { ###nede path
+		modifier = { 
+			fort_maintenance_cost = -0.2
+		}
+		enable_ability = border_forts
+		icon = nede_mini_trad
+		requires = {nede_path_5a}
+	}
+	
+	nede_path_2b = { ###nede path
+		modifier = { 
+			global_monthly_civilization = 0.025
+			lv_cavalry_discipline = 0.1
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_2}
+	}
+	
+	nede_path_3b = { ###nede path
+		modifier = { 
+			lv_camels_offensive = 0.1
+			supply_train_cost = -0.15
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_2b}
+	}
+	
+	nede_path_4b = { ###nede path
+		modifier = { 
+			lv_warriors_offensive = 0.1
+			hills_combat_bonus = 0.1
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_3b}
+	}
+	
+	nede_path_2c = { ###nede path
+		modifier = { 
+			riverine_terrain_combat_bonus = 0.15
+		}
+		on_activate = {
+			ordered_owned_province = {	
+				limit = {
+					is_coastal = yes
+					has_building = port_building
+					can_build_building = port_building
+				}
+				alternative_limit = {
+					is_coastal = yes
+					can_build_building = port_building
+				}
+				order_by = total_population
+				add_building_level = port_building
+				add_building_level = port_building
+			}
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_2}
+	}
+	
+	nede_path_3c = { ###nede path
+		modifier = { 
+			naval_damage_done = 0.1
+			coastal_terrain_combat_bonus = 0.15
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_2c}
+	}
+	
+	nede_states_path_end_bonus = { ###nede path
+		modifier = { 
+			land_morale_modifier = 0.1
+			discipline = 0.1
+		}
+		icon = nede_mini_trad
+		requires = {nede_path_6a nede_path_4b nede_path_3c}
+	}
+}

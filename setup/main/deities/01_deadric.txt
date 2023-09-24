@@ -1,0 +1,77 @@
+deity_manager = {
+	deities_database = { ### KEYS 100021-10040 ###
+		10021 = {
+			key = omen_azura
+			deity = deity_azura
+		}
+		10022 = {
+			key = omen_boethiah
+			deity = deity_boethiah
+		}
+		10023 = {
+			key = omen_clavicusvile
+			deity = deity_clavicusvile
+		}
+		10024= {
+			key = omen_hermeusmora
+			deity = deity_hermeusmora
+		}
+		10025 = {
+			key = omen_hircine
+			deity = deity_hircine
+		}
+		10026 = {
+			key = omen_jyggalag
+			deity = deity_jyggalag
+		}
+		10027 = {
+			key = omen_malacath
+			deity = deity_malacath
+		}
+		10028 = {
+			key = omen_mechrunesdagon
+			deity = deity_mechrunesdagon
+		}
+		10029 = {
+			key = omen_mephala
+			deity = deity_mephala
+		}
+		10030 = {
+			key = omen_meridia
+			deity = deity_meridia
+		}
+		10031 = {
+			key = omen_molagbal
+			deity = deity_molagbal
+		}
+		10032 = {
+			key = omen_namira
+			deity = deity_namira
+		}
+		10033 = {
+			key = omen_nocturnal
+			deity = deity_nocturnal
+		}
+		10034 = {
+			key = omen_peryite
+			deity = deity_peryite
+		}
+		10035 = {
+			key = omen_sanguine
+			deity = deity_sanguine
+		}
+		10036 = {
+			key = omen_sheogorath
+			deity = deity_sheogorath
+		}
+		10037 = {
+			key = omen_vermina
+			deity = deity_vermina
+		}
+		10038 = {
+			key = omen_umaril
+			deity = deity_umaril
+		}
+	}
+}
+

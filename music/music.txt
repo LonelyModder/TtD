@@ -1,0 +1,103 @@
+﻿track1 = {
+	music = "file:/music/MT1.wav"
+	weight = 25
+	can_be_interrupted = yes
+}
+
+track2 = {
+	music = "file:/music/MT2.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track3 = {
+	music = "file:/music/idle1.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track4 = {
+	music = "file:/music/idle2.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track5 = {
+	music = "file:/music/idle3.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track6 = {
+	music = "file:/music/idle4.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track7 = {
+	music = "file:/music/idle5.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track8 = {
+	music = "file:/music/battle1.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track9 = {
+	music = "file:/music/battle2.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track10 = {
+	music = "file:/music/battle3.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track11 = {
+	music = "file:/music/battle4.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track12 = {
+	music = "file:/music/battle5.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track13 = {
+	music = "file:/music/battle6.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+track14 = {
+	music = "file:/music/battle7.wav"
+	weight = 25
+	mood = yes
+	can_be_interrupted = yes
+}
+
+#track15 = {
+#	music = "event:/MUSIC/BaseGame/Moods/War/mx_mood_war_08"
+#	weight = 25
+#	mood = yes
+#	can_be_interrupted = yes
+#}
